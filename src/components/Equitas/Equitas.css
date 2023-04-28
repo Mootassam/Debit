@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.app__equitas {
+  width: 390px;
+
+  background-color: #f1f1f1;
+}
+
+.equitas__header {
+  width: 100%;
+
+  background-color: #d40000;
+
+  padding: 32px 104px 13px 125px;
+}
+
+.equitas__header > h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.055em;
+  color: #ffffff;
+}
+
+.equitas__subheader {
+  background-color: #ffffff;
+  width: 100%;
+  height: 76px;
+}
+
+.equitas__subheader {
+  height: 76px;
+  background-color: #ffffff;
+
+  place-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+
+.equitas__subheader > h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: -0.015em;
+
+  color: #000000;
+}
+
+.equitas__send {
+  margin-top: 12px;
+  background: #ffffff;
+  border-radius: 5px;
+  display: flex;
+  display: flex;
+  align-items: center;
+  padding: 26px 49px 23px 10px;
+  column-gap: 15px;
+}
+
+.equitas__text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: #999999;
+}
+
+.equitas__box {
+  width: 27px;
+  height: 27px;
+  border: 2px solid #999999;
+  border-radius: 6px;
+}
+
+.equitas__details {
+  background: #ffffff;
+  border-radius: 5px;
+  margin-top: 12px;
+  padding: 22px 10px 4px 10px;
+}
+
+.detaill__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.detaill__text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 22px;
+  letter-spacing: 0.015em;
+
+  color: #5d699e;
+}
+
+.detail__image {
+  display: flex;
+  gap: 17px;
+}
+
+.detaill__header {
+  padding-bottom: 7px;
+}
+
+.detaill__group {
+  display: flex;
+  gap: 2px;
+  flex-direction: column;
+}
+
+.group__label {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+
+  color: #999999;
+}
+
+.group__text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.03em;
+
+  color: #000000;
+}
+
+.group__detaill {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+}
+
+.equitas__bottom {
+  padding-top: 11px;
+  display: flex;
+  gap: 11px;
+  flex-direction: column;
+}
+
+.bottm__secure {
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.035em;
+  padding: 11px 0;
+  display: grid;
+  place-items: center;
+  color: #4f6270;
+
+  background: #eaf3fc;
+  width: 100%;
+}
+.secure{ 
+  display: flex;
+  align-content: center;
+  align-items: center;
+  gap:8px;
+}
+
+.bottom__add {
+  background: #d40000;
+  border-radius: 5px;
+  padding: 14px 0;
+  display: grid;
+  place-items: center;
+}
+
+.favourites {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.025em;
+
+  color: #ffffff;
+}
+
+.bottom__options {
+  display: flex;
+  gap: 6px;
+}
+
+.button__home {
+  background: #9c9c9c;
+  border-radius: 5px 5px 0px 0px;
+  display: grid;
+  place-items: center;
+  padding: 13px 51px 9px 50px;
+}
+
+.home {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.025em;
+  color: #ffffff;
+}
+
+.button__send {
+  display: grid;
+  place-items: center;
+  padding: 13px 18px 9px 21px;
+  background-color: #d40000;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.send {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.025em;
+
+  color: #ffffff;
+}

@@ -1,0 +1,300 @@
+.app__sbit {
+  width: 395px;
+  height: 800px;
+  background: #ffffff;
+  position: relative;
+}
+
+.left__time {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: -0.015em;
+  color: #ffffff;
+}
+
+.mobile__left {
+  display: flex;
+  gap: 3px;
+  color: #fff;
+  align-items: center;
+}
+
+.sbi__mobile {
+  background: #171c1f;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  padding: 0 25px;
+  justify-content: space-between;
+}
+
+.sbi__logo {
+  display: flex;
+  gap: 84px;
+  padding: 10px 0 3px 13px;
+  align-items: center;
+  background: #f8f8f8;
+}
+
+.sbi__start {
+  width: 100%;
+  padding: 12px 0 14px 13px;
+  background-image: url("/Sbi/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.sbi__start > span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+
+  letter-spacing: -0.02em;
+
+  color: #ffffff;
+}
+
+.sbi__contents {
+  padding: 29px 17px;
+
+  margin: auto;
+}
+
+.content__message {
+  background: #f7f7f7;
+  border-radius: 7px;
+  width: 100%;
+  height: 244px;
+  display: grid;
+  place-content: center;
+  place-items: center;
+  text-align: center;
+}
+
+.message__success {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 128.69%;
+  /* identical to box height, or 21px */
+
+  letter-spacing: 0.015em;
+  text-transform: capitalize;
+
+  color: #000000;
+}
+
+.message__paid {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  /* or 109% */
+  text-align: center;
+  letter-spacing: -0.04em;
+  color: #000000;
+  max-width: 293px;
+  padding-bottom: 26px;
+}
+
+.message__balance {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  max-width: 216px;
+  /* or 109% */
+
+  text-align: center;
+  letter-spacing: -0.065em;
+
+  color: #000000;
+}
+
+.sbis__bottom {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.bottom__mobiles {
+  height: 38px;
+  background-color: #000000;
+  width: 100%;
+  margin-top: 9px;
+}
+.button__relationships {
+  height: 43px;
+  background: #6d2f94;
+  display: grid;
+  place-items: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: -0.01em;
+  width: 326px;
+
+  color: #ffffff;
+  margin: 13px 17px 0 17px;
+  width: 100%;
+}
+
+.button__futurepayments {
+  background: #ffffff;
+  border: 1px solid #6d2f94;
+  padding: 11px 43px;
+  display: grid;
+  place-items: center;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  /* identical to box height */
+  width: 100%;
+  text-align: center;
+  letter-spacing: -0.01em;
+
+  color: #6d2f94;
+}
+
+.sbis__bottom > div > span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 18px;
+  /* identical to box height, or 159% */
+
+  text-align: center;
+  letter-spacing: -0.005em;
+
+  color: #000000;
+  margin-bottom: 13px;
+}
+
+.bottom__button {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  padding: 0 16px;
+}
+
+/* styling the battery */
+
+.sbi2__battey {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.border__niveau {
+  background: #2da539;
+  width: 100%;
+  max-height: 100%;
+  height: 40%;
+}
+.battery__border {
+  width: 6px;
+  height: 10px;
+  border: 1px solid #ffffff;
+  display: flex;
+  align-items: flex-end;
+}
+
+.battery__top {
+  height: 1px;
+  width: 3px;
+  background-color: #fff;
+}
+
+/* styling the data for the mobile  */
+
+.blue__right {
+  display: flex;
+  color: #ffff;
+  gap: 5px;
+  align-items: center;
+}
+
+.mobile__right {
+  display: flex;
+  color: #ffff;
+  gap: 5px;
+  align-items: center;
+}
+.sbi__data {
+  display: flex;
+  color: #ffff;
+  gap: 1px;
+  align-items: flex-end;
+}
+
+.sbi__data > .data__1 {
+  width: 3px;
+  height: 3px;
+  background-color: #fff;
+}
+
+.sbi__data > .data__2 {
+  width: 3px;
+  height: 5px;
+  background-color: #fff;
+}
+
+.sbi__data > .data__3 {
+  width: 3px;
+  height: 7px;
+  background-color: #fff;
+}
+
+.sbi__data > .data__4 {
+  width: 3px;
+  height: 10px;
+  background-color: #fff;
+}
+.bottom__mobiles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bottom__mobiles >img { 
+  width: 218px;
+}
+
+.mobile__ {
+  padding: 12px 0;
+  color: #ffff;
+  display: flex;
+  max-width: 218px;
+}
+
+.circle {
+  width: 14px;
+  height: 14px;
+  border: 1px solid #838383;
+  border-radius: 7px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}

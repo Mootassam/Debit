@@ -1,0 +1,517 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+.sys__ {
+  display: flex;
+  gap: 20px;
+}
+
+.app__sys {
+  width: 369px;
+  height: 800px;
+  background: #eee8f6;
+  position: relative;
+}
+.data__ {
+  display: flex;
+  gap: 1px;
+  align-items: flex-end;
+}
+.data__ > div {
+  width: 4px;
+  align-items: baseline;
+}
+
+.data__ > div:nth-child(1) {
+  width: 4px;
+  height: 4px;
+  background-color: #ffff;
+}
+
+.data__ > div:nth-child(2) {
+  width: 4px;
+  height: 6px;
+  background-color: #ffff;
+}
+.data__ > div:nth-child(3) {
+  height: 8px;
+  width: 4px;
+  background: rgba(197, 197, 197, 0.7);
+  background-color: #ffff;
+}
+
+.data__ > div:nth-child(4) {
+  height: 10px;
+  width: 4px;
+  background: rgba(197, 197, 197, 0.7);
+}
+.sysheader__battery {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  color: #fff;
+  max-height: 19px;
+}
+
+.fourg {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+  /* identical to box height */
+  letter-spacing: -0.03em;
+
+  color: #ffffff;
+}
+
+.battery__level {
+  margin: 2px;
+  height: 7px;
+
+  background: #fdd60c;
+}
+
+.battery {
+  display: flex;
+  align-items: center;
+}
+.battery__styling {
+  justify-content: flex-start;
+  align-items: center;
+  width: 22px;
+  height: 11px;
+  display: flex;
+  border: 0.75px solid #ffffff;
+  border-radius: 3px;
+}
+
+.small__ {
+  width: 4px;
+  height: 0px;
+  transform: rotate(-90deg);
+  border: 1px solid #ffffff;
+}
+
+.sdiebar__form > label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  color: #000000;
+}
+.app__sysblack {
+  width: 369px;
+  height: 800px;
+  background: #0e051a;
+  position: relative;
+}
+
+.sys__header {
+  width: 100%;
+  background: #5fa946;
+}
+
+/* .sys__header {
+  width: 100%;
+  background: #5fa946;
+  height: 83px;
+} */
+
+/* .sys__headerblack {
+  width: 100%;
+  background: #1d8248;
+  height: 83px;
+} */
+
+.sys__headerblack {
+  width: 100%;
+  background: #1d8248;
+}
+
+.sysheader {
+  display: flex;
+  padding-top: 14px;
+  padding-right: 15px;
+  padding-left: 22px;
+  justify-content: space-between;
+  align-items: center;
+}
+.sysheader__time {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.03em;
+
+  color: #ffffff;
+}
+.syscontent {
+  padding: 7px;
+  flex-direction: column;
+  display: flex;
+  gap: 7px;
+}
+
+.syssubheader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px 5px 23px;
+  text-align: center;
+}
+
+.success__message {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.01em;
+
+  color: #ffffff;
+}
+
+.transaction__dates {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  text-align: center;
+  letter-spacing: -0.015em;
+
+  color: #ffffff;
+}
+
+.transaction__success {
+  display: flex;
+  flex-direction: column;
+}
+
+.syscontent__ {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 11px 14px 15px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.syscontent__label {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+
+  letter-spacing: 0.02em;
+
+  color: #000000;
+}
+
+.syscontent__transaction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.syscontent__id {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  letter-spacing: -0.015em;
+
+  color: #000000;
+}
+
+.violet__ {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.04em;
+
+  color: #5f3c90;
+}
+
+.syscontent__paidto {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 15px 16px 14px 14px;
+  color: #000000;
+}
+
+.syscontent__paidto > label {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+
+  letter-spacing: 0.02em;
+}
+
+.padidto__ {
+  padding-top: 14px;
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+}
+
+.box__ {
+  padding: 5px 3px 7px 4px;
+  border: 1px solid #d0d0d0;
+  border-radius: 13px;
+  display: grid;
+  place-items: center;
+  height: 36px;
+  width: 36px;
+  place-content: center;
+}
+
+.paidto__right {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.right__amountbank {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.03em;
+
+  color: #000000;
+}
+
+.paidto__space {
+  padding-bottom: 11px;
+  display: flex;
+  align-items: center;
+}
+.bankname__ {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  /* identical to box height */
+
+  letter-spacing: -0.015em;
+
+  color: #000000;
+}
+
+.bankcode__ {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+.bankaddress {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #000000;
+}
+
+.sendagain {
+  margin-top: 35px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.04em;
+  color: #5f3c90;
+  float: right;
+}
+
+.debited__from {
+  width: 355px;
+  height: 93px;
+
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 14px 16px 15px 14px;
+
+  color: #000000;
+}
+
+.debited__from > label {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  letter-spacing: 0.02em;
+}
+
+.bankfrom__boxicici {
+  width: 20px;
+  height: 21px;
+
+  border: 1px solid #d0d0d0;
+  border-radius: 4px;
+  display: grid;
+  place-items: center;
+}
+
+.icic__bankfrom {
+  margin-top: 14px;
+}
+
+.icici__bank {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  letter-spacing: -0.015em;
+
+  color: #000000;
+}
+
+.from__left {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.bankfrom__ {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.icic__bankfrom {
+  display: flex;
+  gap: 14px;
+}
+
+.utr__id {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: -0.03em;
+
+  color: #000000;
+}
+
+.debited__contact {
+  display: flex;
+  padding: 15px 0 14px 16px;
+  background: #ffffff;
+  border-radius: 12px;
+  gap: 16px;
+}
+
+.contact__text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  letter-spacing: -0.015em;
+
+  color: #000000;
+}
+
+.sysbottom__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 13px;
+  color: #000000;
+}
+
+.sysbottom__logo > label {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  /* identical to box height */
+
+  letter-spacing: 0.07em;
+}
+
+.bottom__barsys {
+  width: 133px;
+  height: 5px;
+  position: absolute;
+  bottom: 0;
+  background: #030202;
+  border-radius: 2.5px;
+  bottom: 7px;
+  margin: auto;
+  margin-right: 118px;
+  margin-left: 118px;
+}
+
+.bottom__barsysblack {
+  width: 133px;
+  height: 5px;
+  position: absolute;
+  bottom: 0;
+  background: #7e7a77;
+  border-radius: 2.5px;
+  bottom: 7px;
+  margin: auto;
+  margin-right: 118px;
+  margin-left: 118px;
+}
+
+.black__m {
+  background: #21182b;
+}
+.white__c {
+  color: #ffffff;
+}
+
+.black__c {
+  color: #000000;
+}
+
+.black__v {
+  color: #a561eb;
+}
+
+.border__color {
+  border: 1px solid #636363 !important;
+  display: grid;
+  place-content: center;
+  place-items: center;
+}

@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.app__bankstatement {
+  width: 362px;
+  height: 800px;
+  background: #e6e6e6;
+  position: relative;
+}
+
+/* // this is the orginal // */
+
+/* .bank__header {
+  width: 362px;
+  height: 87px;
+  background: #025395;
+  padding: 0 19px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 23px;
+} */
+
+.bank__header {
+  width: 362px;
+
+  background: #025395;
+  padding: 5px 19px 18px 19px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 23px;
+}
+
+
+.time__ {
+  padding-top: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.time__blue {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  /* identical to box height */
+
+  letter-spacing: -0.015em;
+
+  color: #ffffff;
+}
+
+.transfer__text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+
+  letter-spacing: -0.01em;
+
+  color: #ffffff;
+}
+
+.header__image {
+  display: flex;
+  gap: 24px;
+  align-items: baseline;
+}
+
+.header__transfere {
+  display: flex;
+  width: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bank__detaill {
+  display: flex;
+  flex-direction: column;
+  margin-top: 11px;
+  width: 362px;
+  height: 488px;
+  background-color: #ffffff;
+  row-gap: 17px;
+}
+
+.bank__mobile {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 48px;
+  background: #ebebeb;
+}
+
+.bank__detaill {
+  padding: 36px 20px 20px 16px;
+}
+
+.detail {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 13px;
+  max-width: 261px;
+}
+
+.detail__left {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.015em;
+
+  color: #949494;
+}
+
+.detail__right {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+
+.button__done {
+  margin-top: 13px;
+  background: #1d85fe;
+  border: 1px solid #417fb2;
+  border-radius: 6px;
+  padding: 9px;
+  display: grid;
+  place-items: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.035em;
+  color: #ffffff;
+  width: 334px;
+}
+
+.bank__mobile {
+  display: grid;
+  place-items: center;
+}
+
+/* styling the battery  */
+.sbi2__battey {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.border__niveau {
+  background: #2da539;
+  width: 100%;
+  max-height: 100%;
+  height: 40%;
+}
+.battery__border {
+  width: 6px;
+  height: 10px;
+  border: 1px solid #ffffff;
+  display: flex;
+  align-items: flex-end;
+}
+
+.battery__top {
+  height: 1px;
+  width: 3px;
+  background-color: #fff;
+}

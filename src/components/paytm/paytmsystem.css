@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+.paytm__system {
+  width: 370px;
+  height: 775px;
+  background-color: #fafafa;
+}
+
+.paytm-system{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.paytmsystem__content {
+  width: 330px;
+  height: 203px;
+  background: #def6ff;
+  border-radius: 20px 21px 14px 14px;
+  margin: auto;
+}
+
+.paytmsytstem__image {
+  position: relative;
+  top: -10px;
+}
+
+.paytmsystem__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 33px;
+}
+
+.content__successfully {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 27px;
+  letter-spacing: 0.02em;
+  color: #000000;
+  padding-bottom: 16px;
+}
+
+.content__amountsystem {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding-bottom: 21px;
+}
+.amount__withcaracter {
+  display: flex;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #6d787c;
+}
+.paytmsystem__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 39px;
+  padding-bottom: 43px;
+}
+
+.paytmsystem__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  position: relative;
+  z-index: 2;
+
+}
+
+
+.background__ {
+    position: relative;
+    height: 351.5px;
+    top: 3px;
+    background: url("../../../public/paytmsystem/White__Backgrounds.png");
+
+}
+.bottom__to {
+  display: flex;
+  padding-top: 33px;
+  padding-left: 20px;
+  padding-right: 25px;
+}
+
+
+
+.bottom__line  { 
+    position: absolute;
+    z-index: -1;
+}
+.__to__left {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19.5px;
+  line-height: 23px;
+  letter-spacing: 0.04em;
+
+  color: #000000;
+}
+
+.__gpay {
+  display: flex;
+  padding-top: 10px;
+  width: 174px;
+  padding-left: 20px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+
+  color: #6d787c;
+}
+
+.bottom__form {
+  display: flex;
+  padding-left: 20px;
+  padding-top: 56px;
+  padding-right: 25px;
+}
+.__to__leftfrom {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.state__grey {
+  padding-top: 8px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  /* identical to box height */
+
+  letter-spacing: 0.035em;
+
+  color: #6d787c;
+}
+
+.__from {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19.5px;
+  line-height: 23px;
+  /* identical to box height */
+
+  letter-spacing: 0.04em;
+
+  color: #000000;
+}
+
+.bottom__ref {
+  display: flex;
+  flex-direction: column;
+  padding-top: 24px;
+  padding-left: 21px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  /* identical to box height */
+
+  letter-spacing: 0.025em;
+
+  color: #6d787c;
+}
+
+.payt__logo > label {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 7.5px;
+  line-height: 9px;
+  /* identical to box height */
+
+  letter-spacing: 0.005em;
+
+  color: #000000;
+}
+
+.payt__logo {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+
+  align-items: center;
+}

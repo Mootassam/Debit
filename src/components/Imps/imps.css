@@ -1,0 +1,82 @@
+input {
+  padding: 12px;
+}
+
+.app__imps {
+  width: 371px;
+  height: 756px;
+  background-color: #ffff;
+}
+.imps__bar {
+  border: 1px solid #bfbfbf;
+  width: calc(100% - 20px);
+  margin: auto;
+}
+
+.imps__header {
+  display: flex;
+  flex-direction: column;
+  gap: 27.27px;
+  padding-top: 21px;
+  padding-bottom: 35px;
+}
+
+.imps__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imps__title {
+  padding-left: 46px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.form__group > label {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+
+  color: #8d8d8d;
+  position: absolute;
+  top: -5px;
+  z-index: 2;
+  left: 0.8em;
+  background-color: white;
+  padding: 0 5.17px;
+}
+
+.imps__input {
+  position: relative;
+  border: 2px solid #bfbfbf;
+  border-radius: 4px;
+  z-index: 1;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.09em;
+  color: #3f4344 !important;
+}
+.imps__input:focus {
+  outline: 0;
+}
+.imps__form {
+  display: flex;
+  flex-direction: column;
+  gap: 15.62px;
+  margin: 31px;
+}

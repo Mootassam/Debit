@@ -1,0 +1,76 @@
+.app__kotak {
+  background-color: #ffff;
+  width: 371px;
+  height: 719px;
+}
+
+.kotak__header {
+  background-color: #c41325;
+  display: grid;
+  place-content: center;
+  place-items: center;
+  padding: 5px 0;
+}
+
+.kotak__content {
+  padding: 23px 14px 8px 14px;
+}
+
+.kotak__title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: -0.02em;
+  color: #163a69;
+}
+.kotak__group {
+  padding: 0px 0;
+}
+
+.group__form {
+  padding: 17px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.kotak__group > div:nth-last-child(1) {
+  padding: 12px 0 !important ;
+}
+.group__form > label {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22.5px;
+  line-height: 27px;
+  letter-spacing: -0.05em;
+  color: #666666;
+}
+
+.group__form > span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+
+  letter-spacing: -0.005em;
+
+  color: #000000;
+}
+
+.small__zero {
+  position: relative;
+  top: 1px;
+  font-size: 15px;
+}
+.form__submit {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+
+
+/* styling the credit message */

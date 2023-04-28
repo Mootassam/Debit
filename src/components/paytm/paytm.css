@@ -1,0 +1,361 @@
+/* */
+
+.app__paytm {
+  width: 360px;
+  height: 800px;
+  background-color: #0e051a;
+  position: relative;
+}
+
+.system__app {
+  display: flex;
+  gap: 20px;
+}
+
+.paytm__time {
+  background: #186c3b;
+  width: 100%;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  padding: 0 17px;
+  justify-content: space-between;
+}
+.time {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.015em;
+  color: #ffffff;
+  align-items: center;
+}
+.paymt__transaction {
+  background: #1d8248;
+  height: 52px;
+  display: flex;
+  padding: 0 17px;
+  gap: 33px;
+  align-items: center;
+}
+.message__successful {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.015em;
+
+  color: #ffffff;
+}
+
+.message__successful {
+}
+
+.ellipse__circle {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #26b6fd;
+}
+
+.circle__text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.05em;
+
+  color: #ffffff;
+}
+.message__time {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 11px;
+  /* identical to box height */
+
+  letter-spacing: -0.015em;
+
+  color: #ffffff;
+}
+
+.content__email {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.email__detail {
+  display: flex;
+  align-items: center;
+}
+
+.paytem__box {
+  background: #21182b;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  padding: 12px 12px 17px 18px;
+  margin: 6px;
+}
+
+.paymt__content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.paid__to {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: -0.05em;
+  color: #ffffff;
+}
+
+.content__email {
+  display: flex;
+}
+
+.email {
+  padding-left: 16px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0.015em;
+
+  color: #ffffff;
+}
+
+.amount {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+
+  letter-spacing: -0.02em;
+
+  color: #ffffff;
+}
+
+.transfere__detail {
+  padding-top: 19px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+.detail__transfer {
+  display: flex;
+  gap: 17px;
+  align-items: center;
+}
+
+.tranfer__text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: -0.045em;
+
+  color: #ffffff;
+}
+
+.transaction__detaill {
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+
+  gap: 6px;
+  color: #ffffff;
+}
+.transaction__detaill > label {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+
+ 
+}
+
+.number__transaction {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: -0.02em;
+
+  color: #ffffff;
+}
+.detaill__number {
+  display: flex;
+  justify-content: space-between;
+}
+
+.debit__detaills {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.debit__title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 11px;
+  /* identical to box height */
+
+  letter-spacing: -0.045em;
+
+  color: #ffffff;
+}
+.from__detaill {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 1;
+  row-gap: 12px;
+}
+
+.detail__debit {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 14px;
+}
+
+.ac__number {
+  display: flex;
+  justify-content: space-between;
+}
+
+.number__code {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: -0.055em;
+
+  color: #ffffff;
+}
+
+.debit__sendButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 248px;
+  margin: auto;
+  padding-top: 15px;
+}
+
+.debit__sendButton > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 7px;
+}
+.debit__sendButton > div > label {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+
+  color: #a561eb;
+}
+
+.debit__contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact__detail {
+  display: flex;
+  column-gap: 21px;
+  align-items: center;
+}
+
+.contact__detail {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0.015em;
+
+  color: #ffffff;
+}
+
+.upi__bottomlogo {
+  padding-top: 18px;
+
+  display: grid;
+  place-items: center;
+}
+
+.mobile__menue {
+  position: absolute;
+  bottom: 17px;
+  padding-left: 99px;
+}
+
+.mobile__menuewhite {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+}
+
+/*  styling the black mode */
+
+.app__white {
+  background-color: #eee8f6 !important;
+}
+
+.white__mode {
+  background: #ffffff;
+}
+
+.black__text {
+  color: #000;
+}
+
+.bar__system {
+  width: 312.13px;
+  height: 0px;
+  border: 1px solid #f7f7f7;
+}

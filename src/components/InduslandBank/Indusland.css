@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Inter&display=swap");
+.indusland__bank {
+  width: 360px;
+  background-color: #ffffff;
+  height: 800px;
+}
+
+.indusland__header {
+  padding: 11px 13px 25px 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.indusland__time {
+  padding-left: 30px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.015em;
+  color: #000000;
+  display: flex;
+  gap: 3px;
+  align-items: center;
+}
+.indulsand__subheader {
+  display: flex;
+  justify-content: space-between;
+  width: 316px;
+  margin: auto;
+  padding-bottom: 26px;
+}
+
+.subheader__right {
+  display: flex;
+  gap: 39px;
+}
+
+.indusland__content {
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.indusland_top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.top__caracter {
+  width: 56px;
+  background-color: #739d47;
+  border-radius: 50%;
+  height: 56px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 10px;
+}
+
+.caracter {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 0.005em;
+  color: #ffffff;
+}
+
+.careacter__name {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+
+  letter-spacing: 0.005em;
+  color: #000000;
+}
+
+.caracter__amount {
+  display: flex;
+  font-family: "Be Vietnam Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 76px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.amoutn__carrency {
+  font-family: "Be Vietnam Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 51px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #000000;
+}
+
+.catercter__button {
+  display: flex;
+  gap: 8px;
+  padding-bottom: 24px;
+}
+
+.button__payagin {
+  padding: 10px 23px;
+  background: #2756c8;
+  border-radius: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.button__friends {
+  padding: 10px 22px;
+  border: 1px solid #949494;
+  border-radius: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.015em;
+  color: #314793;
+}
+
+.catarecter__time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.time__completed {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+
+.time__completed > span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.04em;
+  color: #000000;
+}
+
+.caracter__bar {
+  width: 185px;
+  height: 0px;
+  border: 1px solid #c5c5c5;
+  margin-bottom: 17px;
+  margin-top: 11px;
+}
+
+.caracter__date {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.06em;
+  color: #000000;
+}
+
+.indulsand__bottom {
+  width: 311px;
+  height: 203.72px;
+  border: 1px solid #c6c6c6;
+  margin-top: 34px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom: 0;
+}
+.logo__ {
+  padding: 1px 8px 1px 9px;
+  border: 1px solid #c6c6c6;
+  border-radius: 6px;
+  display: grid;
+  place-items: center;
+}
+
+.induslan__logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16.72px 20px 0px 15.5px;
+}
+
+.indusland {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.indusland__bar {
+}
+
+.indusland__detaill {
+  padding-top: 17px;
+  padding-left: 14.5px;
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+
+.detaill__transaction {
+  display: flex;
+  gap: 7px;
+  flex-direction: column;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.02em;
+
+  color: #000000;
+}
+
+.indusland__button {
+  display: flex;
+  gap: 8px;
+}
+
+.indusland__issues {
+  width: 157px;
+  height: 34px;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.02em;
+
+  color: #000000;
+}
+.indusland__share {
+  width: 92px;
+  height: 34px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.02em;
+  color: #000000;
+  border: 1px solid #000000;
+  border-radius: 8px;
+}
+
+.app__bottom {
+  display: flex;
+  flex-direction: column;
+  row-gap: 39px;
+  padding: 24px 24px 14px 24px;
+  border-top: 1px solid #f7f7f7;
+  border-top-right-radius: 24px;
+  border-top-left-radius: 24px;
+}
+
+.bottom__up {
+  display: flex;
+  gap: 8px;
+}
+
+.button__issues {
+  border: 1px solid #000000;
+  border-radius: 8px;
+  padding: 7px 12px 8px 9px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.button__share {
+  border: 1px solid #000000;
+  border-radius: 8px;
+  padding: 7px 12px 8px 9px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.bottom__bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* styling the right header of the phone */
+
+.sbi__right {
+  display: flex;
+  align-items: center;
+}
+
+.bar__level {
+  width: 10%;
+  min-width: 5px;
+  max-width: 100%;
+  height: 6px;
+  background: #000000;
+  border-radius: 2px;
+}
+.right__battery {
+  width: 21px;
+  height: 10px;
+  padding: 0px 1px;
+  border: 1px solid #000000;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+}
+
+.right__bar {
+  width: 4px;
+  height: 0px;
+  border: 1px solid #000000;
+  transform: rotate(-90deg);
+}
