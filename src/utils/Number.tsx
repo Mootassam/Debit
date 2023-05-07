@@ -45,8 +45,12 @@ class Number {
     return debitFrom;
   }
 
+  static Impsblue() {
+    const number = Math.floor(Math.random() * 90000000000000 + 10000000000000);
+    return number;
+  }
   static balance() {
-    const num =  Math.floor(Math.random() * 900000 + 100000)
+    const num = Math.floor(Math.random() * 900000 + 100000);
     const staticnum = 1 * num;
     const formattedNumber = staticnum
       .toLocaleString("en-IN", { style: "currency", currency: "INR" })
@@ -141,10 +145,10 @@ class Number {
     return item;
   }
 
-  static generateWhatsApp(arr){ 
-  let whatsApp= Math.floor(Math.random() * arr.length); 
-  const item= arr[whatsApp]; 
-  return item;
+  static generateWhatsApp(arr) {
+    let whatsApp = Math.floor(Math.random() * arr.length);
+    const item = arr[whatsApp];
+    return item;
   }
 }
 
