@@ -72,8 +72,8 @@ function Sbi2(props) {
               </div>
               <div className='right__message'>
                 <div className='message__content'>
-                  Dear SBI User, your A/c X{Number.debitFrom()}-debited by Rs
-                  {Currency.IndiaWithoutCurrency(props.amount)}on <br />
+                  Dear SBI User, your A/c X{Number.debitFrom()}-debited by Rs.
+                  {Currency.IndiaWithoutCurrency(props.amount)}&nbsp;on <br />
                   <span className='message__underline'>
                     {Dates.sbidatemessage()}
                   </span>
@@ -168,8 +168,8 @@ function Sbi2(props) {
               </div>
               <div className='right__message background__dark'>
                 <div className='message__content white__text'>
-                  Dear SBI User, your A/c X{Number.debitFrom()}-debited by Rs
-                  {Currency.IndiaWithoutCurrency(props.amount)}on <br />
+                  Dear SBI User, your A/c X{Number.debitFrom()}-debited by Rs.
+                  {Currency.IndiaWithoutCurrency(props.amount)}&nbsp;on <br />
                   <span className='message__underline white__text'>
                     {Dates.sbidatemessage()}
                   </span>
