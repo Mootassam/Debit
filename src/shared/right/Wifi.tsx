@@ -3,10 +3,10 @@ import { BsWifi2 } from "react-icons/bs";
 import { RiWifiLine } from "react-icons/ri";
 const wifi = [
   {
-    component: <AiOutlineWifi     />,
+    component: <AiOutlineWifi />,
   },
 
-  { commponent: <RiWifiLine  /> },
+  { commponent: <RiWifiLine /> },
 ];
 
 export default wifi;

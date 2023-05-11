@@ -5,6 +5,7 @@ import Currency from "../../utils/Currency";
 import Dates from "../../utils/Dates";
 import { ImAlarm } from "react-icons/im";
 import Left from "../../shared/icons/Left";
+import { RiWifiLine } from "react-icons/ri";
 function Blue(props) {
   const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
 
@@ -37,6 +38,7 @@ function Blue(props) {
 
           <div className='blue__right'>
             <ImAlarm size={13} />
+            <RiWifiLine />
 
             <div className='sbi__data'>
               <div className='data__1'></div>

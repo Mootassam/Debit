@@ -3,6 +3,7 @@ import Dates from "../../utils/Dates";
 import Number from "../../utils/Number";
 import Currency from "../../utils/Currency";
 import Right from "../../shared/right/Right";
+import { RiWifiLine } from "react-icons/ri";
 
 function Sbi2(props) {
   const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
@@ -14,7 +15,7 @@ function Sbi2(props) {
             <div className='sbi__time'>{Dates.currentTime()} </div>
 
             <div className='sbi__right'>
-              <Right />
+              <RiWifiLine />
               <div className='cnx'>
                 <label htmlFor=''>R</label>
                 <div className='cnx__'>
@@ -106,7 +107,7 @@ function Sbi2(props) {
             <div className='sbi__time white'>{Dates.currentTime()} </div>
 
             <div className='sbi__right white '>
-              <Right />
+              <RiWifiLine />
               <div className='cnx '>
                 <label htmlFor='' className='white'>
                   R
