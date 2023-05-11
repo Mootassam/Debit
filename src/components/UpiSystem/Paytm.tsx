@@ -31,111 +31,109 @@ function Paytm(props) {
   };
 
   return (
-    <div className="system__app">
+    <div className='system__app'>
       {props.theme === "dark" && (
-        <div className="app__paytm">
-          <div className="paytm__time">
-            <div className="time">
+        <div className='app__paytm'>
+          <div className='paytm__time'>
+            <div className='time'>
               {Dates.currentTime2()} <Left />
             </div>
-            <div className="battery__2">
-              <Right />
-              <div className="data2__">
-                <div className="data__1"></div>
-                <div className="data__2"></div>
-                <div className="data__3"></div>
-                <div className="data__4"></div>
-                <div className="data__5"></div>
+            <div className='battery__2'>
+              <div className='data2__'>
+                <div className='data__1'></div>
+                <div className='data__2'></div>
+                <div className='data__3'></div>
+                <div className='data__4'></div>
+                <div className='data__5'></div>
               </div>
-              <div className="battery2__">
+              <div className='battery2__'>
                 <div
-                  className="batter__levell"
+                  className='batter__levell'
                   style={{
                     width: `${limit}%`,
                     background: CheckstatusBattery(),
-                  }}
-                ></div>
-                <span className="number__limit">{limit}</span>
+                  }}></div>
+                <span className='number__limit'>{limit}</span>
               </div>
             </div>
           </div>
 
-          <div className="paymt__transaction">
+          <div className='paymt__transaction'>
             <div>
-              <img src="/paytm/retour.png" alt="" width={14} height={14} />
+              <img src='/paytm/retour.png' alt='' width={14} height={14} />
             </div>
-            <div className="transaction__message">
-              <div className="message__successful">Transaction Successful</div>
-              <div className="message__time">{Dates.datePhonePe()}</div>
+            <div className='transaction__message'>
+              <div className='message__successful'>Transaction Successful</div>
+              <div className='message__time'>{Dates.datePhonePe()}</div>
             </div>
           </div>
 
-          <div className="paytem__box">
-            <div className="paymt__content">
-              <div className="paid__to">Paid to</div>
-              <div className="content__email">
-                <div className="email__detail">
-                  <div className="ellipse__circle">
-                    <span className="circle__text"> S</span>
+          <div className='paytem__box'>
+            <div className='paymt__content'>
+              <div className='paid__to'>Paid to</div>
+              <div className='content__email'>
+                <div className='email__detail'>
+                  <div className='ellipse__circle'>
+                    <span className='circle__text'> S</span>
                   </div>
-                  <div className="email">shubham0202@freecharge</div>
+                  <div className='email'>shubham0202@freecharge</div>
                 </div>
-                <div className="amount">
+                <div className='amount'>
                   {Currency.IndiaWithoutZero(props.amount)}
                 </div>
               </div>
 
-              <div className="transfere__detail">
-                <div className="detail__transfer">
+              <div className='transfere__detail'>
+                <div className='detail__transfer'>
                   <img
-                    src="/paytm/transfericon.png"
-                    alt=""
+                    src='/paytm/transfericon.png'
+                    alt=''
                     width={16}
                     height={17}
                   />
 
-                  <div className="tranfer__text">Transfer Details</div>
+                  <div className='tranfer__text'>Transfer Details</div>
                 </div>
                 <div>
-                  <img src="/paytm/up.png" alt="" width={10} height={5} />
+                  <img src='/paytm/up.png' alt='' width={10} height={5} />
                 </div>
               </div>
 
-              <div className="transaction__detaill">
-                <label htmlFor="">Transaction ID </label>
-                <div className="detaill__number">
-                  <div className="number__transaction">
+              <div className='transaction__detaill'>
+                <label htmlFor=''>Transaction ID </label>
+                <div className='detaill__number'>
+                  <div className='number__transaction'>
                     TT23032711482{Number.rrnNumber()}
                   </div>
                   <div>
-                    <img src="/paytm/copy.png" alt="" width={9} height={10} />
+                    <img src='/paytm/copy.png' alt='' width={9} height={10} />
                   </div>
                 </div>
               </div>
 
-              <div className="debit__detaills">
-                <div className="debit__title"> Debit from</div>
+              <div className='debit__detaills'>
+                <div className='debit__title'> Debit from</div>
 
-                <div className="detail__debit">
-                  <img src={item.logo} alt="" width={29} height={29} />
+                <div className='detail__debit'>
+                  <img src={item.logo} alt='' width={29} height={29} />
 
-                  <div className="from__detaill">
-                    <div className="ac__number">
-                      <div className="number__code">
+                  <div className='from__detaill'>
+                    <div className='ac__number'>
+                      <div className='number__code'>
                         *******{Number.debitFrom()}
                       </div>
-                      <div className="amount">
+                      <div className='amount'>
                         {Currency.IndiaWithoutZero(props.amount)}
                       </div>
                     </div>
-                    <div className="ac__number">
-                      <div className="number__code">
+                    <div className='ac__number'>
+                      <div className='number__code'>
                         UTR:{Number.rrnNumberAxis()}
                       </div>
                       <div>
                         <img
-                          src="/paytm/copy.png"
-                          alt=""
+                          src='/paytm/copy.png'
+                          alt=''
                           width={9}
                           height={10}
                         />
@@ -144,63 +142,63 @@ function Paytm(props) {
                   </div>
                 </div>
 
-                <div className="debit__sendButton">
+                <div className='debit__sendButton'>
                   <div>
-                    <img src="/paytm/send.png" alt="" width={36} height={36} />
+                    <img src='/paytm/send.png' alt='' width={36} height={36} />
 
-                    <label htmlFor=""> Send again</label>
+                    <label htmlFor=''> Send again</label>
                   </div>
 
                   <div>
                     <img
-                      src="/paytm/history.png"
-                      alt=""
+                      src='/paytm/history.png'
+                      alt=''
                       width={36}
                       height={36}
                     />
 
-                    <label htmlFor="">Send again</label>
+                    <label htmlFor=''>Send again</label>
                   </div>
 
                   <div>
-                    <img src="/paytm/share.png" alt="" width={36} height={36} />
+                    <img src='/paytm/share.png' alt='' width={36} height={36} />
 
-                    <label htmlFor="">Send again</label>
+                    <label htmlFor=''>Send again</label>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="paytem__box">
-            <div className="debit__contact">
-              <div className="contact__detail">
-                <img src="/paytm/ask.png" alt="" width={17} height={17} />
+          <div className='paytem__box'>
+            <div className='debit__contact'>
+              <div className='contact__detail'>
+                <img src='/paytm/ask.png' alt='' width={17} height={17} />
 
-                <div className="contact__detail">Contact PhonePe Support</div>
+                <div className='contact__detail'>Contact PhonePe Support</div>
               </div>
-              <img src="/paytm/right.png" alt="" width={5} height={10} />
+              <img src='/paytm/right.png' alt='' width={5} height={10} />
             </div>
           </div>
-          <div className="paytem__box">
-            <div className="debit__contact">
-              <div className="contact__detail">
-                <img src="/paytm/light.png" width={17} height={17} />
+          <div className='paytem__box'>
+            <div className='debit__contact'>
+              <div className='contact__detail'>
+                <img src='/paytm/light.png' width={17} height={17} />
 
-                <div className="contact__detail">Did you know?</div>
+                <div className='contact__detail'>Did you know?</div>
               </div>
-              <img src="/paytm/right.png" alt="" width={5} height={10} />
+              <img src='/paytm/right.png' alt='' width={5} height={10} />
             </div>
           </div>
 
-          <div className="upi__bottomlogo">
-            <img src="/paytm/logo__upi.png" alt="" width={84.29} height={31} />
+          <div className='upi__bottomlogo'>
+            <img src='/paytm/logo__upi.png' alt='' width={84.29} height={31} />
           </div>
 
-          <div className="mobile__menue">
+          <div className='mobile__menue'>
             <img
-              src="/paytm/mobile__menue.png"
-              alt=""
+              src='/paytm/mobile__menue.png'
+              alt=''
               width={172}
               height={10}
             />
@@ -209,91 +207,90 @@ function Paytm(props) {
       )}
 
       {props.theme == "light" && (
-        <div className="app__paytm app__white">
-          <div className="paytm__time">
-            <div className="time">
+        <div className='app__paytm app__white'>
+          <div className='paytm__time'>
+            <div className='time'>
               {Dates.currentTime2()} <Left />
             </div>
-            <div className="battery__2">
+            <div className='battery__2'>
               <Right />
-              <div className="data2__">
-                <div className="data__1"></div>
-                <div className="data__2"></div>
-                <div className="data__3"></div>
-                <div className="data__4"></div>
-                <div className="data__5"></div>
+              <div className='data2__'>
+                <div className='data__1'></div>
+                <div className='data__2'></div>
+                <div className='data__3'></div>
+                <div className='data__4'></div>
+                <div className='data__5'></div>
               </div>
-              <div className="battery2__">
+              <div className='battery2__'>
                 <div
-                  className="batter__levell"
+                  className='batter__levell'
                   style={{
                     width: `${limit}%`,
                     background: CheckstatusBattery(),
-                  }}
-                ></div>
-                <span className="number__limit">{limit}</span>
+                  }}></div>
+                <span className='number__limit'>{limit}</span>
               </div>
             </div>
           </div>
 
-          <div className="paymt__transaction ">
+          <div className='paymt__transaction '>
             <div>
-              <img src="/paytm/retour.png" alt="" width={14} height={14} />
+              <img src='/paytm/retour.png' alt='' width={14} height={14} />
             </div>
-            <div className="transaction__message">
-              <div className="message__successful ">Transaction Successful</div>
-              <div className="message__time">{Dates.datePhonePe()} </div>
+            <div className='transaction__message'>
+              <div className='message__successful '>Transaction Successful</div>
+              <div className='message__time'>{Dates.datePhonePe()} </div>
             </div>
           </div>
 
-          <div className="paytem__box white__mode black__text">
-            <div className="paymt__content ">
-              <div className="paid__to black__text ">Paid to</div>
-              <div className="content__email ">
-                <div className="email__detail">
-                  <div className="ellipse__circle">
-                    <span className="circle__text"> S</span>
+          <div className='paytem__box white__mode black__text'>
+            <div className='paymt__content '>
+              <div className='paid__to black__text '>Paid to</div>
+              <div className='content__email '>
+                <div className='email__detail'>
+                  <div className='ellipse__circle'>
+                    <span className='circle__text'> S</span>
                   </div>
-                  <div className="email black__text">
+                  <div className='email black__text'>
                     shubham0202@freecharge
                   </div>
                 </div>
-                <div className="amount black__text">
+                <div className='amount black__text'>
                   {Currency.IndiaWithoutZero(props.amount)}
                 </div>
               </div>
 
-              <div className="bar__tran"></div>
-              <div className="transfere__detail">
-                <div className="detail__transfer ">
+              <div className='bar__tran'></div>
+              <div className='transfere__detail'>
+                <div className='detail__transfer '>
                   <img
-                    src="/paytm/transferwhite.png"
-                    alt=""
+                    src='/paytm/transferwhite.png'
+                    alt=''
                     width={16}
                     height={17}
                   />
 
-                  <div className="tranfer__text black__text">
+                  <div className='tranfer__text black__text'>
                     Transfer Details
                   </div>
                 </div>
                 <div>
-                  <img src="/paytm/topblack.png" alt="" width={10} height={5} />
+                  <img src='/paytm/topblack.png' alt='' width={10} height={5} />
                 </div>
               </div>
 
-              <div className="transaction__detaill black__text">
-                <label htmlFor="" className="black__text">
+              <div className='transaction__detaill black__text'>
+                <label htmlFor='' className='black__text'>
                   Transaction ID
                 </label>
-                <div className="detaill__number black__text">
-                  <div className="number__transaction black__text">
+                <div className='detaill__number black__text'>
+                  <div className='number__transaction black__text'>
                     TT23032711482{Number.rrnNumber()}
                   </div>
                   <div>
                     <img
-                      src="/paytm/copywhite.png"
-                      alt=""
+                      src='/paytm/copywhite.png'
+                      alt=''
                       width={9}
                       height={10}
                     />
@@ -301,29 +298,29 @@ function Paytm(props) {
                 </div>
               </div>
 
-              <div className="debit__detaills">
-                <div className="debit__title black__text"> Debit from</div>
+              <div className='debit__detaills'>
+                <div className='debit__title black__text'> Debit from</div>
 
-                <div className="detail__debit">
-                  <img src={item.logo} alt="" width={29} height={29} />
+                <div className='detail__debit'>
+                  <img src={item.logo} alt='' width={29} height={29} />
 
-                  <div className="from__detaill black__text">
-                    <div className="ac__number">
-                      <div className="number__code black__text">
+                  <div className='from__detaill black__text'>
+                    <div className='ac__number'>
+                      <div className='number__code black__text'>
                         *******{Number.debitFrom()}
                       </div>
-                      <div className="amount black__text">
+                      <div className='amount black__text'>
                         {Currency.IndiaWithoutZero(props.amount)}
                       </div>
                     </div>
-                    <div className="ac__number">
-                      <div className="number__code black__text">
+                    <div className='ac__number'>
+                      <div className='number__code black__text'>
                         UTR:{Number.rrnNumberAxis()}
                       </div>
                       <div>
                         <img
-                          src="/paytm/copywhite.png"
-                          alt=""
+                          src='/paytm/copywhite.png'
+                          alt=''
                           width={9}
                           height={10}
                         />
@@ -331,72 +328,72 @@ function Paytm(props) {
                     </div>
                   </div>
                 </div>
-                <div className="bar__tran"></div>
-                <div className="debit__sendButton">
+                <div className='bar__tran'></div>
+                <div className='debit__sendButton'>
                   <div>
                     <img
-                      src="/paytm/sendwhite.png"
-                      alt=""
+                      src='/paytm/sendwhite.png'
+                      alt=''
                       width={36}
                       height={36}
                     />
 
-                    <label htmlFor=""> Send again</label>
+                    <label htmlFor=''> Send again</label>
                   </div>
 
                   <div>
                     <img
-                      src="/paytm/historywhite.png"
-                      alt=""
+                      src='/paytm/historywhite.png'
+                      alt=''
                       width={36}
                       height={36}
                     />
 
-                    <label htmlFor="">Send again</label>
+                    <label htmlFor=''>Send again</label>
                   </div>
 
                   <div>
                     <img
-                      src="/paytm/sharewhites.png"
-                      alt=""
+                      src='/paytm/sharewhites.png'
+                      alt=''
                       width={36}
                       height={36}
                     />
 
-                    <label htmlFor="">Send again</label>
+                    <label htmlFor=''>Send again</label>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="paytem__box white__mode">
-            <div className="debit__contact">
-              <div className="contact__detail">
-                <img src="/paytm/askwhite.png" alt="" width={17} height={17} />
+          <div className='paytem__box white__mode'>
+            <div className='debit__contact'>
+              <div className='contact__detail'>
+                <img src='/paytm/askwhite.png' alt='' width={17} height={17} />
 
-                <div className="contact__detail black__text ">
+                <div className='contact__detail black__text '>
                   Contact PhonePe Support
                 </div>
               </div>
-              <img src="/paytm/rightblack.png" alt="" width={5} height={10} />
+              <img src='/paytm/rightblack.png' alt='' width={5} height={10} />
             </div>
           </div>
-          <div className="paytem__box white__mode">
-            <div className="debit__contact">
-              <div className="contact__detail">
-                <img src="/paytm/lightwhite.png" width={17} height={17} />
-                <div className="contact__detail black__text">Did you know?</div>
+          <div className='paytem__box white__mode'>
+            <div className='debit__contact'>
+              <div className='contact__detail'>
+                <img src='/paytm/lightwhite.png' width={17} height={17} />
+                <div className='contact__detail black__text'>Did you know?</div>
               </div>
-              <img src="/paytm/rightblack.png" alt="" width={5} height={10} />
+              <img src='/paytm/rightblack.png' alt='' width={5} height={10} />
             </div>
           </div>
-          <div className="upi__bottomlogo">
-            <img src="/paytm/logobottom.png" alt="" width={84.29} height={31} />
+          <div className='upi__bottomlogo'>
+            <img src='/paytm/logobottom.png' alt='' width={84.29} height={31} />
           </div>
 
-          <div className="mobile__menuewhite">
-            <img src="/paytm/menumobile.png" alt="" width={172} height={10} />
+          <div className='mobile__menuewhite'>
+            <img src='/paytm/menumobile.png' alt='' width={172} height={10} />
           </div>
         </div>
       )}
