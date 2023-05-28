@@ -93,7 +93,7 @@ function Hdfc(props) {
         <div className='detaill__payment'>
           <div className='paid__date'>Paid at {Dates.dateshdfc()}</div>
           <div className='paid__ref'>
-            UPI Ref No: {Number.rrnNumberAxis()}
+            UPI Ref No: 31{Number.phonepe2()}
             <span>Copy</span>
           </div>
         </div>
