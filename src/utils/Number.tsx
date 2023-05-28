@@ -33,7 +33,7 @@ class Number {
     return random;
   }
   static phonepe2() {
-    const random = Math.floor(Math.random() * 9000000000 + 100000000000);
+    const random = Math.floor(Math.random() * 9000000000 + 1000000000);
     return random;
   }
 
