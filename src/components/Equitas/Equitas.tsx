@@ -35,7 +35,7 @@ function Equitas(props) {
         <div className="group__detaill">
           <div className="detaill__group">
             <div className="group__label">Reference No. (UTR No./RRN)</div>
-            <div className="group__text">{Number.referenceKotakNumber()} </div>
+            <div className="group__text">31{Number.referenceKotakNumber()} </div>
           </div>
 
           <div className="detaill__group">
