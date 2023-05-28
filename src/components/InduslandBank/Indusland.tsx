@@ -89,7 +89,7 @@ function Indusland(props) {
           <div className="indusland__detaill">
             <div className="detaill__transaction">
               <div className="transaction__label">UPI transaction ID</div>
-              <div className="transaction__ids">{Number.rrnNumberAxis()}</div>
+              <div className="transaction__ids">31{Number.phonepe2()}</div>
             </div>
 
             <div className="detaill__transaction">
