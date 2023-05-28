@@ -32,6 +32,12 @@ class Number {
     const random = Math.floor(Math.random() * 900000000000 + 100000000000);
     return random;
   }
+  static phonepe2() {
+    const random = Math.floor(Math.random() * 9000000000 + 100000000000);
+    return random;
+  }
+
+
 
   static accountNumberKotak() {
     const random = Math.floor(
