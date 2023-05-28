@@ -1,6 +1,6 @@
 class Number {
   static referenceKotakNumber() {
-    const randomNum = Math.floor(Math.random() * 90000000000) + 10000000000;
+    const randomNum = Math.floor(Math.random() * 9000000000) + 1000000000;
     return randomNum;
   }
 
