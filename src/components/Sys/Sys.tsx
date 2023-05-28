@@ -133,7 +133,7 @@ function Sys(props) {
                     <div className="icici__bank">
                       {item.name} - {Number.debitFrom()}
                     </div>
-                    <div className="utr__id">UTR: {Number.rrnNumberAxis()}</div>
+                    <div className="utr__id">UTR: 31{Number.phonepe2()}</div>
                   </div>
                   <div className="right__amountbank">
                     {Currency.IndiaWithoutZero(props.amount)}
@@ -271,7 +271,7 @@ function Sys(props) {
                       {item.name} - {Number.debitFrom()}
                     </div>
                     <div className="utr__id white__c">
-                      UTR: {Number.rrnNumberAxis()}
+                      UTR: 31{Number.phonepe2()}
                     </div>
                   </div>
                   <div className="right__amountbank white__c">
