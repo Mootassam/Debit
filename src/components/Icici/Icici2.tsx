@@ -28,7 +28,7 @@ function Icici2(props) {
               <div className="customer__group">
                 <div className="customer">
                   <label htmlFor="">Transaction ID</label>
-                  <span>{Number.referenceNumber()}</span>
+                  <span>31{Number.phonepe2()}</span>
                 </div>
 
                 <div className="customer">
@@ -115,7 +115,7 @@ function Icici2(props) {
                     Transaction ID
                   </label>
                   <span className="text__white">
-                    {Number.referenceNumber()}
+                    31{Number.phonepe2()}
                   </span>
                 </div>
 
