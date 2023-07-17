@@ -11,7 +11,7 @@ import {
 const data = [
   { name: "HDFC Bank", logo: hdfc },
   { name: "Bank of Baroda", logo: boroda },
-  { name: "Indulsand Bank", logo: indusland },
+  { name: "IndusInd Bank", logo: indusland },
   { name: "Jupiter", logo: jupiter },
   { name: "State Bank of India", logo: sbi },
   { name: "ICICI Bank", logo: icici },
