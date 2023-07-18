@@ -257,7 +257,7 @@ export function App() {
                       />
                     )}
 
-                    {template === "idfc" && <Idfc />}
+                    {/* {template === "idfc" && <Idfc />} */}
                   </>
                 )}
               </div>
