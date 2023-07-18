@@ -3,7 +3,11 @@ import "./Samsung.css";
 import Dates from "../../utils/Dates";
 import Number from "../../utils/Number";
 import Names from "../../utils/Names";
+import data from "../../data/bank";
+
 function Samsung(props) {
+  let item = Number.getRandomItem(data);
+
   return (
     <div className="app__samsung">
       <div className="samsung__header">
@@ -33,7 +37,8 @@ function Samsung(props) {
 
           <div className="samsung__text">
             <div className="samsung__left">Sent from:</div>
-            <div className="samsung__right">{Names.generateRandomFullName()}</div>
+            <div className="samsung__right">            {item.name}
+</div>
           </div>
 
           <div className="samsung__text">

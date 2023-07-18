@@ -247,14 +247,14 @@ export function App() {
                       />
                     )}
 
-                    {/* {template === "samsung" && (
+                    {template === "samsung" && (
                       <Samsung
                         time={time}
                         range={battery}
                         theme={theme}
                         amount={amount}
                       />
-                    )} */}
+                    )}
                   </>
                 )}
               </div>
