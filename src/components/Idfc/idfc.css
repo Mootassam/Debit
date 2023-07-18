@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap");
 
 .app__idfc {
   width: 343px;
@@ -84,11 +84,54 @@
 }
 
 .idfc__date {
-    color: #B1B0B5;
-    font-family: Be Vietnam Pro;
-    font-size: 13.5px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.81px;
+  color: #b1b0b5;
+  font-family: Be Vietnam Pro;
+  font-size: 13.5px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.81px;
 }
+
+.idfc__firstbank {
+  color: #acacac;
+  font-family: "Be Vietnam Pro";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.__to {
+  padding-top: 23px;
+}
+
+.__mode {
+  padding-top: 41px;
+}
+
+.--date {
+  padding-top: 19px;
+}
+
+.--transaction {
+  padding-top: 20px;
+}
+
+
+.--10 { 
+    padding-top: 10px;
+}
+.--7{ 
+    padding-top: 7px !important;
+}
+
+.--9{ 
+    padding-top: 9px !important
+}
+.--4{ 
+    padding-top: 4px;}
+
+    .--3{ 
+        padding-top: 3px !important;
+    }

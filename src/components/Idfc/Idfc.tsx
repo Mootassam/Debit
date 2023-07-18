@@ -13,39 +13,39 @@ function Idfc() {
           <label htmlFor="" className="idfc__label">
             From
           </label>
-          <span className="idfc__namecustomer">
+          <span className="idfc__namecustomer --10">
             Kukkala Veera Venkata Kumar
           </span>
-          <span className="idfc__firstbank">IDFC FIRST BanK ****6761</span>
+          <span className="idfc__firstbank --3">IDFC FIRST BanK ****6761</span>
         </div>
 
-        <div className="idfc__section">
+        <div className="idfc__section __to">
           <label htmlFor="" className="idfc__label">
             To
           </label>
-          <span className="idfc__namecustomer">REKHA CONSTRUCTION</span>
-          <span className="idfc__firstbank">9910780968m@pnb</span>
+          <span className="idfc__namecustomer --10">REKHA CONSTRUCTION</span>
+          <span className="idfc__firstbank --4">9910780968m@pnb</span>
         </div>
 
-        <div className="idfc__section">
+        <div className="idfc__section __mode">
           <label htmlFor="" className="idfc__label">
             Payment mode
           </label>
-          <span className="idfc__namecustomer">UPI</span>
+          <span className="idfc__namecustomer --7">UPI</span>
         </div>
 
-        <div className="idfc__section">
+        <div className="idfc__section --date">
           <label htmlFor="" className="idfc__label">
             Payment date
           </label>
-          <span className="idfc__date">4:55 pm 15 Apr,2023</span>
+          <span className="idfc__date --9">4:55 pm 15 Apr,2023</span>
         </div>
 
         <div className="idfc__section">
-          <label htmlFor="" className="idfc__label">
+          <label htmlFor="" className="idfc__label --transaction">
             Transaction ID
           </label>
-          <span className="idfc__date">310516605858</span>
+          <span className="idfc__date --9">310516605858</span>
         </div>
       </div>
 
