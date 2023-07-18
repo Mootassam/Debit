@@ -71,11 +71,11 @@ const optionsbank = [
     value: "phonepe3",
     image: "",
   },
-  {
-    label: "Samsung Pay",
-    value: "samsung",
-    image: "",
-  },
+  // {
+  //   label: "Samsung Pay",
+  //   value: "samsung",
+  //   image: "",
+  // },
  
 ];
 export default optionsbank;

@@ -48,6 +48,7 @@ export function App() {
       setLoaded(true);
     }
   }, [divRef]);
+
   const change = (event) => {
     event.preventDefault();
     setAmount(event.target.value);
@@ -246,14 +247,14 @@ export function App() {
                       />
                     )}
 
-                    {template === "samsung" && (
+                    {/* {template === "samsung" && (
                       <Samsung
                         time={time}
                         range={battery}
                         theme={theme}
                         amount={amount}
                       />
-                    )}
+                    )} */}
                   </>
                 )}
               </div>
