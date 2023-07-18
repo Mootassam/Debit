@@ -32,18 +32,19 @@ function Samsung(props) {
 
           <div className="samsung__text">
             <div className="samsung__left">Transaction ID:</div>
-            <div className="samsung__right">311{Number.referenceKotakNumber()}</div>
+            <div className="samsung__right">
+              311{Number.referenceKotakNumber()}
+            </div>
           </div>
 
           <div className="samsung__text">
             <div className="samsung__left">Sent from:</div>
-            <div className="samsung__right">            {item.name}
-</div>
+            <div className="samsung__right"> {item.name}</div>
           </div>
 
           <div className="samsung__text">
             <div className="samsung__left">UPI ID:</div>
-            <div className="samsung__right">omshiv98@mahb</div>
+            <div className="samsung__right">{Names.generateSamsungText()}</div>
           </div>
         </div>
         <img src="/Samsung/bar.png" alt="" width={368} />
