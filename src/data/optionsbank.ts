@@ -88,6 +88,12 @@ const optionsbank = [
     value: "samsung",
     image: "",
   },
+
+  {
+    label: "IDFC Bank",
+    value: "idfc",
+    image: "",
+  },
  
 ];
 export default optionsbank;

@@ -28,6 +28,7 @@ import html2canvas from "html2canvas";
 import Header from "./layout/Header";
 import CreditBar from "./shared/CreditBar";
 import Samsung from "./components/Samsung/Samsung";
+import Idfc from "./components/Idfc/Idfc";
 
 export function App() {
   const [count, setCount] = useState(0);
@@ -255,6 +256,8 @@ export function App() {
                         amount={amount}
                       />
                     )}
+
+                    {template === "idfc" && <Idfc />}
                   </>
                 )}
               </div>

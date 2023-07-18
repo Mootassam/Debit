@@ -54,48 +54,31 @@ class Names {
     return fullName;
   }
 
-  static firstCaracter(string){ 
-    const firstname = string.charAt(0); 
-    return firstname
+  static firstCaracter(string) {
+    const firstname = string.charAt(0);
+    return firstname;
   }
 
-
-
-  static generateSamsungText() { 
+  static generateSamsungText() {
     const alphabet = "abcdefghijklmnopqrstuvwxyz";
-    const numbers= '0123456789';
+    const numbers = "0123456789";
 
-    let textBeforeAt = '';
+    let textBeforeAt = "";
 
+    for (let i = 0; i < 3; i++) {
+      const randomChar = numbers[Math.floor(Math.random() * numbers.length)];
+      const randomNumber = numbers[Math.floor(Math.random() * numbers.length)];
+      textBeforeAt += randomChar + randomNumber;
+    }
 
-  for(let i = 0 ; i< 3 ; i++) { 
-    const randomChar = numbers[Math.floor(Math.random() * numbers.length)];
-    const randomNumber  = numbers[Math.floor(Math.random() * numbers.length)];
-    textBeforeAt += randomChar + randomNumber;
+    let textAfterAt = "";
+    for (let i = 0; i < 3; i++) {
+      const randomChar = alphabet[Math.floor(Math.random() * alphabet.length)];
+      textAfterAt += randomChar;
+    }
+
+    return textBeforeAt + "@" + textAfterAt;
   }
-
-  let textAfterAt = "";
-  for (let i = 0; i < 3; i++) {
-    const randomChar = alphabet[Math.floor(Math.random() * alphabet.length)];
-    textAfterAt += randomChar;
-  }
-
-  return textBeforeAt + "@" + textAfterAt;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 export default Names;
