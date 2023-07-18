@@ -86,7 +86,7 @@ function Sys(props) {
               </label>
               <div className="syscontent__transaction">
                 <span className="syscontent__id">
-                  T2212182036{Number.rrnNumber()}
+                  T{Dates.date()}2036{Number.rrnNumber()}
                 </span>
                 <span className="violet__"> Copy</span>
               </div>
@@ -225,7 +225,7 @@ function Sys(props) {
               </label>
               <div className="syscontent__transaction ">
                 <span className="syscontent__id white__c">
-                  T2212182036{Number.rrnNumber()}
+                  T{Dates.date()}82036{Number.rrnNumber()}
                 </span>
                 <span className="violet__ black__v"> Copy</span>
               </div>

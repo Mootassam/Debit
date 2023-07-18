@@ -1,6 +1,8 @@
 import React from "react";
 import "./paytm.css";
 import Currency from "../../utils/Currency";
+import Dates from "src/utils/Dates";
+import Number from './../../utils/Number';
 
 function Paytm(props) {
   return (
@@ -58,7 +60,7 @@ function Paytm(props) {
               <label htmlFor="">Transaction ID </label>
               <div className="detaill__number">
                 <div className="number__transaction">
-                  TT2303271148232174062182
+                  T{Dates.date()}114823{Number.phonepe2()}
                 </div>
                 <div>
                   <img src="/paytm/copy.png" alt="" width={9} height={10} />
@@ -197,7 +199,7 @@ function Paytm(props) {
               </label>
               <div className="detaill__number black__text">
                 <div className="number__transaction black__text">
-                  TT2303271148232174062182
+                T{Dates.date()}114823{Number.phonepe2()}
                 </div>
                 <div>
                   <img

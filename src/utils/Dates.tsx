@@ -15,6 +15,13 @@ class Dates {
     return dateString;
   }
 
+  static date() { 
+    const formattedDate = moment().format("YYMMDD");
+    return  formattedDate
+
+
+  }
+
   static dateEquitas() {
     var currentDate = moment();
     var dateString = currentDate.format("DD MMM YYYY - hh:mm A");

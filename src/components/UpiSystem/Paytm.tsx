@@ -103,7 +103,7 @@ function Paytm(props) {
                 <label htmlFor=''>Transaction ID </label>
                 <div className='detaill__number'>
                   <div className='number__transaction'>
-                    TT23032711482{Number.rrnNumber()}
+                    T{Dates.date()}11482{Number.rrnNumber()}
                   </div>
                   <div>
                     <img src='/paytm/copy.png' alt='' width={9} height={10} />
@@ -285,7 +285,7 @@ function Paytm(props) {
                 </label>
                 <div className='detaill__number black__text'>
                   <div className='number__transaction black__text'>
-                    TT23032711482{Number.rrnNumber()}
+                  T{Dates.date()}11482{Number.rrnNumber()}
                   </div>
                   <div>
                     <img

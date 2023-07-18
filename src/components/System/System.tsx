@@ -57,7 +57,7 @@ function System(props) {
 
             <div className="transaction__id">
               <label htmlFor="transacton__id">Transaction ID</label>
-              <div className="transaction__number">T2303231949526270896958</div>
+              <div className="transaction__number">T{Dates.date()}104009{Number.phonepe2()}</div>
             </div>
 
             <div className="transaction__">
@@ -169,7 +169,7 @@ function System(props) {
                 Transaction ID
               </label>
               <div className="transaction__number  white__system">
-                T2303231949526270896958
+              T{Dates.date()}104009{Number.phonepe2()}
               </div>
             </div>
 
