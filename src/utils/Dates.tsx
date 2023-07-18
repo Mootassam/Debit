@@ -97,6 +97,11 @@ class Dates {
     const time = moment().format("hh:mm A");
     return time;
   }
+
+  static samsung() { 
+    return moment().format("DD MMM YYYY, hh:mm A");
+
+  }
 }
 
 export default Dates;

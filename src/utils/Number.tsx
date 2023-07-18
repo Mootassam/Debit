@@ -55,6 +55,8 @@ class Number {
     const number = Math.floor(Math.random() * 90000000000000 + 10000000000000);
     return number;
   }
+
+  
   static balance() {
     const num = Math.floor(Math.random() * 900000 + 100000);
     const staticnum = 1 * num;

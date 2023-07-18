@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&display=swap");
+
+.app__samsung {
+  width: 420px;
+  height: 803px;
+  background-color: #fff;
+  position: relative;
+}
+
+.samsung__header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 74px;
+}
+
+.samsung__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 23px;
+}
+
+.title__samsung {
+  color: #000;
+  font-family: Roboto;
+  font-size: 19.3px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 112.187%;
+}
+
+.samsung__amount {
+  padding-top: 11px;
+  color: #3e71ee;
+  font-family: Roboto;
+  font-size: 31.5px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 112.187%;
+}
+
+.samsung__sent {
+  padding-top: 8px;
+
+  color: #3e71ee;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 112.187%;
+}
+
+.samsung__content {
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.samsung__text {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  width: 374px;
+}
+
+.samsung__left {
+  color: #000;
+  font-family: Roboto;
+  font-size: 15.3px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 112.187%;
+}
+
+.samsung__right {
+  color: #000;
+  font-family: Roboto;
+  font-size: 15.3px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 112.187%;
+}
+
+.samsung__detail {
+  padding-top: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 8px;
+}
+
+
+.samsung__footer { 
+    position: absolute;
+    bottom: 13.57px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    right: 0;
+}

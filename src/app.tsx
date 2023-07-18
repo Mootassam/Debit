@@ -27,6 +27,7 @@ import CheckAmoutn from "./utils/CheckAmount";
 import html2canvas from "html2canvas";
 import Header from "./layout/Header";
 import CreditBar from "./shared/CreditBar";
+import Samsung from "./components/Samsung/Samsung";
 
 export function App() {
   const [count, setCount] = useState(0);
@@ -106,20 +107,21 @@ export function App() {
 
   return (
     <>
-      <div className='app'>
-        <div className='app__header'>
+      <div className="app">
+        <div className="app__header">
           <Header />
         </div>
-        <div className='app__content'>
-          <div className='app__sidebar'>
-            <div className='form__submit'>
-              <div className='sdiebar__form'>
-                <label htmlFor=''> Select Amount</label>
+        <div className="app__content">
+          <div className="app__sidebar">
+            <div className="form__submit">
+              <div className="sdiebar__form">
+                <label htmlFor=""> Select Amount</label>
                 <select
-                  name='amount'
-                  id=''
-                  className='app__select'
-                  onClick={change}>
+                  name="amount"
+                  id=""
+                  className="app__select"
+                  onClick={change}
+                >
                   {optionAmouts.map((item, index) => (
                     <option key={index} value={item.value}>
                       {item.label}
@@ -127,13 +129,14 @@ export function App() {
                   ))}
                 </select>
               </div>
-              <div className='sdiebar__form'>
-                <label htmlFor=''> Select Bank</label>
+              <div className="sdiebar__form">
+                <label htmlFor=""> Select Bank</label>
                 <select
-                  className='app__select'
+                  className="app__select"
                   onChange={(event: any) => {
                     setTemplate(event.target.value);
-                  }}>
+                  }}
+                >
                   {optionsbank.map(
                     (item, index) =>
                       CheckAmoutn.checkAmount(amount, item.value) && (
@@ -146,35 +149,36 @@ export function App() {
               </div>
 
               {CheckTheme.checkTheme(template) && (
-                <div className='sdiebar__form'>
-                  <label htmlFor=''>Template</label>
+                <div className="sdiebar__form">
+                  <label htmlFor="">Template</label>
                   <select
-                    className='app__select'
+                    className="app__select"
                     onChange={(e: any) => {
                       setTheme(e.target.value);
-                    }}>
-                    <option value='light'> Light</option>
-                    <option value='dark'> Dark</option>
+                    }}
+                  >
+                    <option value="light"> Light</option>
+                    <option value="dark"> Dark</option>
                   </select>
                 </div>
               )}
 
-              <button className='generate' onClick={handleCaptureScreenshot}>
-                <img src='/sidebar/screenshot.png' alt='' width={40} />
+              <button className="generate" onClick={handleCaptureScreenshot}>
+                <img src="/sidebar/screenshot.png" alt="" width={40} />
               </button>
             </div>
 
-            <div className='form__translate'>
-              <label htmlFor=''> Translate</label>
-              <div className='translate__'>
-                <img src='/sidebar/usa.png' alt='' width={80} />
-                <img src='/sidebar/chinese.webp' alt='' width={80} />
+            <div className="form__translate">
+              <label htmlFor=""> Translate</label>
+              <div className="translate__">
+                <img src="/sidebar/usa.png" alt="" width={80} />
+                <img src="/sidebar/chinese.webp" alt="" width={80} />
               </div>
             </div>
           </div>
-          <div className='content__card'>
-            <div className='card__payment flash '>
-              <div className='screenshot' ref={divRef}>
+          <div className="content__card">
+            <div className="card__payment flash ">
+              <div className="screenshot" ref={divRef}>
                 {loaded && (
                   <>
                     {template === "kotak" && (
@@ -235,6 +239,15 @@ export function App() {
                     )}
                     {template === "phonepe3" && (
                       <Sys
+                        time={time}
+                        range={battery}
+                        theme={theme}
+                        amount={amount}
+                      />
+                    )}
+
+                    {template === "samsung" && (
+                      <Samsung
                         time={time}
                         range={battery}
                         theme={theme}
