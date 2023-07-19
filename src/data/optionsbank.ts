@@ -101,13 +101,11 @@ const optionsbank = [
     image: "",
   },
 
-
-  
   {
     label: "Fi",
     value: "Fi",
     image: "",
   },
- 
+  { label: "kotakred", value: "redKotak" },
 ];
 export default optionsbank;

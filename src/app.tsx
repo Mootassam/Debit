@@ -30,6 +30,8 @@ import CreditBar from "./shared/CreditBar";
 import Samsung from "./components/Samsung/Samsung";
 import Idfc from "./components/Idfc/Idfc";
 import Grey from "./components/IdfcG/Grey";
+import Fi from "./components/Fi/Fi";
+import RedKotak from "./components/RedKotak/RedKotak";
 
 export function App() {
   const [count, setCount] = useState(0);
@@ -248,7 +250,6 @@ export function App() {
                         amount={amount}
                       />
                     )}
-
                     {template === "samsung" && (
                       <Samsung
                         time={time}
@@ -257,10 +258,11 @@ export function App() {
                         amount={amount}
                       />
                     )}
-
                     {template === "idfc" && <Idfc />}
+                    {template === "grey" && <Grey />}
+                    {template === "Fi" && <Fi />}
 
-                    {template === 'grey' && <Grey />}
+                    {template === "redKotak" && <RedKotak />}
                   </>
                 )}
               </div>
