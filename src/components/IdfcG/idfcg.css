@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap");
+
+
+.app__grey {
+    width: 273px;
+    height: 801px;
+    background-color: #F0F0F0;
+    position: relative;
+}
+
+.grey__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 38px;
+    flex-direction: column;
+}
+
+/* styling the bottom of idfc */
+
+.grey__bottom {
+    position: absolute;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+
+.grey__content {
+    padding-top: 29px;
+    padding-left: 39px;
+}
+
+.grey__section {
+    display: flex;
+    flex-direction: column;
+}
+
+.grey__payment {
+    color: #707072;
+    font-family: Be Vietnam Pro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.grey__amount {
+    color: #545559;
+    font-family: Be Vietnam Pro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.19px;
+}
+
+.section__label {
+    color: #7C7C7C;
+    font-family: Be Vietnam Pro;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.605px;
+}
+
+.grey__customername {
+    color: #717173;
+    font-family: Be Vietnam Pro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.grey__bank {
+    color: #7A7A7C;
+font-family: Be Vietnam Pro;
+font-size: 11px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.p__21 {
+    padding-top: 21px;
+}
+.p__9 { 
+    padding-top: 9px;
+    padding-bottom: 3px;
+}
+.p__to{ 
+    padding-top: 21px;
+}
+
+.p__11{ 
+    padding-top: 11px;
+    padding-bottom: 3px;
+}
+
+.p__19{ 
+    padding-top: 19px;
+    padding-bottom: 9px;
+}
+
+.p__16{ 
+    padding-top: 16px;
+    padding-bottom: 6px;
+}
+.p__17  { 
+    padding-top: 17px ;
+    padding-bottom: 7px;
+}
+
+.b__19{ 
+    padding-top: 19px;
+    padding-bottom: 7px;
+}
+
+.s__19{ 
+    padding-top: 19px;
+}

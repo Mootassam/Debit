@@ -29,6 +29,7 @@ import Header from "./layout/Header";
 import CreditBar from "./shared/CreditBar";
 import Samsung from "./components/Samsung/Samsung";
 import Idfc from "./components/Idfc/Idfc";
+import Grey from "./components/IdfcG/Grey";
 
 export function App() {
   const [count, setCount] = useState(0);
@@ -257,7 +258,9 @@ export function App() {
                       />
                     )}
 
-                    {/* {template === "idfc" && <Idfc />} */}
+                    {template === "idfc" && <Idfc />}
+
+                    {template === 'grey' && <Grey />}
                   </>
                 )}
               </div>

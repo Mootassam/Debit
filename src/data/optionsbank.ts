@@ -89,11 +89,25 @@ const optionsbank = [
     image: "",
   },
 
-  // {
-  //   label: "IDFC Bank",
-  //   value: "idfc",
-  //   image: "",
-  // },
+  {
+    label: "IDFC Bank",
+    value: "idfc",
+    image: "",
+  },
+
+  {
+    label: "IDFC Grey",
+    value: "grey",
+    image: "",
+  },
+
+
+  
+  {
+    label: "Fi",
+    value: "Fi",
+    image: "",
+  },
  
 ];
 export default optionsbank;
