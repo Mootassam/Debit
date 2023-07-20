@@ -10,7 +10,9 @@ function Idfc(props) {
       <div className="idfc__header">
         <img src="/Idfc/logo.png" alt="" width={124} />
         <span className="idfc__payment">Payment successful</span>
-        <span className="idfc__amount">{Currency.IndiaCurrency(props.amount)}</span>
+        <span className="idfc__amount">
+          {Currency.IndiaCurrency(props.amount)}
+        </span>
       </div>
       <div className="idfc__content">
         <div className="idfc__section">
@@ -20,9 +22,10 @@ function Idfc(props) {
           <span className="idfc__namecustomer --10">
             {Names.generateRandomFullName()}
           </span>
-          <span className="idfc__firstbank --3">IDFC FIRST BanK ****{Number.generate5RanodmNumber()}</span>
+          <span className="idfc__firstbank --3">
+            IDFC FIRST BanK ****{Number.generate5RanodmNumber()}
+          </span>
         </div>
-
         <div className="idfc__section __to">
           <label htmlFor="" className="idfc__label">
             To
@@ -30,26 +33,25 @@ function Idfc(props) {
           <span className="idfc__namecustomer --10">REKHA CONSTRUCTION</span>
           <span className="idfc__firstbank --4">9910780968m@pnb</span>
         </div>
-
         <div className="idfc__section __mode">
           <label htmlFor="" className="idfc__label">
             Payment mode
           </label>
           <span className="idfc__namecustomer --7">UPI</span>
         </div>
-
         <div className="idfc__section --date">
           <label htmlFor="" className="idfc__label">
             Payment date
           </label>
           <span className="idfc__date --9">{Dates.idfc()}</span>
         </div>
-
         <div className="idfc__section">
           <label htmlFor="" className="idfc__label --transaction">
             Transaction ID
           </label>
-          <span className="idfc__date --9">310{Number.generateRanodom9Number()}</span>
+          <span className="idfc__date --9">
+            310{Number.generateRanodom9Number()}
+          </span>
         </div>
       </div>
 

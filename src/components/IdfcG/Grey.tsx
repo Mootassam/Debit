@@ -1,6 +1,10 @@
 import React from "react";
 import "./idfcg.css";
 import Currency from "../../utils/Currency";
+import Number from "../../utils/Number";
+import Names from "../../utils/Names";
+import Idfc from './../Idfc/Idfc';
+import Dates from "../../utils/Dates";
 function Grey(props) {
   return (
     <div className="app__grey">
@@ -17,8 +21,10 @@ function Grey(props) {
           <label htmlFor="" className="section__label">
             From
           </label>
-          <span className="grey__customername p__9">ANIL LEEKHA</span>
-          <span className="grey__bank">IDFC FIRST Bank ****5214</span>
+          <span className="grey__customername p__9">{Names.generateRandomFullName()}</span>
+          <span className="grey__bank">
+            IDFC FIRST Bank ****{Number.generateRandom4Number()}
+          </span>
         </div>
         <div className="grey__section">
           <label htmlFor="" className="section__label p__to">
@@ -46,13 +52,13 @@ function Grey(props) {
           <label htmlFor="" className="section__label p__17">
             Payment date
           </label>
-          <span className="grey__customername">11:07 am 08 Apr,2023 </span>
+          <span className="grey__customername">{Dates.idfc()}</span>
         </div>
         <div className="grey__section">
           <label htmlFor="" className="section__label b__19">
             Transaction ID{" "}
           </label>
-          <span className="grey__customername">309811238256</span>
+          <span className="grey__customername">309{Number.generateRanodom9Number()}</span>
         </div>
       </div>
       <div className="grey__bottom">
