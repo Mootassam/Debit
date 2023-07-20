@@ -3,7 +3,7 @@ import "./fi.css";
 
 import { RxInfoCircled } from "react-icons/rx";
 
-export default function Fi() {
+export default function Fi(props) {
   return (
     <div className="app__fi">
       <div className="fi__header">

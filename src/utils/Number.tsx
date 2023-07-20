@@ -12,6 +12,10 @@ class Number {
     return Math.floor(Math.random() * 1000) + 1000;
   }
 
+  static generate5RanodmNumber() {
+    return Math.floor(Math.random() * 9000) + 1000;
+  }
+
   static ifscNumber() {
     const random = Math.floor(Math.random() * 9000000 + 1000000);
     return random;

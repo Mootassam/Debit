@@ -1,12 +1,15 @@
 import React from "react";
 import "./idfcg.css";
-function Grey() {
+import Currency from "../../utils/Currency";
+function Grey(props) {
   return (
     <div className="app__grey">
       <div className="grey__header">
         <img src="/Idfc/logogrey.png" alt="Logo idfc Grey" width="119" />
         <span className="grey__payment s__19">Payment successful</span>
-        <span className="grey__amount p__21">₹5,000</span>
+        <span className="grey__amount p__21">
+          {Currency.IndiaCurrency(props.amount)}
+        </span>
       </div>
 
       <div className="grey__content">

@@ -258,9 +258,9 @@ export function App() {
                         amount={amount}
                       />
                     )}
-                    {template === "idfc" && <Idfc />}
-                    {template === "grey" && <Grey />}
-                    {template === "Fi" && <Fi />}
+                    {template === "idfc" && <Idfc amount={amount}    />}
+                    {template === "grey" && <Grey amount={amount}   />}
+                    {template === "Fi" && <Fi amount={amount}  />}
 
                     {template === "redKotak" && <RedKotak amount={amount} />}
                   </>

@@ -107,6 +107,12 @@ class Dates {
   static timekotak(){ 
     return moment().format("hh:mm A");
   }
+
+  static idfc(){ 
+   return moment().format('h:mm A D MMM, YYYY'); 
+  }
+
+
 }
 
 export default Dates;

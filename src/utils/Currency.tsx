@@ -28,6 +28,14 @@ class Currency {
     return formattedNumber;
   }
 
+  static IndiaCurrency(number?) { 
+    const staticnum = 1 * number;
+    const formattedNumber = staticnum
+      .toLocaleString("en-IN", { style: "currency", currency: "INR" })
+      .replace(".00", "")
+    return formattedNumber;
+  }
+
   static IndiaImps(number?) {
     const num = 1 * number;
     const formattedNumber = num
@@ -36,7 +44,7 @@ class Currency {
       .replace("₹", "");
     return formattedNumber;
   }
-  static InidaCurrency() {}
+
 
   static impsCurrency(number) {}
 }
