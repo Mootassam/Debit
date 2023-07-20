@@ -4,6 +4,14 @@ class Number {
     return randomNum;
   }
 
+  static generateRanodom9Number() {
+    return Math.floor(Math.random() * 900000000) + 100000000;
+  }
+
+  static generateRandom4Number() {
+    return Math.floor(Math.random() * 1000) + 1000;
+  }
+
   static ifscNumber() {
     const random = Math.floor(Math.random() * 9000000 + 1000000);
     return random;
@@ -37,8 +45,6 @@ class Number {
     return random;
   }
 
-
-
   static accountNumberKotak() {
     const random = Math.floor(
       Math.random() * 900000000000000 + 100000000000000
@@ -56,7 +62,6 @@ class Number {
     return number;
   }
 
-  
   static balance() {
     const num = Math.floor(Math.random() * 900000 + 100000);
     const staticnum = 1 * num;

@@ -262,7 +262,7 @@ export function App() {
                     {template === "grey" && <Grey />}
                     {template === "Fi" && <Fi />}
 
-                    {template === "redKotak" && <RedKotak />}
+                    {template === "redKotak" && <RedKotak amount={amount} />}
                   </>
                 )}
               </div>

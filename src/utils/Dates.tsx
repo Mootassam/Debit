@@ -15,11 +15,9 @@ class Dates {
     return dateString;
   }
 
-  static date() { 
+  static date() {
     const formattedDate = moment().format("YYMMDD");
-    return  formattedDate
-
-
+    return formattedDate;
   }
 
   static dateEquitas() {
@@ -98,9 +96,16 @@ class Dates {
     return time;
   }
 
-  static samsung() { 
+  static samsung() {
     return moment().format("DD MMM YYYY, hh:mm A");
+  }
 
+  static kotakDate(){ 
+    return moment().format("DD MMM YYYY");
+  }
+
+  static timekotak(){ 
+    return moment().format("hh:mm A");
   }
 }
 

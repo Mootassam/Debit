@@ -238,6 +238,7 @@
   font-weight: 400;
   line-height: normal;
   display: flex;
-align-items: center;
-gap:6px
+  align-items: center;
+  gap: 6px;
 }
+
