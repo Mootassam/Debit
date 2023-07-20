@@ -38,7 +38,7 @@ export function App() {
   const [amount, setAmount] = useState(2000);
   const [IFSC, setIFSC] = useState<any | null>(null);
   const divRef = useRef<HTMLDivElement>(null);
-  const [template, setTemplate] = useState("kotak");
+  const [template, setTemplate] = useState("Fi");
   const [reference, setReference] = useState<any | null>(null);
   const [utr, setutr] = useState<any | null>(null);
   const [acno, setacno] = useState<any | null>(null);
