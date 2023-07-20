@@ -24,7 +24,14 @@
   right: 0;
 }
 
-.fi__transfer {
+.fi__currency {
+  color: #b9b9b9;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-right: 3px;
 }
 
 .content__successful {
@@ -81,9 +88,9 @@
   border-radius: 10px;
   margin-bottom: 35px;
   display: flex;
- 
+
   align-items: center;
-  gap:8px;
+  gap: 8px;
   padding-left: 8px;
 }
 
@@ -97,7 +104,6 @@
   position: relative;
   display: grid;
   place-items: center;
-
 }
 
 .header__content {
@@ -261,11 +267,11 @@
 }
 
 .info__payement {
-    color: #000;
-    font-family: Roboto;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    width: 304px;
+  color: #000;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 304px;
 }

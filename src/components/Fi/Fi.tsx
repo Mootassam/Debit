@@ -19,6 +19,7 @@ export default function Fi(props) {
           <span className="fi__company">ITAAN TRADING CO.</span>
           <span className="fi__amount">
             <span className="amount__fi">
+              <span className="fi__currency">₹</span>
             {Currency.IndiaImps(props.amount)}
               <label htmlFor="" className="fi__small">
                 .00
