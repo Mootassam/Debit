@@ -112,6 +112,10 @@ class Dates {
    return moment().format('h:mm A D MMM, YYYY'); 
   }
 
+  static dateFI(){ 
+     return moment().format('MMM D [at] hh:mm A');
+  }
+
 
 }
 

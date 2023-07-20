@@ -1,7 +1,10 @@
 import React from "react";
 import "./fi.css";
-
 import { RxInfoCircled } from "react-icons/rx";
+import Number from "../../utils/Number";
+import Dates from "../../utils/Dates";
+import Names from "../../utils/Names";
+import Currency from "../../utils/Currency";
 
 export default function Fi(props) {
   return (
@@ -16,7 +19,7 @@ export default function Fi(props) {
           <span className="fi__company">ITAAN TRADING CO.</span>
           <span className="fi__amount">
             <span className="amount__fi">
-              5,000{" "}
+            {Currency.IndiaImps(props.amount)}
               <label htmlFor="" className="fi__small">
                 .00
               </label>
@@ -38,15 +41,15 @@ export default function Fi(props) {
       </div>
       <div className="content__successful __success">
         <span className="span__success">Successful</span>
-        <span className="span__date">Apr 6 at 02:10 PM</span>
+        <span className="span__date">{Dates.dateFI()}</span>
       </div>
       <div className="big__content">
         <div className="content__speacial">
           <label htmlFor="" className="big__content__label">
-            FROM - ASAM SAN JEEVULU:
+            FROM - {Names.generateRandomFullName()}:
           </label>
           <label htmlFor="" className="content__detail">
-            xxxxxxxxxx3604
+            xxxxxxxxxx{Number.generateRandom4Number()}
           </label>
         </div>
 
@@ -64,7 +67,7 @@ export default function Fi(props) {
             IMPS TRANSACTION ID :{" "}
           </label>
           <label htmlFor="" className="content__detail">
-            309614355145
+            309{Number.generateRanodom9Number()}
           </label>
         </div>
 
@@ -73,7 +76,7 @@ export default function Fi(props) {
             FI TRANSACTION ID:
           </label>
           <label htmlFor="" className="content__detail">
-            Ae1uDF2KTr9U
+            {Names.generateRandomText()}
           </label>
         </div>
 

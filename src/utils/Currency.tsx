@@ -4,9 +4,7 @@ class Currency {
       style: "currency",
       currency: "INR",
     });
-
     var formattedAmount = formatter.format(number);
-
     return formattedAmount;
   }
 
@@ -28,11 +26,11 @@ class Currency {
     return formattedNumber;
   }
 
-  static IndiaCurrency(number?) { 
+  static IndiaCurrency(number?) {
     const staticnum = 1 * number;
     const formattedNumber = staticnum
       .toLocaleString("en-IN", { style: "currency", currency: "INR" })
-      .replace(".00", "")
+      .replace(".00", "");
     return formattedNumber;
   }
 
@@ -44,7 +42,6 @@ class Currency {
       .replace("₹", "");
     return formattedNumber;
   }
-
 
   static impsCurrency(number) {}
 }
