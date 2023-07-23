@@ -166,6 +166,7 @@ export function App() {
                   onChange={(e) => {
                     localStorage.setItem("upi", e.target.value);
                   }}
+                  maxLength={4}
                   value={upi}
                 />
               </div>
