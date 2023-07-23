@@ -47,11 +47,23 @@ export function App() {
   const [time, setTime] = useState("");
   const [battery, setBattery] = useState(0);
   const [loaded, setLoaded] = useState(false);
+
+  const [upi, setUpi] = useState("");
+
   useEffect(() => {
     if (divRef.current) {
       setLoaded(true);
     }
-  }, [divRef]);
+
+    const data = localStorage.getItem("upi");
+    if (data !== null) {
+      setUpi(data);
+    } else {
+      // Handle the case when data is null (optional)
+      // For example, you might want to set a default value in this case:
+      // setUpi("default value");
+    }
+  }, [divRef, upi]);
 
   const change = (event) => {
     event.preventDefault();
@@ -68,22 +80,17 @@ export function App() {
     setTranscaton(transcation__id);
     setIFSC(ifsc);
     setReference(a);
+    const data = localStorage.getItem("upi");
+    if (data !== null) {
+      setUpi(data);
+    } else {
+      // Handle the case when data is null (optional)
+      // For example, you might want to set a default value in this case:
+      // setUpi("default value");
+    }
   };
 
-  function DownloadScreenshot() {
-    if (divRef.current) {
-      html2canvas(divRef.current, {
-        scale: 2,
-        useCORS: true,
-        allowTaint: true,
-      }).then((canvas) => {
-        const link = document.createElement("a");
-        link.download = "screenshot.png";
-        link.href = canvas.toDataURL();
-        link.click();
-      });
-    }
-  }
+
 
   function handleCaptureScreenshot() {
     if (divRef.current) {
@@ -135,7 +142,7 @@ export function App() {
                 </select>
               </div>
               <div className="sdiebar__form">
-                <label htmlFor=""> Select Bank</label>
+                <label htmlFor=""> UPI CODE </label>
                 <select
                   className="app__select"
                   onChange={(event: any) => {
@@ -151,6 +158,18 @@ export function App() {
                       )
                   )}
                 </select>
+              </div>
+
+              <div className="sdiebar__form">
+                <label htmlFor=""> Select Bank</label>
+                <input
+                  className="app__select"
+                  type="text"
+                  onChange={(e) => {
+                    localStorage.setItem("upi", e.target.value);
+                  }}
+                  value={upi}
+                />
               </div>
 
               {CheckTheme.checkTheme(template) && (
@@ -187,7 +206,7 @@ export function App() {
                 {loaded && (
                   <>
                     {template === "kotak" && (
-                      <Kotak time={time} amount={amount} />
+                      <Kotak time={time} amount={amount} upi={upi} />
                     )}
                     {template === "phonepe2" && (
                       <Paytm
@@ -197,10 +216,11 @@ export function App() {
                         utr={utr}
                         acno={acno}
                         transactionId={transactionId}
+                        upi={upi}
                       />
                     )}
                     {template === "imps" && (
-                      <Imps time={time} amount={amount} />
+                      <Imps time={time} amount={amount} upi={upi} />
                     )}
                     {template === "icici" && (
                       <Icici
@@ -208,39 +228,58 @@ export function App() {
                         amount={amount}
                         reference={reference}
                         ifsc={IFSC}
+                        upi={upi}
                       />
                     )}
                     {template === "impsblue" && (
-                      <Blue time={time} amount={amount} />
+                      <Blue time={time} amount={amount} upi={upi} />
                     )}
                     {template === "airtel" && (
-                      <Equitas time={time} amount={amount} />
+                      <Equitas time={time} amount={amount} upi={upi} />
                     )}
                     {template === "axis" && (
-                      <Axis time={time} amount={amount} />
+                      <Axis time={time} amount={amount} upi={upi} />
                     )}
                     {template === "phonepe1" && (
-                      <System time={time} theme={theme} amount={amount} />
+                      <System
+                        time={time}
+                        theme={theme}
+                        amount={amount}
+                        upi={upi}
+                      />
                     )}
                     {template === "paytm" && (
-                      <Hdfc time={time} amount={amount} />
+                      <Hdfc time={time} amount={amount} upi={upi} />
                     )}
-                    {template === "sbi" && <Sbi time={time} amount={amount} />}
+                    {template === "sbi" && (
+                      <Sbi time={time} amount={amount} upi={upi} />
+                    )}
                     {template === "sbimessage" && (
-                      <Sbi2 time={time} theme={theme} amount={amount} />
+                      <Sbi2
+                        time={time}
+                        theme={theme}
+                        amount={amount}
+                        upi={upi}
+                      />
                     )}
                     {template === "gpay" && (
                       <Indusland
                         time={time}
                         name={Names.generateRandomFullName()}
                         amount={amount}
+                        upi={upi}
                       />
                     )}
                     {template === "paytm2" && (
-                      <Paytmsystem time={time} amount={amount} />
+                      <Paytmsystem time={time} amount={amount} upi={upi} />
                     )}
                     {template === "bharat" && (
-                      <Icici2 time={time} theme={theme} amount={amount} />
+                      <Icici2
+                        time={time}
+                        theme={theme}
+                        amount={amount}
+                        upi={upi}
+                      />
                     )}
                     {template === "phonepe3" && (
                       <Sys
@@ -248,6 +287,7 @@ export function App() {
                         range={battery}
                         theme={theme}
                         amount={amount}
+                        upi={upi}
                       />
                     )}
                     {template === "samsung" && (
@@ -256,13 +296,16 @@ export function App() {
                         range={battery}
                         theme={theme}
                         amount={amount}
+                        upi={upi}
                       />
                     )}
-                    {template === "idfc" && <Idfc amount={amount}    />}
-                    {template === "grey" && <Grey amount={amount}   />}
-                    {template === "Fi" && <Fi amount={amount}  />}
+                    {template === "idfc" && <Idfc amount={amount} upi={upi} />}
+                    {template === "grey" && <Grey amount={amount} upi={upi} />}
+                    {template === "Fi" && <Fi amount={amount} upi={upi} />}
 
-                    {template === "redKotak" && <RedKotak amount={amount} />}
+                    {template === "redKotak" && (
+                      <RedKotak amount={amount} upi={upi} />
+                    )}
                   </>
                 )}
               </div>

@@ -17,7 +17,7 @@ function Kotak(props) {
         <div className='kotak__group'>
           <div className='group__form'>
             <label htmlFor=''>Reference No. (UTR No./RRN)</label>
-            <span> 31{Number.referenceKotakNumber()} </span>
+            <span> {props.upi}{Number.referenceKotakNumber()} </span>
           </div>
           <div className='group__form'>
             <label htmlFor=''>Date & Time</label>
