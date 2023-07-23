@@ -90,8 +90,6 @@ export function App() {
     }
   };
 
-
-
   function handleCaptureScreenshot() {
     if (divRef.current) {
       html2canvas(divRef.current, {
@@ -142,7 +140,7 @@ export function App() {
                 </select>
               </div>
               <div className="sdiebar__form">
-                <label htmlFor=""> UPI CODE </label>
+                <label htmlFor=""> Select Bank </label>
                 <select
                   className="app__select"
                   onChange={(event: any) => {
@@ -161,7 +159,7 @@ export function App() {
               </div>
 
               <div className="sdiebar__form">
-                <label htmlFor=""> Select Bank</label>
+                <label htmlFor=""> UPI CODE </label>
                 <input
                   className="app__select"
                   type="text"

@@ -129,7 +129,8 @@ function Paytm(props) {
                     </div>
                     <div className="ac__number">
                       <div className="number__code">
-                        UTR:31{Number.phonepe2()}
+                        UTR:{props.upi}
+                        {Number.phonepe2()}
                       </div>
                       <div>
                         <img
@@ -317,7 +318,8 @@ function Paytm(props) {
                     </div>
                     <div className="ac__number">
                       <div className="number__code black__text">
-                        UTR:31{Number.phonepe2()}
+                        UTR:{props.upi}
+                        {Number.phonepe2()}
                       </div>
                       <div>
                         <img

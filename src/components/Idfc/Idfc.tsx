@@ -50,7 +50,8 @@ function Idfc(props) {
             Transaction ID
           </label>
           <span className="idfc__date --9">
-            310{Number.generateRanodom9Number()}
+            {props.upi}
+            {Number.generateRanodom90Number()}
           </span>
         </div>
       </div>

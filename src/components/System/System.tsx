@@ -78,7 +78,7 @@ function System(props) {
                       ****{Number.debitFrom()}
                     </div>
                     <div className="transaction__utr">
-                      UTR 3204{Number.phonepe0()}
+                      UTR {props.upi}{Number.phonepe0()}
                     </div>
                   </div>
                   <div className="bank__amount">
@@ -188,7 +188,7 @@ function System(props) {
                       ****{Number.debitFrom()}
                     </div>
                     <div className="transaction__utr violet__color">
-                      UTR 3204{Number.phonepe0()}
+                      UTR {props.upi}{Number.phonepe0()}
                     </div>
                   </div>
                   <div className="bank__amount  white__system">
