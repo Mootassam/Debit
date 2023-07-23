@@ -34,7 +34,6 @@ import Fi from "./components/Fi/Fi";
 import RedKotak from "./components/RedKotak/RedKotak";
 
 export function App() {
-  const [count, setCount] = useState(0);
   const [amount, setAmount] = useState(2000);
   const [IFSC, setIFSC] = useState<any | null>(null);
   const divRef = useRef<HTMLDivElement>(null);
