@@ -5,7 +5,7 @@ import Currency from "../../utils/Currency";
 import Number from "../../utils/Number";
 import data from "../../data/bank";
 function System(props) {
-  let item  = Number.getRandomItem(data);
+  let item = Number.getRandomItem(data);
   return (
     <div className="system">
       {props.theme === "light" && (
@@ -57,7 +57,9 @@ function System(props) {
 
             <div className="transaction__id">
               <label htmlFor="transacton__id">Transaction ID</label>
-              <div className="transaction__number">T{Dates.date()}104009{Number.phonepe2()}</div>
+              <div className="transaction__number">
+                T{Dates.date()}104009{Number.phonepe2()}
+              </div>
             </div>
 
             <div className="transaction__">
@@ -66,12 +68,7 @@ function System(props) {
               <div className="transaction__row">
                 <div className="transaction__box">
                   <div className="box__phone">
-                    <img
-                      src={item.logo}
-                      alt=""
-                      width={30}
-                      height={27}
-                    />
+                    <img src={item.logo} alt="" width={30} height={27} />
                   </div>
                 </div>
 
@@ -81,7 +78,7 @@ function System(props) {
                       ****{Number.debitFrom()}
                     </div>
                     <div className="transaction__utr">
-                      UTR 31{Number.phonepe2()}
+                      UTR 3204{Number.phonepe0()}
                     </div>
                   </div>
                   <div className="bank__amount">
@@ -169,7 +166,7 @@ function System(props) {
                 Transaction ID
               </label>
               <div className="transaction__number  white__system">
-              T{Dates.date()}104009{Number.phonepe2()}
+                T{Dates.date()}104009{Number.phonepe2()}
               </div>
             </div>
 
@@ -181,12 +178,7 @@ function System(props) {
               <div className="transaction__row">
                 <div className="transaction__box">
                   <div className="box__phone">
-                    <img
-                      src={item.logo}
-                      alt=""
-                      width={30}
-                      height={27}
-                    />
+                    <img src={item.logo} alt="" width={30} height={27} />
                   </div>
                 </div>
 
@@ -196,7 +188,7 @@ function System(props) {
                       ****{Number.debitFrom()}
                     </div>
                     <div className="transaction__utr violet__color">
-                      UTR 31{Number.phonepe2()}
+                      UTR 3204{Number.phonepe0()}
                     </div>
                   </div>
                   <div className="bank__amount  white__system">
