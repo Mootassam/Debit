@@ -58,6 +58,7 @@ export function App() {
     if (data !== null) {
       setUpi(data);
     } else {
+      setUpi("3204");
       // Handle the case when data is null (optional)
       // For example, you might want to set a default value in this case:
       // setUpi("default value");
