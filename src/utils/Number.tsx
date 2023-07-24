@@ -7,6 +7,13 @@ class Number {
   static generateRanodom9Number() {
     return Math.floor(Math.random() * 900000000) + 100000000;
   }
+  static generateRanodom2Number() {
+    return Math.floor(Math.random() * 90000000) + 10000000;
+  }
+
+  static generateRanodomNumber() {
+    return Math.floor(Math.random() * 900000000) + 100000000;
+  }
 
   static generateRandom4Number() {
     return Math.floor(Math.random() * 1000) + 1000;

@@ -140,7 +140,7 @@ export function App() {
                 </select>
               </div>
               <div className="sdiebar__form">
-                <label htmlFor=""> Select Bank </label>
+                <label htmlFor="">Select Bank</label>
                 <select
                   className="app__select"
                   onChange={(event: any) => {
