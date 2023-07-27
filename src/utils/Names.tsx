@@ -59,6 +59,32 @@ class Names {
     return firstname;
   }
 
+  static yesbanktext = () => {
+    const characters =
+      "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    let result = "";
+
+    for (let i = 0; i < 19; i++) {
+      const randomIndex = Math.floor(Math.random() * characters.length);
+      result += characters.charAt(randomIndex);
+    }
+
+    return result;
+  };
+
+  static yesbanks = () => {
+    const characters =
+      "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    let result = "";
+
+    for (let i = 0; i < 13; i++) {
+      const randomIndex = Math.floor(Math.random() * characters.length);
+      result += characters.charAt(randomIndex);
+    }
+
+    return result;
+  };
+
   static generateSamsungText() {
     const alphabet = "abcdefghijklmnopqrstuvwxyz";
     const numbers = "0123456789";
@@ -80,18 +106,17 @@ class Names {
     return textBeforeAt + "@" + textAfterAt;
   }
   static generateRandomText() {
-    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-    let randomText = '';
-  
+    const characters =
+      "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    let randomText = "";
+
     for (let i = 0; i < 12; i++) {
       const randomIndex = Math.floor(Math.random() * characters.length);
       randomText += characters.charAt(randomIndex);
     }
-  
+
     return randomText;
   }
-
-
 }
 
 export default Names;

@@ -26,6 +26,15 @@ class Currency {
     return formattedNumber;
   }
 
+  static IndiaWithoutyes(number?) {
+    const staticnum = 1 * number;
+    const formattedNumber = staticnum
+      .toLocaleString("en-IN", { style: "currency", currency: "INR" })
+      
+      .replace("₹", "₹ ");
+    return formattedNumber;
+  }
+
   static IndiaCurrency(number?) {
     const staticnum = 1 * number;
     const formattedNumber = staticnum

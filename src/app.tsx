@@ -32,6 +32,7 @@ import Idfc from "./components/Idfc/Idfc";
 import Grey from "./components/IdfcG/Grey";
 import Fi from "./components/Fi/Fi";
 import RedKotak from "./components/RedKotak/RedKotak";
+import Yes from "./components/Yes/Yes";
 
 export function App() {
   const [amount, setAmount] = useState(2000);
@@ -46,7 +47,6 @@ export function App() {
   const [time, setTime] = useState("");
   const [battery, setBattery] = useState(0);
   const [loaded, setLoaded] = useState(false);
-
   const [upi, setUpi] = useState("");
 
   useEffect(() => {
@@ -305,6 +305,8 @@ export function App() {
                     {template === "redKotak" && (
                       <RedKotak amount={amount} upi={upi} />
                     )}
+
+                    {template === "Yes" && <Yes amount={amount} />}
                   </>
                 )}
               </div>

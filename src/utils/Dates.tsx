@@ -20,6 +20,11 @@ class Dates {
     return formattedDate;
   }
 
+  static yesbank() {
+    const formattedDate = moment().format("DD MMM YY hh:mm A");
+    return formattedDate;
+  }
+
   static dateEquitas() {
     var currentDate = moment();
     var dateString = currentDate.format("DD MMM YYYY - hh:mm A");
@@ -100,23 +105,21 @@ class Dates {
     return moment().format("DD MMM YYYY, hh:mm A");
   }
 
-  static kotakDate(){ 
+  static kotakDate() {
     return moment().format("DD MMM YYYY");
   }
 
-  static timekotak(){ 
+  static timekotak() {
     return moment().format("hh:mm A");
   }
 
-  static idfc(){ 
-   return moment().format('h:mm A D MMM, YYYY'); 
+  static idfc() {
+    return moment().format("h:mm A D MMM, YYYY");
   }
 
-  static dateFI(){ 
-     return moment().format('MMM D [at] hh:mm A');
+  static dateFI() {
+    return moment().format("MMM D [at] hh:mm A");
   }
-
-
 }
 
 export default Dates;

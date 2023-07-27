@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap");
+.groupChild,
+.groupItem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 405px;
+}
+.groupChild {
+  background: linear-gradient(180.02deg, #f8f8f8, #f8f8f8 39.74%, #fdfdfd);
+  height: 801px;
+}
+.groupItem {
+  background-color: var(--color-steelblue);
+  height: 65px;
+}
+.rectangleParent {
+  top: 0;
+  left: 0;
+  width: 405px;
+  height: 801px;
+}
+.groupInner,
+.ok,
+.rectangleParent {
+  position: absolute;
+}
+.groupInner {
+  top: 0;
+  left: 0;
+  border-radius: var(--br-10xs);
+  background-color: var(--color-firebrick);
+  width: 292px;
+  height: 42px;
+}
+.ok {
+  top: 10px;
+  left: 133px;
+}
+.background1Icon,
+.groupWrapper,
+.rectangleGroup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 292px;
+  height: 42px;
+}
+.background1Icon,
+.groupWrapper {
+  top: 591px;
+  left: 58px;
+}
+.background1Icon {
+  top: 160px;
+  left: 23px;
+  width: 362px;
+  height: 409px;
+  object-fit: cover;
+}
+.thankYou {
+  position: absolute;
+  top: 58px;
+  left: 100px;
+  font-size: var(--font-size-3xl-6);
+  color: var(--color-darkslategray);
+}
+.fundTransfer,
+.transferCompleted {
+  position: absolute;
+  top: 101px;
+  left: 68px;
+  font-size: var(--font-size-xl-5);
+  color: var(--color-dimgray-600);
+}
+.fundTransfer {
+  top: 160px;
+  left: 101px;
+  font-size: var(--font-size-mini-6);
+  color: var(--color-dimgray-500);
+}
+.adHoc,
+.typeOfTransaction,
+.vasudhaCollections {
+  position: absolute;
+  top: 207px;
+  left: 0;
+}
+.adHoc,
+.vasudhaCollections {
+  left: 153px;
+  font-size: var(--font-size-base-2);
+  color: var(--color-dimgray-400);
+}
+.vasudhaCollections {
+  top: 287px;
+  font-size: var(--font-size-base-3);
+}
+.ab130ea0000,
+.c62b7111eeba5,
+.div,
+.july231029,
+.sachin {
+  position: absolute;
+  top: 325px;
+  left: 153px;
+  font-size: 15.65px;
+  color: var(--color-dimgray-400);
+}
+.ab130ea0000,
+.c62b7111eeba5,
+.july231029,
+.sachin {
+  top: 365px;
+}
+.ab130ea0000,
+.c62b7111eeba5,
+.sachin {
+  top: 404px;
+}
+.ab130ea0000,
+.c62b7111eeba5 {
+  top: 444px;
+}
+.ab130ea0000 {
+  top: 466px;
+}
+.amount,
+.div1 {
+  position: absolute;
+  top: 247px;
+}
+.div1 {
+  left: 157px;
+  font-size: var(--font-size-base-5);
+  color: var(--color-dimgray-400);
+  display: inline-block;
+  
+}
+.amount {
+  left: 0;
+}
+.beneficiaryAccountNo,
+.beneficiaryName {
+  position: absolute;
+  top: 286px;
+  left: 0;
+}
+.beneficiaryAccountNo {
+  top: 326px;
+}
+.remarks,
+.transactionDate {
+  position: absolute;
+  top: 365px;
+  left: 0;
+}
+.remarks {
+  top: 405px;
+  left: 1px;
+}
+.confirmation,
+.number,
+.transactionReference {
+  position: absolute;
+  top: 444px;
+  left: 0;
+}
+.confirmation,
+.number {
+  top: 464px;
+}
+.confirmation {
+  top: 0;
+  left: 103px;
+  font-size: var(--font-size-mini-8);
+  font-weight: 600;
+  color: var(--color-white);
+}
+.thankYouParent {
+  position: absolute;
+  top: 22px;
+  left: 50px;
+  width: 302px;
+  height: 486px;
+  font-size: var(--font-size-sm-6);
+  color: var(--color-dimgray-300);
+  font-family: var(--font-source-sans-pro);
+}
+.app__groupParent {
+  position: relative;
+  width: 405px;
+  height: 801px;
+  text-align: left;
+  font-size: var(--font-size-lgi);
+  color: var(--color-white);
+  font-family: var(--font-roboto);
+}
