@@ -72,25 +72,27 @@ class Names {
     return result;
   };
 
-  static yesbanks = () => {
-    const characters =
-      "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-    let result = "";
+  static generateRanodomNumber() {
+    return Math.floor(Math.random() * 9000) + 1000;
+  }
 
-    for (let i = 0; i < 13; i++) {
+  static yesbanks = () => {
+    const characters = "0123456789abcdef";
+    let variablePart = "";
+
+    for (let i = 0; i < 6; i++) {
+      // Generating 6 characters for the variable part
       const randomIndex = Math.floor(Math.random() * characters.length);
-      result += characters.charAt(randomIndex);
+      variablePart += characters.charAt(randomIndex);
     }
 
-    return result;
+    return `10a${variablePart}${this.generateRanodomNumber()}`;
   };
 
   static generateSamsungText() {
     const alphabet = "abcdefghijklmnopqrstuvwxyz";
     const numbers = "0123456789";
-
     let textBeforeAt = "";
-
     for (let i = 0; i < 3; i++) {
       const randomChar = numbers[Math.floor(Math.random() * numbers.length)];
       const randomNumber = numbers[Math.floor(Math.random() * numbers.length)];
