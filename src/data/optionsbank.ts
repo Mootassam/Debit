@@ -104,11 +104,7 @@ const optionsbank = [
     image: "",
   },
 
-  {
-    label: "Yes Bank",
-    value: "Yes",
-    image: "",
-  },
+ 
 
   { label: "kotakred", value: "redKotak" },
 ];

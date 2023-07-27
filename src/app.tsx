@@ -306,7 +306,7 @@ export function App() {
                       <RedKotak amount={amount} upi={upi} />
                     )}
 
-                    {template === "Yes" && <Yes amount={amount} />}
+                    {/* {template === "Yes" && <Yes amount={amount} />} */}
                   </>
                 )}
               </div>
