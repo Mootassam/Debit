@@ -6,40 +6,61 @@ import Number from "../../utils/Number";
 import Names from "./../../utils/Names";
 function Yes(props) {
   return (
-    <div className="app__groupParent">
-      <h1>IM the best </h1>
-      <div className="rectangleParent">
-        <div className="groupChild" />
-        <div className="groupItem" />
+    <div className="app__yes">
+      <div className="yes__header">
+        <span className="yes__confirmation">CONFIRMATION</span>
       </div>
-      <div className="groupWrapper">
-        <div className="rectangleGroup">
-          <div className="groupInner" />
-          <div className="ok">OK</div>
+      <div className="yes__">
+        <span className="yes__thankyou">Thank You!</span>
+        <span className="yes__transfer">Transfer Completed</span>
+      </div>
+      <div className="yes__content">
+        <span className="fund__transfer">FUND TRANSFER</span>
+
+        <div className="content__yes">
+          <div className="type__transaction">
+            <span className="yes__label">Type of Transaction</span>
+            <span className="yes__value">Ad Hoc</span>
+          </div>
+
+          <div className="yes__amount">
+            <span className="yes__label">Amount</span>
+            <span className="yes__value">{Currency.IndiaWithoutyes(props.amount)}</span>
+          </div>
+
+          <div className="yes__amount">
+            <span className="yes__label">Beneficiary Name</span>
+            <span className="yes__value">Vasudha Collections</span>
+          </div>
+
+          <div className="yes__amount">
+            <span className="yes__label">Beneficiary Account No.</span>
+            <span className="yes__value">012763{Number.generateRanodom9Number()}</span>
+          </div>
+
+          <div className="yes__amount">
+            <span className="yes__label">Transaction Date</span>
+            <span className="yes__value">{Dates.yesbank()}</span>
+          </div>
+
+          <div className="yes__amount">
+            <span className="yes__label">Remarks</span>
+            <span className="yes__value">Sachin</span>
+          </div>
+
+          <div className="yes__amount">
+            <span className="yes__label">Transaction Reference</span>
+            <span className="yes__value">{Names.yesbanktext()}</span>
+          </div>
+
+          <div className="yes__amount __special">
+            <span className="yes__label">Number</span>
+            <span className="yes__value">{Names.yesbanks()}</span>
+          </div>
         </div>
       </div>
-      <img className="background1Icon" alt="" src="/background-1@2x.png" />
-      <div className="thankYouParent">
-        <div className="thankYou">Thank You!</div>
-        <div className="transferCompleted">Transfer Completed</div>
-        <div className="fundTransfer">FUND TRANSFER</div>
-        <div className="typeOfTransaction">Type of Transaction</div>
-        <div className="adHoc">Ad Hoc</div>
-        <div className="vasudhaCollections">Vasudha Collections</div>
-        <div className="div">012763{Number.generateRanodom9Number()}</div>
-        <div className="july231029">{Dates.yesbank()}</div>
-        <div className="sachin">Sachin</div>
-        <div className="c62b7111eeba5">{Names.yesbanktext()} </div>
-        <div className="ab130ea0000">{Names.yesbanks()}</div>
-        <div className="div1">{Currency.IndiaWithoutyes(props.amount)}</div>
-        <div className="amount">Amount</div>
-        <div className="beneficiaryName">Beneficiary Name</div>
-        <div className="beneficiaryAccountNo">Beneficiary Account No.</div>
-        <div className="transactionDate">Transaction Date</div>
-        <div className="remarks">Remarks</div>
-        <div className="transactionReference">Transaction Reference</div>
-        <div className="number">Number</div>
-        <div className="confirmation">CONFIRMATION</div>
+      <div className="yes__ok">
+        <span>Ok</span>
       </div>
     </div>
   );

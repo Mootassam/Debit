@@ -61,7 +61,7 @@ class Names {
 
   static yesbanktext = () => {
     const characters =
-      "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+      "abcdefghijklmnopqrstuvwxyz0123456789";
     let result = "";
 
     for (let i = 0; i < 19; i++) {
