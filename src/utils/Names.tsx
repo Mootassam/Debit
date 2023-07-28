@@ -54,14 +54,21 @@ class Names {
     return fullName;
   }
 
+  static remarks = () => {
+    const listRemarks = ["Sachin", "Prepaid tasks", "done", "payed", "Aryan"];
+    const randomNote = Math.floor(Math.random() * listRemarks.length); 
+    return listRemarks[randomNote]
+
+
+  };
+
   static firstCaracter(string) {
     const firstname = string.charAt(0);
     return firstname;
   }
 
   static yesbanktext = () => {
-    const characters =
-      "abcdefghijklmnopqrstuvwxyz0123456789";
+    const characters = "abcdefghijklmnopqrstuvwxyz0123456789";
     let result = "";
 
     for (let i = 0; i < 19; i++) {

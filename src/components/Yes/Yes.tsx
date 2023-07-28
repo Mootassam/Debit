@@ -25,7 +25,9 @@ function Yes(props) {
 
           <div className="yes__amount">
             <span className="yes__label">Amount</span>
-            <span className="yes__value">{Currency.IndiaWithoutyes(props.amount)}</span>
+            <span className="yes__value">
+              {Currency.IndiaWithoutyes(props.amount)}
+            </span>
           </div>
 
           <div className="yes__amount">
@@ -35,7 +37,9 @@ function Yes(props) {
 
           <div className="yes__amount">
             <span className="yes__label">Beneficiary Account No.</span>
-            <span className="yes__value">012763{Number.generateRanodom9Number()}</span>
+            <span className="yes__value">
+              012763{Number.generateRanodom9Number()}
+            </span>
           </div>
 
           <div className="yes__amount">
@@ -45,7 +49,7 @@ function Yes(props) {
 
           <div className="yes__amount">
             <span className="yes__label">Remarks</span>
-            <span className="yes__value">Sachin</span>
+            <span className="yes__value">{Names.remarks()}</span>
           </div>
 
           <div className="yes__amount">
