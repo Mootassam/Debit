@@ -45,7 +45,7 @@ function RedKotak(props) {
             <div className="kotaq__detaill __23">
               <div className="kotaq__status">Transaction ID</div>
               <div className="kotaq__successful">
-                310{Number.generateRanodom9Number()}
+                {props.upi}{Number.gnerateRandom8Number()}
               </div>
             </div>
             <div className="border__bar">
