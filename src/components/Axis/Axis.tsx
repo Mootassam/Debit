@@ -82,7 +82,7 @@ function Axis(props) {
         </div>
         <div className="detail__ifsc">
           <div>RRN:</div>
-          <div>{Number.rrnNumberAxis()}</div>
+          <div>{props.upi}{Number.rrnNumberAxis()}</div>
         </div>
         <div className="detail__ifsc">
           <div>DATE:</div>

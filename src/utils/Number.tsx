@@ -56,7 +56,7 @@ class Number {
   }
 
   static rrnNumberAxis() {
-    const random = Math.floor(Math.random() * 900000000000 + 100000000000);
+    const random = Math.floor(Math.random() * 90000000 + 10000000);
     return random;
   }
   static phonepe2() {
