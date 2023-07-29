@@ -58,7 +58,7 @@ function Grey(props) {
           <label htmlFor="" className="section__label b__19">
             Transaction ID{" "}
           </label>
-          <span className="grey__customername">309{Number.generateRanodom9Number()}</span>
+          <span className="grey__customername">{props.upi}{Number.generate8randomNumer()}</span>
         </div>
       </div>
       <div className="grey__bottom">

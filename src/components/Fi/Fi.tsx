@@ -68,7 +68,7 @@ export default function Fi(props) {
             IMPS TRANSACTION ID :{" "}
           </label>
           <label htmlFor="" className="content__detail">
-            309{Number.generateRanodom9Number()}
+            {props.upi}{Number.gnerateRandom8Number()}
           </label>
         </div>
 

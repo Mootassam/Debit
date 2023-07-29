@@ -19,6 +19,10 @@ class Number {
     return Math.floor(Math.random() * 900000000) + 100000000;
   }
 
+  static generate8randomNumer() { 
+    return Math.floor(Math.random() * 90000000) + 10000000 ;  
+  }
+
   static generateRandom4Number() {
     return Math.floor(Math.random() * 1000) + 1000;
   }
