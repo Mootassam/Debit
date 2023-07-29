@@ -33,7 +33,7 @@ function Samsung(props) {
           <div className="samsung__text">
             <div className="samsung__left">Transaction ID:</div>
             <div className="samsung__right">
-              311{Number.referenceKotakNumber()}
+              {props.upi}{Number.referenceKotakNumber()}
             </div>
           </div>
 
