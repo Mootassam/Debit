@@ -4,12 +4,10 @@ import Currency from "../../../utils/Currency";
 import Number from "../../../utils/Number";
 import Names from "../../../utils/Names";
 import randomEmail from "random-email";
-import data from "../../../data/bank";
 import Dates from "../../../utils/Dates";
 import Rightdata from "../../../shared/right/Rightdata";
 import Left from "../../../shared/icons/Left";
 function Indusland(props) {
-  let item = Number.getRandomItem(data);
 
   return (
     <div className="indusland__bank">
@@ -68,14 +66,14 @@ function Indusland(props) {
             <div className="indusland">
               <div className="logo__">
                 <img
-                  src={item.logo}
+                  src={props.from.logo}
                   alt=""
                   width={31}
                   height={27}
                   style={{ objectFit: "contain" }}
                 />
               </div>
-              <div className="logo__text">{item.name} </div>
+              <div className="logo__text">{props.from.name} </div>
             </div>
             <div>
               <img src="/Indusland/bottom.png" alt="" width={15} height={8} />

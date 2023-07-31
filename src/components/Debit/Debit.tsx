@@ -92,7 +92,7 @@ function Debit() {
 
   const generate = async () => {
     let data;
-    ["phonepe1", "phonepe2", "paytm", "bharat", "gpay", "phonepe3"].includes(
+    ["phonepe1", "phonepe2", "paytm", "bharat", "gpay", "phonepe3","samsung"].includes(
       template
     )
       ? (data = {
@@ -267,9 +267,9 @@ function Debit() {
                   )}
                   {template === "axis" && <Axis amount={amount} upi={upi} />}
                   {template === "phonepe1" && (
-                    <System theme={theme} amount={amount} upi={upi} />
+                    <System theme={theme} amount={amount} upi={upi}  from={from} />
                   )}
-                  {template === "paytm" && <Hdfc amount={amount} upi={upi} />}
+                  {template === "paytm" && <Hdfc amount={amount} upi={upi} from={from} />}
                   {template === "sbi" && <Sbi amount={amount} upi={upi} />}
                   {template === "sbimessage" && (
                     <Sbi2 theme={theme} amount={amount} upi={upi} />
@@ -279,19 +279,20 @@ function Debit() {
                       name={Names.generateRandomFullName()}
                       amount={amount}
                       upi={upi}
+                      from={from}
                     />
                   )}
                   {template === "paytm2" && (
                     <Paytmsystem amount={amount} upi={upi} />
                   )}
                   {template === "bharat" && (
-                    <Icici2 theme={theme} amount={amount} upi={upi} />
+                    <Icici2 theme={theme} amount={amount} upi={upi}  from={from} />
                   )}
                   {template === "phonepe3" && (
-                    <Sys theme={theme} amount={amount} upi={upi} />
+                    <Sys theme={theme} amount={amount} upi={upi}  from={from} />
                   )}
                   {template === "samsung" && (
-                    <Samsung theme={theme} amount={amount} upi={upi} />
+                    <Samsung theme={theme} amount={amount} upi={upi}      from={from} />
                   )}
                   {template === "idfc" && <Idfc amount={amount} upi={upi} />}
                   {template === "grey" && <Grey amount={amount} upi={upi} />}

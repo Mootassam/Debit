@@ -3,14 +3,10 @@ import "./Sys.css";
 import Number from "../../../utils/Number";
 import Dates from "../../../utils/Dates";
 import Currency from "../../../utils/Currency";
-import data from "../../../data/bank";
 import Left from "../../../shared/icons/Left";
 import Right from "../../../shared/right/Right";
 
 function Sys(props) {
-  let item = Number.getRandomItem(data);
-
-  
 
   const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
 
@@ -126,14 +122,17 @@ function Sys(props) {
               <label htmlFor="">Debited from</label>
               <div className="icic__bankfrom">
                 <div className="bankfrom__boxicici">
-                  <img src={item.logo} alt="" width={14} height={15} />
+                  <img src={props.from.logo} alt="" width={14} height={15} />
                 </div>
                 <div className="bankfrom__">
                   <div className="from__left">
                     <div className="icici__bank">
-                      {item.name} - {Number.debitFrom()}
+                      {props.from.name} - {Number.debitFrom()}
                     </div>
-                    <div className="utr__id">UTR: {props.upi}{Number.phonepe2()}</div>
+                    <div className="utr__id">
+                      UTR: {props.upi}
+                      {Number.phonepe2()}
+                    </div>
                   </div>
                   <div className="right__amountbank">
                     {Currency.IndiaWithoutZero(props.amount)}
@@ -263,15 +262,16 @@ function Sys(props) {
               </label>
               <div className="icic__bankfrom">
                 <div className="bankfrom__boxicici border__color">
-                  <img src={item.logo} alt="" width={14} height={15} />
+                  <img src={props.from.logo} alt="" width={14} height={15} />
                 </div>
                 <div className="bankfrom__ ">
                   <div className="from__left white__c">
                     <div className="icici__bank white__c">
-                      {item.name} - {Number.debitFrom()}
+                      {props.from.name} - {Number.debitFrom()}
                     </div>
                     <div className="utr__id white__c">
-                      UTR: {props.upi}{Number.phonepe2()}
+                      UTR: {props.upi}
+                      {Number.phonepe2()}
                     </div>
                   </div>
                   <div className="right__amountbank white__c">

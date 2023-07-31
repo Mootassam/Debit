@@ -3,12 +3,10 @@ import "./hdfc.css";
 import Number from "../../../utils/Number";
 import Currency from "../../../utils/Currency";
 import Dates from "../../../utils/Dates";
-import data from "../../../data/bank";
 import Rightdata from "../../../shared/right/Rightdata";
 import Left from "../../../shared/icons/Left";
 
 function Hdfc(props) {
-  let item = Number.getRandomItem(data);
   return (
     <div className="app__hdfc">
       <div className="hdfc__header">
@@ -83,8 +81,8 @@ function Hdfc(props) {
         <div className="from__">
           <div className="from__text">From Your</div>
           <div className="name__hdfc">
-            {item.name}
-            <img src={item.logo} alt="" width={31} height={31} />
+            {props?.from?.name}
+            <img src={props?.from?.logo} alt="" width={31} height={31} />
           </div>
           <div className="hdfc__code">A/c No. - {Number.debitFrom()}</div>
           <div className="check__balance">Check Balance</div>

@@ -38,7 +38,7 @@ function Samsung(props) {
 
           <div className="samsung__text">
             <div className="samsung__left">Sent from:</div>
-            <div className="samsung__right"> {item.name}</div>
+            <div className="samsung__right"> {props.from.name}</div>
           </div>
 
           <div className="samsung__text">

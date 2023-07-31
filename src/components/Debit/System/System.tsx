@@ -3,9 +3,7 @@ import "./system.css";
 import Dates from "../../../utils/Dates";
 import Currency from "../../../utils/Currency";
 import Number from "../../../utils/Number";
-import data from "../../../data/bank";
 function System(props) {
-  let item = Number.getRandomItem(data);
   return (
     <div className="system">
       {props.theme === "light" && (
@@ -68,7 +66,7 @@ function System(props) {
               <div className="transaction__row">
                 <div className="transaction__box">
                   <div className="box__phone">
-                    <img src={item.logo} alt="" width={30} height={27} />
+                    <img src={props.from.logo} alt="" width={30} height={27} />
                   </div>
                 </div>
 
@@ -178,7 +176,7 @@ function System(props) {
               <div className="transaction__row">
                 <div className="transaction__box">
                   <div className="box__phone">
-                    <img src={item.logo} alt="" width={30} height={27} />
+                    <img src={props.from.logo} alt="" width={30} height={27} />
                   </div>
                 </div>
 

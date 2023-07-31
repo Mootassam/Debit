@@ -55,10 +55,10 @@ function Icici2(props) {
                 <label htmlFor="">Debited from</label>
                 <div className="debit__group">
                   <div className="debit__image">
-                    <img src={item.logo} alt="" width={33} height={35} />
+                    <img src={props.from.logo} alt="" width={33} height={35} />
                   </div>
                   <div className="icici__bank">
-                    <span>{item.name}</span>
+                    <span>{props.from.name}</span>
                     <span>******{Number.debitFrom()}</span>
                   </div>
                 </div>
@@ -151,10 +151,10 @@ function Icici2(props) {
                 </label>
                 <div className="debit__group">
                   <div className="debit__image">
-                    <img src={item.logo} alt="" width={33} height={35} />
+                    <img src={props.from.logo} alt="" width={33} height={35} />
                   </div>
                   <div className="icici__bank">
-                    <span className="text__white">{item.name}</span>
+                    <span className="text__white">{props.from.name}</span>
                     <span className="text__white">
                       ******{Number.debitFrom()}
                     </span>
