@@ -43,8 +43,7 @@ function Debit() {
   const [template, setTemplate] = useState("Fi");
   const [reference, setReference] = useState<any | null>(null);
   const [utr, setutr] = useState<any | null>(null);
-  const [acno, setacno] = useState<any | null>(null);
-  const [transactionId, setTranscaton] = useState<any | null>(null);
+  const [transactionId, setTransacaton] = useState<any | null>(null);
   const [theme, setTheme] = useState("light");
   const [loaded, setLoaded] = useState(false);
   const [upi, setUpi] = useState("");
@@ -55,7 +54,6 @@ function Debit() {
     if (divRef.current) {
       setLoaded(true);
     }
-
     setfrom(Number.getRandomItem(list));
     setAccount(Number.generateRandom4Number());
     const data = localStorage.getItem("upi");
@@ -76,8 +74,7 @@ function Debit() {
 
     setAccount(Number.generateRandom4Number());
     setutr(utr);
-    setacno(acno);
-    setTranscaton(Number.phonepe0());
+    setTransacaton(`${upi}${Number.phonepe0()}`);
     setIFSC(ifsc);
     setReference(a);
     const data = localStorage.getItem("upi");
@@ -92,16 +89,21 @@ function Debit() {
 
   const generate = async () => {
     let data;
-    ["phonepe1", "phonepe2", "paytm", "bharat", "gpay", "phonepe3","samsung"].includes(
-      template
-    )
+    [
+      "phonepe1",
+      "phonepe2",
+      "paytm",
+      "bharat",
+      "gpay",
+      "phonepe3",
+      "samsung",
+    ].includes(template)
       ? (data = {
           amount: amount,
           upi: upi,
           bank: from.name,
           transaction: transactionId,
           account: account,
- 
         })
       : (data = {
           amount: amount,
@@ -267,9 +269,16 @@ function Debit() {
                   )}
                   {template === "axis" && <Axis amount={amount} upi={upi} />}
                   {template === "phonepe1" && (
-                    <System theme={theme} amount={amount} upi={upi}  from={from} />
+                    <System
+                      theme={theme}
+                      amount={amount}
+                      upi={upi}
+                      from={from}
+                    />
                   )}
-                  {template === "paytm" && <Hdfc amount={amount} upi={upi} from={from} />}
+                  {template === "paytm" && (
+                    <Hdfc amount={amount} upi={upi} from={from} />
+                  )}
                   {template === "sbi" && <Sbi amount={amount} upi={upi} />}
                   {template === "sbimessage" && (
                     <Sbi2 theme={theme} amount={amount} upi={upi} />
@@ -286,13 +295,23 @@ function Debit() {
                     <Paytmsystem amount={amount} upi={upi} />
                   )}
                   {template === "bharat" && (
-                    <Icici2 theme={theme} amount={amount} upi={upi}  from={from} />
+                    <Icici2
+                      theme={theme}
+                      amount={amount}
+                      upi={upi}
+                      from={from}
+                    />
                   )}
                   {template === "phonepe3" && (
-                    <Sys theme={theme} amount={amount} upi={upi}  from={from} />
+                    <Sys theme={theme} amount={amount} upi={upi} from={from} />
                   )}
                   {template === "samsung" && (
-                    <Samsung theme={theme} amount={amount} upi={upi}      from={from} />
+                    <Samsung
+                      theme={theme}
+                      amount={amount}
+                      upi={upi}
+                      from={from}
+                    />
                   )}
                   {template === "idfc" && <Idfc amount={amount} upi={upi} />}
                   {template === "grey" && <Grey amount={amount} upi={upi} />}

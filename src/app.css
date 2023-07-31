@@ -226,7 +226,8 @@ li {
   cursor: pointer;
 }
 .special__credit {
-  padding: 30px;
+  padding: 12px;
+  font-size: 12px;
   background-color: #fff;
   border-radius: 5px;
 }

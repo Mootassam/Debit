@@ -28,7 +28,10 @@ function Header() {
         <ul className="list__items">
           {debitData.map((item, index) => (
             <li className="special__credit" onClick={() => alert("in")}>
-              {index + 1} ) {item.bank} {item.amount} {item.account}
+              {index + 1} )bank Name : <b> {item.bank} </b> <br />
+              Amount : <b> {item.amount} </b> <br />
+              Account Number: <b>{item.account} </b> <br />
+              transactionID : <b>{item.transaction} </b>
             </li>
           ))}
         </ul>
