@@ -1,5 +1,5 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import { getLoading, getDebit, deleteALL } from "./debitReducers";
+import { getLoading, getDebit, deleteALL, showDetail } from "./debitReducers";
 
 export const saveDebit = createAsyncThunk<void, object>(
   "debit/saveDebit",
@@ -16,12 +16,12 @@ export const saveDebit = createAsyncThunk<void, object>(
   }
 );
 
-export const editDebit = createAsyncThunk<void, object>(
+export const editDebit = createAsyncThunk<void, any>(
   "debit/editDebit",
-  async (data, thunkAPI) => {
+  async ({ data, index }, thunkAPI) => {
     try {
       thunkAPI.dispatch(getLoading(true));
-      await thunkAPI.dispatch(getDebit(data));
+      await thunkAPI.dispatch(showDetail({ data, index }));
       thunkAPI.dispatch(getLoading(false));
     } catch (error) {
       thunkAPI.dispatch(getLoading(false));

@@ -17,7 +17,6 @@ const debitSlice = createSlice({
   initialState,
   reducers: {
     getDebit: (state, action) => {
-      console.log(action.payload);
       state.debit.push(action.payload);
     },
     getLoading: (state, actions) => {
@@ -26,8 +25,12 @@ const debitSlice = createSlice({
     deleteALL: (state) => {
       state.debit = [];
     },
+    showDetail: (state, action) => {
+      state.detaill = action.payload.data;
+    },
   },
 });
 
-export const { getDebit, getLoading, deleteALL } = debitSlice.actions;
+export const { getDebit, getLoading, deleteALL, showDetail } =
+  debitSlice.actions;
 export default debitSlice.reducer;

@@ -1,17 +1,24 @@
 import React from "react";
 
 import { useSelector } from "react-redux";
-import { selectDebit } from "./../store/debit/debitSelectors";
+import { debitDetaill, selectDebit } from "./../store/debit/debitSelectors";
 import { useDispatch } from "react-redux/es/exports";
-import { deleteDebit } from "../store/debit/debitActions";
+import { deleteDebit, editDebit } from "../store/debit/debitActions";
 import { ThunkDispatch } from "@reduxjs/toolkit";
 
 function Header() {
   const dispatch = useDispatch<ThunkDispatch<any, any, any>>();
   const debitData = useSelector(selectDebit);
+
   const clearAll = async () => {
     await dispatch(deleteDebit());
   };
+
+  const showDetaill = (data, index) => {
+    dispatch(editDebit({ data, index }));
+  };
+
+
   return (
     <>
       <div className="app__header">
@@ -26,7 +33,7 @@ function Header() {
       </div> */}
         <label></label>
 
-        <label className="credit__time" onClick={() =>clearAll()}>
+        <label className="credit__time" onClick={() => clearAll()}>
           Clear All : <span className="credit__number">{debitData.length}</span>
         </label>
       </div>
@@ -34,7 +41,10 @@ function Header() {
       <div className="header__sidebar">
         <ul className="list__items">
           {debitData.map((item, index) => (
-            <li className="special__credit" onClick={() => alert("in")}>
+            <li
+              className="special__credit"
+              onClick={() => showDetaill(item, index)}
+            >
               <b> {index + 1} )</b>
               <br />
               bank Name : <b> {item.bank} </b> <br />

@@ -9,3 +9,8 @@ export const selectLoading = createSelector(
   selectGenerateSate,
   (loading) => loading.loading
 );
+
+export const debitDetaill = createSelector(
+  selectGenerateSate,
+  (detaill) => detaill.detaill
+);

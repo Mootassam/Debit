@@ -93,7 +93,7 @@ form {
   gap: 25px;
 }
 
-.translate__>img {
+.translate__ > img {
   width: 50px;
   display: flex;
   object-position: center;
@@ -119,7 +119,7 @@ form {
   animation: fadeIn 5s;
 }
 
-.generate>img {
+.generate > img {
   object-position: center;
   object-fit: cover;
 }

@@ -34,6 +34,8 @@ import { saveDebit } from "../../store/debit/debitActions";
 import { ThunkDispatch } from "@reduxjs/toolkit";
 import Number from "../../utils/Number";
 import list from "../../data/bank";
+import { useSelector } from "react-redux";
+import { debitDetaill } from "../../store/debit/debitSelectors";
 
 function Debit() {
   const dispatch = useDispatch<ThunkDispatch<any, any, any>>();
@@ -49,20 +51,8 @@ function Debit() {
   const [upi, setUpi] = useState("");
   const [account, setAccount] = useState(0);
   const [from, setfrom] = useState(Number.getRandomItem(list));
-
-  useEffect(() => {
-    if (divRef.current) {
-      setLoaded(true);
-    }
-    setfrom(Number.getRandomItem(list));
-    setAccount(Number.generateRandom4Number());
-    const data = localStorage.getItem("upi");
-    if (data !== null) {
-      setUpi(data);
-    } else {
-      setUpi("3204");
-    }
-  }, [divRef, upi, amount, template, transactionId]);
+  const dataDebit = useSelector(debitDetaill);
+  console.log(dataDebit);
 
   const change = (event) => {
     event.preventDefault();
@@ -85,6 +75,34 @@ function Debit() {
       // setUpi("default value");
     }
   };
+
+
+  useEffect(() => {
+    if (divRef.current) {
+      setLoaded(true);
+    }
+
+
+    setfrom(Number.getRandomItem(list));
+    setAccount(Number.generateRandom4Number());
+    const data = localStorage.getItem("upi");
+    if (data !== null) {
+      setUpi(data);
+    } else {
+      setUpi("3204");
+    }
+  }, [ upi, amount, template, transactionId]);
+
+  useEffect(() => {
+    if (divRef.current) {
+      setLoaded(true);
+    }
+  
+    if (dataDebit?.bank) {
+      setTemplate(dataDebit.bank);
+    }
+  }, [divRef, dataDebit]);
+
 
   const generate = async () => {
     let data;
@@ -227,7 +245,7 @@ function Debit() {
           </div>
 
           <div className="form__translate">
-            <label htmlFor=""> Credit Tools  </label>
+            <label htmlFor=""> Credit Tools </label>
             <div className="translate__">
               <img src="/sidebar/usa.png" alt="" width={80} />
               <img src="/sidebar/chinese.webp" alt="" width={80} />
