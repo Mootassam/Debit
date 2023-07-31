@@ -2,10 +2,16 @@ import React from "react";
 
 import { useSelector } from "react-redux";
 import { selectDebit } from "./../store/debit/debitSelectors";
+import { useDispatch } from "react-redux/es/exports";
+import { deleteDebit } from "../store/debit/debitActions";
+import { ThunkDispatch } from "@reduxjs/toolkit";
 
 function Header() {
+  const dispatch = useDispatch<ThunkDispatch<any, any, any>>();
   const debitData = useSelector(selectDebit);
-
+  const clearAll = async () => {
+    await dispatch(deleteDebit());
+  };
   return (
     <>
       <div className="app__header">
@@ -18,9 +24,9 @@ function Header() {
         <HiCreditCard color="white" size={25} />
         <span className="number__credit">3</span>
       </div> */}
-      <label></label>
+        <label></label>
 
-        <label className="credit__time">
+        <label className="credit__time" onClick={() =>clearAll()}>
           Clear All : <span className="credit__number">{debitData.length}</span>
         </label>
       </div>
@@ -29,7 +35,8 @@ function Header() {
         <ul className="list__items">
           {debitData.map((item, index) => (
             <li className="special__credit" onClick={() => alert("in")}>
-            <b>  {index + 1} )</b><br />
+              <b> {index + 1} )</b>
+              <br />
               bank Name : <b> {item.bank} </b> <br />
               Amount : <b> ₹ {item.amount} </b> <br />
               Account Number: <b>{item.account} </b> <br />

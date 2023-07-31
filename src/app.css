@@ -2,15 +2,16 @@
   position: relative;
   overflow-y: hidden;
 }
+
 .app__header {
   background-color: rgb(62, 70, 143);
   height: 29px;
   padding: 0 20px;
-display: flex;
-justify-content: space-between;
-width: 100%;
-
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
+
 .app__content {
   padding-top: 10px;
   margin-inline: auto;
@@ -55,16 +56,19 @@ form {
 
   height: 100%;
 }
+
 .app__payment {
   display: flex;
   background-color: rgb(126, 221, 72);
   width: 100%;
   justify-content: space-between;
 }
+
 .card__payment {
   display: flex;
   gap: 24px;
 }
+
 .credit {
   width: 1080px !important;
 }
@@ -88,7 +92,8 @@ form {
   justify-content: center;
   gap: 25px;
 }
-.translate__ > img {
+
+.translate__>img {
   width: 50px;
   display: flex;
   object-position: center;
@@ -113,7 +118,8 @@ form {
   color: #ffffff;
   animation: fadeIn 5s;
 }
-.generate > img {
+
+.generate>img {
   object-position: center;
   object-fit: cover;
 }
@@ -137,6 +143,7 @@ form {
     opacity: 0;
   }
 }
+
 .app__credit {
   position: relative;
   float: right;
@@ -169,6 +176,7 @@ form {
   height: 100%;
   width: 200px;
 }
+
 .item {
   display: flex;
   flex-direction: column;
@@ -181,6 +189,7 @@ form {
 .credit__item {
   color: white;
 }
+
 .item__detail {
   background-color: black;
   color: white;
@@ -189,7 +198,7 @@ form {
 }
 
 .credit__time {
-  background-color:rgb(153, 43, 43);
+  background-color: rgb(153, 43, 43);
   cursor: pointer;
   color: white;
   padding: 3px 18px;
@@ -199,7 +208,6 @@ form {
 .credit__number {
   color: white;
   font-weight: bold;
-
 }
 
 .header__sidebar {
@@ -221,16 +229,19 @@ form {
   overflow-y: scroll;
   padding-right: 10px;
 }
+
 li {
   list-style: none;
   cursor: pointer;
 }
+
 .special__credit {
   padding: 12px;
   font-size: 12px;
   background-color: #fff;
   border-radius: 5px;
 }
+
 .special__credit:hover {
   background-color: #ff9933;
 }
@@ -259,6 +270,7 @@ li {
 .save__debit:active {
   background-color: aqua;
 }
+
 .generate__credit {
   background-color: #3a5d27;
   color: white;

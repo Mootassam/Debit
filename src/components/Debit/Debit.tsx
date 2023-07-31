@@ -70,7 +70,6 @@ function Debit() {
     let a = Math.floor(100000000000 + Math.random() * 900000000000);
     let ifsc = Math.floor(1000000 + Math.random() * 9000000);
     let utr = Math.floor(100000000000 + Math.random() * 900000000000);
-    let acno = Math.floor(1000 + Math.random() * 9000);
 
     setAccount(Number.generateRandom4Number());
     setutr(utr);
