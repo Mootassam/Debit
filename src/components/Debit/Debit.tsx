@@ -228,7 +228,7 @@ function Debit() {
           </div>
 
           <div className="form__translate">
-            <label htmlFor=""> Translate</label>
+            <label htmlFor=""> Credit Tools  </label>
             <div className="translate__">
               <img src="/sidebar/usa.png" alt="" width={80} />
               <img src="/sidebar/chinese.webp" alt="" width={80} />

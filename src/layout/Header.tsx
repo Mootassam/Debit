@@ -8,7 +8,7 @@ function Header() {
 
   return (
     <>
-      <div className="app__credit">
+      <div className="app__header">
         {/* <div
         className="card__crdit"
         onClick={() => {
@@ -18,6 +18,7 @@ function Header() {
         <HiCreditCard color="white" size={25} />
         <span className="number__credit">3</span>
       </div> */}
+      <label></label>
 
         <label className="credit__time">
           Clear All : <span className="credit__number">{debitData.length}</span>
@@ -28,10 +29,11 @@ function Header() {
         <ul className="list__items">
           {debitData.map((item, index) => (
             <li className="special__credit" onClick={() => alert("in")}>
-              {index + 1} )bank Name : <b> {item.bank} </b> <br />
-              Amount : <b> {item.amount} </b> <br />
+            <b>  {index + 1} )</b><br />
+              bank Name : <b> {item.bank} </b> <br />
+              Amount : <b> ₹ {item.amount} </b> <br />
               Account Number: <b>{item.account} </b> <br />
-              transactionID : <b>{item.transaction} </b>
+              IMPS : <b>{item.transaction} </b>
             </li>
           ))}
         </ul>
