@@ -46,7 +46,7 @@ function Debit() {
   const [template, setTemplate] = useState("Fi");
   const [reference, setReference] = useState<any | null>(null);
   const [utr, setutr] = useState<any | null>(null);
-  const [transactionId, setTransacaton] = useState<any | null>(null);
+  const [transactionId, setTransaction] = useState<any | null>(null);
   const [theme, setTheme] = useState("light");
   const [loaded, setLoaded] = useState(false);
   const [upi, setUpi] = useState("");
@@ -63,7 +63,7 @@ function Debit() {
 
     setAccount(Number.generateRandom4Number());
     setutr(utr);
-    setTransacaton(`${upi}${Number.phonepe0()}`);
+    setTransaction(`${upi}${Number.phonepe0()}`);
     setIFSC(ifsc);
     setReference(a);
     const data = localStorage.getItem("upi");
@@ -95,6 +95,7 @@ function Debit() {
       setTemplate(dataDebit.template);
       setAmount(dataDebit.amount);
       setAccount(dataDebit.account);
+      setTransaction(dataDebit.transaction)
     }
   }, [divRef, dataDebit]);
 
@@ -112,7 +113,7 @@ function Debit() {
       ? (data = {
           amount: amount,
           upi: upi,
-          template : template,
+          template: template,
           bank: from.name,
           transaction: transactionId,
           account: account,
@@ -121,7 +122,7 @@ function Debit() {
       : (data = {
           amount: amount,
           upi: upi,
-          template : template,
+          template: template,
           bank: template,
           transaction: transactionId,
           account: account,
