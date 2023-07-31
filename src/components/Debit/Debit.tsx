@@ -36,6 +36,7 @@ import Number from "../../utils/Number";
 import list from "../../data/bank";
 import { useSelector } from "react-redux";
 import { debitDetaill } from "../../store/debit/debitSelectors";
+import Dates from "../../utils/Dates";
 
 function Debit() {
   const dispatch = useDispatch<ThunkDispatch<any, any, any>>();
@@ -52,7 +53,6 @@ function Debit() {
   const [account, setAccount] = useState(0);
   const [from, setfrom] = useState(Number.getRandomItem(list));
   const dataDebit = useSelector(debitDetaill);
-  console.log(dataDebit);
 
   const change = (event) => {
     event.preventDefault();
@@ -70,9 +70,6 @@ function Debit() {
     if (data !== null) {
       setUpi(data);
     } else {
-      // Handle the case when data is null (optional)
-      // For example, you might want to set a default value in this case:
-      // setUpi("default value");
     }
   };
 
@@ -81,7 +78,7 @@ function Debit() {
       setLoaded(true);
     }
     setfrom(Number.getRandomItem(list));
-    setAccount(Number.generateRandom4Number());
+
     const data = localStorage.getItem("upi");
     if (data !== null) {
       setUpi(data);
@@ -95,8 +92,9 @@ function Debit() {
       setLoaded(true);
     }
     if (dataDebit?.bank) {
-      setTemplate(dataDebit.bank);
+      setTemplate(dataDebit.template);
       setAmount(dataDebit.amount);
+      setAccount(dataDebit.account);
     }
   }, [divRef, dataDebit]);
 
@@ -114,16 +112,20 @@ function Debit() {
       ? (data = {
           amount: amount,
           upi: upi,
+          template : template,
           bank: from.name,
           transaction: transactionId,
           account: account,
+          time: Dates.currentTime(),
         })
       : (data = {
           amount: amount,
           upi: upi,
+          template : template,
           bank: template,
           transaction: transactionId,
           account: account,
+          time: Dates.currentTime(),
         });
 
     try {
@@ -253,7 +255,14 @@ function Debit() {
             <div className="screenshot" ref={divRef}>
               {loaded && (
                 <>
-                  {template === "kotak" && <Kotak amount={amount} upi={upi} />}
+                  {template === "kotak" && (
+                    <Kotak
+                      amount={amount}
+                      upi={upi}
+                      transactionId={transactionId}
+                      account={account}
+                    />
+                  )}
                   {template === "phonepe2" && (
                     <Paytm
                       amount={amount}
@@ -265,36 +274,77 @@ function Debit() {
                       account={account}
                     />
                   )}
-                  {template === "imps" && <Imps amount={amount} upi={upi} />}
+                  {template === "imps" && (
+                    <Imps amount={amount} upi={upi} account={account} />
+                  )}
                   {template === "icici" && (
                     <Icici
                       amount={amount}
                       reference={reference}
                       ifsc={IFSC}
                       upi={upi}
+                      account={account}
                     />
                   )}
                   {template === "impsblue" && (
-                    <Blue amount={amount} upi={upi} />
+                    <Blue
+                      amount={amount}
+                      upi={upi}
+                      transactionId={transactionId}
+                      account={account}
+                    />
                   )}
                   {template === "airtel" && (
-                    <Equitas amount={amount} upi={upi} />
+                    <Equitas
+                      amount={amount}
+                      upi={upi}
+                      transactionId={transactionId}
+                      account={account}
+                    />
                   )}
-                  {template === "axis" && <Axis amount={amount} upi={upi} />}
+                  {template === "axis" && (
+                    <Axis
+                      amount={amount}
+                      upi={upi}
+                      transactionId={transactionId}
+                      account={account}
+                    />
+                  )}
                   {template === "phonepe1" && (
                     <System
                       theme={theme}
                       amount={amount}
                       upi={upi}
                       from={from}
+                      account={account}
+                      transactionId={transactionId}
                     />
                   )}
                   {template === "paytm" && (
-                    <Hdfc amount={amount} upi={upi} from={from} />
+                    <Hdfc
+                      amount={amount}
+                      upi={upi}
+                      from={from}
+                      account={account}
+                      transactionId={transactionId}
+                    />
                   )}
-                  {template === "sbi" && <Sbi amount={amount} upi={upi} />}
+                  {template === "sbi" && (
+                    <Sbi
+                      amount={amount}
+                      upi={upi}
+                      account={account}
+                      transactionId={transactionId}
+                    />
+                  )}
                   {template === "sbimessage" && (
-                    <Sbi2 theme={theme} amount={amount} upi={upi} />
+                    <Sbi2
+                      theme={theme}
+                      amount={amount}
+                      upi={upi}
+                      account={account}
+                      transactionId={transactionId}
+                    />
                   )}
                   {template === "gpay" && (
                     <Indusland
@@ -302,21 +352,32 @@ function Debit() {
                       amount={amount}
                       upi={upi}
                       from={from}
+                      account={account}
+                      transactionId={transactionId}
                     />
                   )}
-                  {template === "paytm2" && (
-                    <Paytmsystem amount={amount} upi={upi} />
-                  )}
+                  {/* {template === "paytm2" && (
+                    <Paytmsystem amount={amount} upi={upi} account={account} />
+                  )} */}
                   {template === "bharat" && (
                     <Icici2
                       theme={theme}
                       amount={amount}
                       upi={upi}
                       from={from}
+                      account={account}
+                      transactionId={transactionId}
                     />
                   )}
                   {template === "phonepe3" && (
-                    <Sys theme={theme} amount={amount} upi={upi} from={from} />
+                    <Sys
+                      theme={theme}
+                      amount={amount}
+                      upi={upi}
+                      from={from}
+                      account={account}
+                      transactionId={transactionId}
+                    />
                   )}
                   {template === "samsung" && (
                     <Samsung
@@ -324,22 +385,51 @@ function Debit() {
                       amount={amount}
                       upi={upi}
                       from={from}
+                      account={account}
+                      transactionId={transactionId}
                     />
                   )}
-                  {template === "idfc" && <Idfc amount={amount} upi={upi} />}
-                  {template === "grey" && <Grey amount={amount} upi={upi} />}
-                  {template === "Fi" && <Fi amount={amount} upi={upi} />}
-
-                  {template === "redKotak" && (
-                    <RedKotak amount={amount} upi={upi} />
+                  {template === "idfc" && (
+                    <Idfc
+                      amount={amount}
+                      upi={upi}
+                      account={account}
+                      transactionId={transactionId}
+                    />
+                  )}
+                  {template === "grey" && (
+                    <Grey amount={amount} upi={upi} account={account} />
+                  )}
+                  {template === "Fi" && (
+                    <Fi
+                      amount={amount}
+                      upi={upi}
+                      account={account}
+                      transactionId={transactionId}
+                    />
                   )}
 
-                  {template === "Yes" && <Yes amount={amount} />}
+                  {template === "redKotak" && (
+                    <RedKotak
+                      amount={amount}
+                      upi={upi}
+                      account={account}
+                      transactionId={transactionId}
+                    />
+                  )}
+
+                  {template === "Yes" && (
+                    <Yes
+                      amount={amount}
+                      account={account}
+                      transactionId={transactionId}
+                    />
+                  )}
                 </>
               )}
             </div>
 
-            <div className="credit__screenshot"></div>
+            {/* <div className="credit__screenshot"></div> */}
           </div>
         </div>
       </div>

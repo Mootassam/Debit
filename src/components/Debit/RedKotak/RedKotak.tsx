@@ -45,7 +45,7 @@ function RedKotak(props) {
             <div className="kotaq__detaill __23">
               <div className="kotaq__status">Transaction ID</div>
               <div className="kotaq__successful">
-                {props.upi}{Number.gnerateRandom8Number()}
+              {props.transactionId}
               </div>
             </div>
             <div className="border__bar">
@@ -64,7 +64,7 @@ function RedKotak(props) {
                 Kotak Mahindra Bank
               </span>
               <span className="saving">
-                SAVINGS <div className="circle__grey"></div> XX{Number.generateRandom4Number()}
+                SAVINGS <div className="circle__grey"></div> XX{props.account}
               </span>
             </div>
           </div>

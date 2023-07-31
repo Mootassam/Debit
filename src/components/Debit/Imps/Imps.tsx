@@ -23,7 +23,7 @@ function Imps(props) {
             <input
               type='text'
               placeholder='303256489490'
-              value={`${props.upi}${Number.referenceKotakNumber()}`}
+              value={props.transactionId}
               className='imps__input'
             />
           </div>

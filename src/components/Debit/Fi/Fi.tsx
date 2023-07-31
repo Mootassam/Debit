@@ -50,7 +50,7 @@ export default function Fi(props) {
             FROM - {Names.generateRandomFullName()}:
           </label>
           <label htmlFor="" className="content__detail">
-            xxxxxxxxxx{Number.generateRandom4Number()}
+            xxxxxxxxxx{props.account}
           </label>
         </div>
 
@@ -68,7 +68,7 @@ export default function Fi(props) {
             IMPS TRANSACTION ID :{" "}
           </label>
           <label htmlFor="" className="content__detail">
-            {props.upi}{Number.gnerateRandom8Number()}
+            {props.transactionId}
           </label>
         </div>
 

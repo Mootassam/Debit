@@ -50,7 +50,10 @@ function Header() {
               bank Name : <b> {item.bank} </b> <br />
               Amount : <b> ₹ {item.amount} </b> <br />
               Account Number: <b>{item.account} </b> <br />
-              IMPS : <b>{item.transaction} </b>
+              IMPS : <b>{item.transaction} </b> 
+              <br />
+              Time  : {item.time}
+
             </li>
           ))}
         </ul>

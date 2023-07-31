@@ -7,7 +7,6 @@ import Left from "../../../shared/icons/Left";
 import Right from "../../../shared/right/Right";
 
 function Sys(props) {
-
   const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
 
   const CheckstatusBattery = () => {
@@ -127,11 +126,10 @@ function Sys(props) {
                 <div className="bankfrom__">
                   <div className="from__left">
                     <div className="icici__bank">
-                      {props.from.name} - {Number.debitFrom()}
+                      {props.from.name} - {props.account}
                     </div>
                     <div className="utr__id">
-                      UTR: {props.upi}
-                      {Number.phonepe2()}
+                      UTR: {props.transactionId}
                     </div>
                   </div>
                   <div className="right__amountbank">
@@ -267,11 +265,10 @@ function Sys(props) {
                 <div className="bankfrom__ ">
                   <div className="from__left white__c">
                     <div className="icici__bank white__c">
-                      {props.from.name} - {Number.debitFrom()}
+                      {props.from.name} - {props.account}
                     </div>
                     <div className="utr__id white__c">
-                      UTR: {props.upi}
-                      {Number.phonepe2()}
+                      UTR:{props.transactionId}
                     </div>
                   </div>
                   <div className="right__amountbank white__c">

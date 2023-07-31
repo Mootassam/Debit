@@ -125,7 +125,7 @@ function Paytm(props) {
                   <div className="from__detaill">
                     <div className="ac__number">
                       <div className="number__code">
-                        *******{Number.debitFrom()}
+                        *******{props.account}
                       </div>
                       <div className="amount">
                         {Currency.IndiaWithoutZero(props.amount)}
@@ -133,8 +133,7 @@ function Paytm(props) {
                     </div>
                     <div className="ac__number">
                       <div className="number__code">
-                        UTR:{props.upi}
-                        {props.transactionId}
+                        UTR:{props.transactionId}
                       </div>
                       <div>
                         <img
@@ -314,7 +313,7 @@ function Paytm(props) {
                   <div className="from__detaill black__text">
                     <div className="ac__number">
                       <div className="number__code black__text">
-                        *******{Number.debitFrom()}
+                        *******{props.account}
                       </div>
                       <div className="amount black__text">
                         {Currency.IndiaWithoutZero(props.amount)}
@@ -322,8 +321,7 @@ function Paytm(props) {
                     </div>
                     <div className="ac__number">
                       <div className="number__code black__text">
-                        UTR:{props.upi}
-                        {props.transactionId}
+                        UTR:{props.transactionId}
                       </div>
                       <div>
                         <img

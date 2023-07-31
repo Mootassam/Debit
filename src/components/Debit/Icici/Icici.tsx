@@ -22,7 +22,9 @@ function Icici(props) {
               <div>
                 <div className="detail__icici">
                   <div className="refrence">Reference ID</div>
-                  <div className="refrence">{props.upi}{Number.phonepe2()}</div>
+                  <div className="refrence">
+                  {props.transactionId}
+                  </div>
                 </div>
                 <div className="detail__icici">
                   <div className="refrence">Mode ID</div>
@@ -41,7 +43,7 @@ function Icici(props) {
                 <div className="detail__icici">
                   <div className="refrence">From Account</div>
                   <div className="refrence">
-                    XX-XX-XX-XX-XX-{Number.debit2numbere()}
+                    XX-XX-XX-XX-XX-{Number.generate2Number(props.account)}
                   </div>
                 </div>
                 <div className="detail__icici">

@@ -23,7 +23,7 @@ function Idfc(props) {
             {Names.generateRandomFullName()}
           </span>
           <span className="idfc__firstbank --3">
-            IDFC FIRST BanK ****{Number.generate5RanodmNumber()}
+            IDFC FIRST BanK ****{props.account}
           </span>
         </div>
         <div className="idfc__section __to">
@@ -50,7 +50,7 @@ function Idfc(props) {
             Transaction ID
           </label>
           <span className="idfc__date --9">
-            {props.upi}{Number.generateRanodom2Number()}
+          {props.transactionId}
           </span>
         </div>
       </div>

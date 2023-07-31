@@ -57,7 +57,7 @@ function Axis(props) {
             <img src="/axis/axislogo.png" alt="" width={29} height={24} />
           </div>
           <div>
-            <div className="axis__debit">XXXX-{Number.debitFrom()}</div>
+            <div className="axis__debit">XXXX-{props.account}</div>
             <div>SA</div>
           </div>
         </div>
@@ -82,7 +82,7 @@ function Axis(props) {
         </div>
         <div className="detail__ifsc">
           <div>RRN:</div>
-          <div>{props.upi}{Number.rrnNumberAxis()}</div>
+          <div>{props.transactionId}</div>
         </div>
         <div className="detail__ifsc">
           <div>DATE:</div>

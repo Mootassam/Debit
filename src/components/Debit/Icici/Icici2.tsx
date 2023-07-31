@@ -6,7 +6,7 @@ import Dates from "../../../utils/Dates";
 import Number from "../../../utils/Number";
 import data from "../../../data/bank";
 function Icici2(props) {
-  let item =  Number.getRandomItem(data); 
+  let item = Number.getRandomItem(data);
   return (
     <StyledWrapper>
       <div className="app__icici2">
@@ -59,7 +59,7 @@ function Icici2(props) {
                   </div>
                   <div className="icici__bank">
                     <span>{props.from.name}</span>
-                    <span>******{Number.debitFrom()}</span>
+                    <span>******{props.account}</span>
                   </div>
                 </div>
               </div>
@@ -114,9 +114,7 @@ function Icici2(props) {
                   <label htmlFor="" className="text__white">
                     Transaction ID
                   </label>
-                  <span className="text__white">
-                    31{Number.phonepe2()}
-                  </span>
+                  <span className="text__white">31{Number.phonepe2()}</span>
                 </div>
 
                 <div className="customer">
@@ -156,7 +154,7 @@ function Icici2(props) {
                   <div className="icici__bank">
                     <span className="text__white">{props.from.name}</span>
                     <span className="text__white">
-                      ******{Number.debitFrom()}
+                      ******{props.account}
                     </span>
                   </div>
                 </div>

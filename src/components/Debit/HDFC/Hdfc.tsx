@@ -84,14 +84,14 @@ function Hdfc(props) {
             {props?.from?.name}
             <img src={props?.from?.logo} alt="" width={31} height={31} />
           </div>
-          <div className="hdfc__code">A/c No. - {Number.debitFrom()}</div>
+          <div className="hdfc__code">A/c No. - {props.account}</div>
           <div className="check__balance">Check Balance</div>
         </div>
 
         <div className="detaill__payment">
           <div className="paid__date">Paid at {Dates.dateshdfc()}</div>
           <div className="paid__ref">
-            UPI Ref No: {props.upi}{Number.phonepe2()}
+            UPI Ref No: {props.transactionId}
             <span>Copy</span>
           </div>
         </div>

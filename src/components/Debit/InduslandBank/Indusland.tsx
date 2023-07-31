@@ -87,7 +87,7 @@ function Indusland(props) {
           <div className="indusland__detaill">
             <div className="detaill__transaction">
               <div className="transaction__label">UPI transaction ID</div>
-              <div className="transaction__ids">{props.upi}{Number.phonepe2()}</div>
+              <div className="transaction__ids">{props.transactionId}</div>
             </div>
 
             <div className="detaill__transaction">

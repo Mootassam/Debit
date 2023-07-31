@@ -19,8 +19,11 @@ class Number {
     return Math.floor(Math.random() * 900000000) + 100000000;
   }
 
-  static generate8randomNumer() { 
-    return Math.floor(Math.random() * 90000000) + 10000000 ;  
+  static generateRandom5Number() {
+    return Math.floor(Math.random() * 10000) + 10000;
+  }
+  static generate8randomNumer() {
+    return Math.floor(Math.random() * 90000000) + 10000000;
   }
 
   static generateRandom4Number() {
@@ -69,9 +72,7 @@ class Number {
   }
 
   static accountNumberKotak() {
-    const random = Math.floor(
-      Math.random() * 900000000000000 + 100000000000000
-    );
+    const random = Math.floor(Math.random() * 90000000000 + 10000000000);
     return random;
   }
 
@@ -81,7 +82,7 @@ class Number {
   }
 
   static Impsblue() {
-    const number = Math.floor(Math.random() * 90000000000000 + 10000000000000);
+    const number = Math.floor(Math.random() * 9000000000 + 1000000000);
     return number;
   }
 
@@ -185,6 +186,10 @@ class Number {
     let whatsApp = Math.floor(Math.random() * arr.length);
     const item = arr[whatsApp];
     return item;
+  }
+
+  static generate2Number(Number) {
+    return Number % 100;
   }
 }
 

@@ -35,7 +35,7 @@ function Equitas(props) {
         <div className="group__detaill">
           <div className="detaill__group">
             <div className="group__label">Reference No. (UTR No./RRN)</div>
-            <div className="group__text">{props.upi}{Number.referenceKotakNumber()} </div>
+            <div className="group__text">{props.transactionId} </div>
           </div>
 
           <div className="detaill__group">
@@ -56,7 +56,7 @@ function Equitas(props) {
           </div>
           <div className="detaill__group">
             <div className="group__label">Account number</div>
-            <div className="group__text">201516545879 </div>
+            <div className="group__text">{Number.generate8randomNumer()}{props.account} </div>
           </div>
           <div className="detaill__group">
             <div className="group__label">IFSC</div>

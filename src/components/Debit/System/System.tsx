@@ -72,11 +72,9 @@ function System(props) {
 
                 <div className="transaction__det">
                   <div className="transaction__house">
-                    <div className="transation__code">
-                      ****{Number.debitFrom()}
-                    </div>
+                    <div className="transation__code">****{props.account}</div>
                     <div className="transaction__utr">
-                      UTR {props.upi}{Number.phonepe0()}
+                      UTR {props.transactionId}
                     </div>
                   </div>
                   <div className="bank__amount">
@@ -183,10 +181,10 @@ function System(props) {
                 <div className="transaction__det">
                   <div className="transaction__house">
                     <div className="transation__code white__system">
-                      ****{Number.debitFrom()}
+                      ****{props.account}
                     </div>
                     <div className="transaction__utr violet__color">
-                      UTR {props.upi}{Number.phonepe0()}
+                      UTR {props.transactionId}
                     </div>
                   </div>
                   <div className="bank__amount  white__system">
