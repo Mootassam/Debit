@@ -76,13 +76,10 @@ function Debit() {
     }
   };
 
-
   useEffect(() => {
     if (divRef.current) {
       setLoaded(true);
     }
-
-
     setfrom(Number.getRandomItem(list));
     setAccount(Number.generateRandom4Number());
     const data = localStorage.getItem("upi");
@@ -91,18 +88,17 @@ function Debit() {
     } else {
       setUpi("3204");
     }
-  }, [ upi, amount, template, transactionId]);
+  }, [upi, amount, template, transactionId]);
 
   useEffect(() => {
     if (divRef.current) {
       setLoaded(true);
     }
-  
     if (dataDebit?.bank) {
       setTemplate(dataDebit.bank);
+      setAmount(dataDebit.amount);
     }
   }, [divRef, dataDebit]);
-
 
   const generate = async () => {
     let data;
