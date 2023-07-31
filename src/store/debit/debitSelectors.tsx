@@ -1,0 +1,11 @@
+import { createSelector } from "reselect";
+
+const selectGenerateSate = (state: any) => state.debit;
+export const selectDebit = createSelector(
+  selectGenerateSate,
+  (debit) => debit.debit
+);
+export const selectLoading = createSelector(
+  selectGenerateSate,
+  (loading) => loading.loading
+);
