@@ -1,4 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import Dates from "../../utils/Dates";
 
 interface DebitState {
   loading: boolean;
@@ -17,7 +18,7 @@ const debitSlice = createSlice({
   initialState,
   reducers: {
     getDebit: (state, action) => {
-      state.debit.push(action.payload);
+      state.debit = [...state.debit, action.payload];
     },
     getLoading: (state, actions) => {
       state.loading = actions.payload;
@@ -28,9 +29,18 @@ const debitSlice = createSlice({
     showDetail: (state, action) => {
       state.detaill = action.payload.data;
     },
+    debitUpdate :(state, action) => {
+      const  index  = action.payload;
+      if (index >= 0 && index < state.debit.length) {
+        const updatedItem = { ...state.debit[index], creditTime: Dates.currentTime() };
+        state.debit[index] = updatedItem;
+      }
+      
+      
+    }
   },
 });
 
-export const { getDebit, getLoading, deleteALL, showDetail } =
+export const { getDebit, getLoading, deleteALL, showDetail,debitUpdate } =
   debitSlice.actions;
 export default debitSlice.reducer;

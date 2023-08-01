@@ -13,7 +13,6 @@ import Indusland from "./InduslandBank/Indusland";
 import Icici2 from "./Icici/Icici2";
 import Icici from "./Icici/Icici";
 import Sbi2 from "./Sbi2/Sbi2";
-import Paytmsystem from "./paytm/Paytmsystem";
 import Sys from "./Sys/Sys";
 import Names from "../../utils/Names";
 import CheckTheme from "../../utils/CheckTheme";
@@ -37,6 +36,8 @@ import list from "../../data/bank";
 import { useSelector } from "react-redux";
 import { debitDetaill } from "../../store/debit/debitSelectors";
 import Dates from "../../utils/Dates";
+import creditICIC from "../Credit/ICICI/CreditIcici";
+import CreditIcici from "../Credit/ICICI/CreditIcici";
 
 function Debit() {
   const dispatch = useDispatch<ThunkDispatch<any, any, any>>();
@@ -78,7 +79,6 @@ function Debit() {
       setLoaded(true);
     }
     setfrom(Number.getRandomItem(list));
-
     const data = localStorage.getItem("upi");
     if (data !== null) {
       setUpi(data);
@@ -95,7 +95,7 @@ function Debit() {
       setTemplate(dataDebit.template);
       setAmount(dataDebit.amount);
       setAccount(dataDebit.account);
-      setTransaction(dataDebit.transaction)
+      setTransaction(dataDebit.transaction);
     }
   }, [divRef, dataDebit]);
 
@@ -118,6 +118,7 @@ function Debit() {
           transaction: transactionId,
           account: account,
           time: Dates.currentTime(),
+          creditTime : ""
         })
       : (data = {
           amount: amount,
@@ -127,6 +128,7 @@ function Debit() {
           transaction: transactionId,
           account: account,
           time: Dates.currentTime(),
+          creditTime : ""
         });
 
     try {
@@ -135,6 +137,8 @@ function Debit() {
       console.log(error);
     }
   };
+
+ 
 
   function handleCaptureScreenshot() {
     if (divRef.current) {
@@ -164,7 +168,7 @@ function Debit() {
   return (
     <div className="app">
       <div className="app__header">
-        <Header />
+        <Header template={template} />
       </div>
       <div className="app__content">
         <div className="app__sidebar">
@@ -235,9 +239,6 @@ function Debit() {
               <span>Generate Debit</span>
             </button>
 
-            <button className="generate__credit">
-              <span>Generate Credit</span>
-            </button>
             <button className="generate" onClick={handleCaptureScreenshot}>
               <img src="/sidebar/screenshot.png" alt="" width={40} />
             </button>
@@ -357,9 +358,7 @@ function Debit() {
                       transactionId={transactionId}
                     />
                   )}
-                  {/* {template === "paytm2" && (
-                    <Paytmsystem amount={amount} upi={upi} account={account} />
-                  )} */}
+
                   {template === "bharat" && (
                     <Icici2
                       theme={theme}
@@ -430,7 +429,13 @@ function Debit() {
               )}
             </div>
 
-            {/* <div className="credit__screenshot"></div> */}
+            <div className="credit__screenshot">
+              <CreditIcici
+                amount={amount}
+                account={account}
+                transactionId={transactionId}
+              />
+            </div>
           </div>
         </div>
       </div>

@@ -292,4 +292,48 @@ button {
   background-color: #4f4d4b;
   width: 358px;
   height: 800px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+
+.small__message {
+  background-color: #000;
+  width: 100%;
+  border-radius: 12px;
+  height: auto;
+  color: white;
+  padding: 10px;
+}
+
+.credit__bottom {
+  width: 100%;
+  background-color: #000;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+}
+
+.bottom__credit {
+  background-color: #27485d;
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+}
+
+.screenshot__message {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+.screenshot__time{ 
+  margin: auto;
+  color: white;
+  font-weight: bold;
 }

@@ -5,6 +5,6 @@ import preact from '@preact/preset-vite'
 export default defineConfig({
   plugins: [preact()],
   server:{ 
-    host : "192.168.3.160",
+    host : "192.168.0.84",
   }
 })

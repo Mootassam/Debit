@@ -2,7 +2,6 @@ import moment from "moment";
 
 class Dates {
   static dateKotak(time) {
-    console.log(time, "time");
     if (time) {
     }
 

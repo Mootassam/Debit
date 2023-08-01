@@ -3,10 +3,16 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { debitDetaill, selectDebit } from "./../store/debit/debitSelectors";
 import { useDispatch } from "react-redux/es/exports";
-import { deleteDebit, editDebit } from "../store/debit/debitActions";
+import {
+  deleteDebit,
+  editDebit,
+  saveDebit,
+  updateDebit,
+} from "../store/debit/debitActions";
 import { ThunkDispatch } from "@reduxjs/toolkit";
+import Dates from "../utils/Dates";
 
-function Header() {
+function Header(props) {
   const dispatch = useDispatch<ThunkDispatch<any, any, any>>();
   const debitData = useSelector(selectDebit);
 
@@ -14,10 +20,14 @@ function Header() {
     await dispatch(deleteDebit());
   };
 
-  const showDetaill = (data, index) => {
-    dispatch(editDebit({ data, index }));
+  const showDetaill = async (data, index) => {
+    try {
+      await dispatch(editDebit({ data, index }));
+      await dispatch(updateDebit(index));
+    } catch (error) {
+      console.log(error);
+    }
   };
-
 
   return (
     <>
@@ -50,10 +60,11 @@ function Header() {
               bank Name : <b> {item.bank} </b> <br />
               Amount : <b> ₹ {item.amount} </b> <br />
               Account Number: <b>{item.account} </b> <br />
-              IMPS : <b>{item.transaction} </b> 
+              IMPS : <b>{item.transaction} </b>
               <br />
-              Time  : {item.time}
-
+              Time : {item.time}
+              <br />
+              CreditTime :{item.creditTime}
             </li>
           ))}
         </ul>
