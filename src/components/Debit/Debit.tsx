@@ -453,13 +453,13 @@ function Debit() {
               )}
             </div>
 
-            <div className="credit__screenshot" ref={creditRef}>
+            {/* <div className="credit__screenshot" ref={creditRef}>
               <CreditIcici
                 amount={amount}
                 account={account}
                 transactionId={transactionId}
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
