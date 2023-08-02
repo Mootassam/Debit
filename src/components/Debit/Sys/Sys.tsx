@@ -3,7 +3,6 @@ import Number from "../../../utils/Number";
 import Dates from "../../../utils/Dates";
 import Currency from "../../../utils/Currency";
 import Left from "../../../shared/icons/Left";
-import Right from "../../../shared/right/Right";
 import { BiWifi } from "react-icons/bi";
 
 function Sys(props) {
