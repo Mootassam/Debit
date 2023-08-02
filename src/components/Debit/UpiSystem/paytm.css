@@ -41,11 +41,11 @@
   line-height: 8px;
   letter-spacing: 0.015em;
   color: #ffffff;
-  
+
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
-  transform: translateX(-50%)
+  transform: translateX(-50%);
 }
 .bar__tran {
   width: 312.13px;
@@ -55,7 +55,7 @@
 
 .data2__ {
   display: flex;
-  gap: 2px;
+  gap: 1.5px;
   align-items: flex-end;
 }
 .data2__ > div {
@@ -139,7 +139,7 @@
   gap: 33px;
   align-items: center;
 }
-.paymt__transaction  >img { 
+.paymt__transaction > img {
   object-fit: contain;
 }
 
@@ -465,4 +465,12 @@
   width: 312.13px;
   height: 0px;
   border: 1px solid #f7f7f7;
+}
+
+.paytm__g {
+  margin-right: -2px;
+}
+
+.biwifi {
+  margin-right: -2px;
 }

@@ -4,6 +4,7 @@ import Dates from "../../../utils/Dates";
 import Number from "../../../utils/Number";
 import Right from "../../../shared/right/Right";
 import Left from "../../../shared/icons/Left";
+import { BiWifi } from 'react-icons/bi';
 
 function Paytm(props) {
   const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
@@ -206,7 +207,9 @@ function Paytm(props) {
               {Dates.currentTime2()} <Left />
             </div>
             <div className="battery__2">
-              <Right />
+          
+<BiWifi className="biwifi" />
+              <img src="/paytm/4g.png" alt="" className="paytm__g"  width={9}/>
               <div className="data2__">
                 <div className="data__1"></div>
                 <div className="data__2"></div>
