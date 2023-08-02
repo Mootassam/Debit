@@ -10,7 +10,7 @@ import {
   updateDebit,
 } from "../store/debit/debitActions";
 import { ThunkDispatch } from "@reduxjs/toolkit";
-import Dates from "../utils/Dates";
+
 
 function Header(props) {
   const dispatch = useDispatch<ThunkDispatch<any, any, any>>();
@@ -43,7 +43,7 @@ function Header(props) {
       </div> */}
         <label></label>
 
-        <label className="credit__time" onClick={() => clearAll()}>
+        <label className="clear__all" onClick={() => clearAll()}>
           Clear All : <span className="credit__number">{debitData.length}</span>
         </label>
       </div>

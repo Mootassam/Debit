@@ -8,45 +8,31 @@ const optionAmouts = [
     value: "5000",
   },
   {
-    label: "9000",
-    value: "9000",
+    label: "8000",
+    value: "8000",
   },
   {
-    label: "15000",
-    value: "15000",
+    label: "12500",
+    value: "12500",
   },
   {
-    label: "30000",
-    value: "30000",
+    label: "28500",
+    value: "28500",
   },
   {
-    label: "40000",
-    value: "40000",
+    label: "38500",
+    value: "38500",
   },
   {
-    label: "59000",
-    value: "59000",
+    label: "68500",
+    value: "68500",
   },
   {
-    label: "69000",
-    value: "69000",
+    label: "125000",
+    value: "125000",
   },
-  {
-    label: "89000",
-    value: "89000",
-  },
-  {
-    label: "99000",
-    value: "99000",
-  },
-  {
-    label: "105000",
-    value: "105000",
-  },
-  {
-    label: "155000",
-    value: "155000",
-  },
+
+
   {
     label: "185000",
     value: "185000",

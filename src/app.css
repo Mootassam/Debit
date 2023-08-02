@@ -197,18 +197,6 @@ form {
   padding: 10px 20px;
 }
 
-.credit__time {
-  background-color: rgb(153, 43, 43);
-  cursor: pointer;
-  color: white;
-  padding: 3px 18px;
-  margin-right: 30px;
-}
-
-.credit__number {
-  color: white;
-  font-weight: bold;
-}
 
 .header__sidebar {
   width: 250px;
@@ -246,18 +234,6 @@ li {
   background-color: #ff9933;
 }
 
-.clear__all {
-  background-color: red;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  padding: 10px;
-  position: relative;
-  cursor: pointer;
-  bottom: 0;
-  top: 30px;
-}
 
 .save__debit {
   background-color: #27485d;
@@ -308,13 +284,7 @@ button {
   padding: 10px;
 }
 
-.credit__bottom {
-  width: 100%;
-  background-color: #000;
-  height: 30px;
-  position: absolute;
-  bottom: 0;
-}
+
 
 .bottom__credit {
   background-color: #27485d;
@@ -336,4 +306,13 @@ button {
   margin: auto;
   color: white;
   font-weight: bold;
+}
+
+.clear__all{ 
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: rgb(219, 80, 80);
+  padding:  3px  20px;
+  margin-right: 25px;
 }

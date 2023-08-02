@@ -3,31 +3,126 @@ import { useDispatch } from "react-redux";
 import { ThunkDispatch } from "@reduxjs/toolkit";
 import { useSelector } from "react-redux";
 import { debitDetaill } from "../../../store/debit/debitSelectors";
-
+import "./credit.css";
+import Dates from "../../../utils/Dates";
+import { RiWifiLine } from "react-icons/ri";
 function CreditIcici(props) {
   const dispatch = useDispatch<ThunkDispatch<any, any, any>>();
   const dataDebit = useSelector(debitDetaill);
   useEffect(() => {}, [dataDebit]);
+  const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
 
   return (
-    <div>
-      <div className="screenshot__message">
-        <span className="screenshot__time">{dataDebit.time}</span>
-        <div className="small__message">
-          ICICI Bank Acc XX{dataDebit.account} debitedwith INR{" "}
-          {dataDebit.amount} on 02-Feb-23.Info:BIL*NEFT*0005.Avl Bal is INR
-          11,637.35.For dispute Call 18002662 or SMS BLOCK 464to 9215676766
+    <div className="app__credit">
+      <div className="credit__time ">
+        <div>
+          <span className="credited__time">{Dates.currentTime()}</span>
         </div>
-        <span className="screenshot__time">{dataDebit.creditTime}</span>
-        <div className="small__message">
-          Dear Customer, Your a/c no. XXXXXXXX{dataDebit.account} iscredited by
-          Rs.{dataDebit.amount} on30-07-23 by a/c linked tomobile
-          OXXXXXX000-LUARTECHNOLOGIES (IMPS Ref no{dataDebit.transaction}).If
-          not done byyou, call 1800111109. -SBI
+        <div className="sbi__right">
+              <RiWifiLine />
+              <div className="cnx">
+                <label htmlFor="">R</label>
+                <div className="cnx__">
+                  <div className="cnx1__"></div>
+                  <div className="cnx2__"></div>
+                  <div className="cnx3__"></div>
+                  <div className="cnx4__"></div>
+                </div>
+              </div>
+              <div className="cnx nodata">
+                <label htmlFor="">X</label>
+                <div className="cnx__">
+                  <div className="cnx1__ gray"></div>
+                  <div className="cnx2__ gray"></div>
+                  <div className="cnx3__ gray"></div>
+                  <div className="cnx4__ gray"></div>
+                </div>
+              </div>
+
+              <div className="right__battery">
+                <div
+                  className="bar__level"
+                  style={{
+                    width: `${limit}%`,
+                  }}
+                >
+                  {" "}
+                </div>
+              </div>
+              <div className="right__bar"></div>
+            </div>
+      </div>
+
+      <div className="credit__subheader">
+        <div className="credit__left">
+          <img src="/Credit/ICICI/back.png" alt="" width={15} />
+          <div className="msg__cirlce"></div>
+          <span className="msg__bank">VD-FEDBNK</span>
+        </div>
+        <div className="sub__right">
+          <div className="circle1"></div>
+          <div className="circle1"></div>
+          <div className="circle1"></div>
         </div>
       </div>
 
-      <div className="bottom__credit"></div>
+      <div className="credit_message">
+        <div className="credit__detaill">
+          <span className="detaill__date">Monday 14:58</span>
+
+          <div className="transaction__credit">
+            <span className="trasanction__title">
+              Transaction
+              <div className="circle__little"></div>
+              <label className="change__category">Change category</label>
+            </span>
+            <div className="message__credit">
+              <span className="__message">
+                Rs 50.00 debited from <br /> your A/c using UPI on <br />{" "}
+                17-04-2023 14:58:28 to VPA Q905387393@ybl - (UPI Ref No
+                347323569150)-Federal Bank
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div className="credit__detaill">
+          <span className="detaill__date">14:58</span>
+
+          <div className="transaction__credit">
+            <span className="trasanction__title">
+              Transaction
+              <div className="circle__little"></div>
+              <label className="change__category">Change category</label>
+            </span>
+            <div className="message__credit">
+              <span className="__message">
+                Your a/c no. <br />
+                XXXXXXXXXX8031 is <br />
+                debited for Rs.5000.00 <br />
+                on 19-04-2023 and a/ <br />
+                c XXXXXXXXXXXX371 <br />
+                credited (IMPS Ref no. <br />
+                310911789131) -Federal <br />
+                Bank
+              </span>
+            </div>
+            <div className="message__status">
+              <span className="status__time">11:04 </span>
+              <span className="satus__circle"></span>
+              <span className="status__sim">Idea </span>
+            </div>
+          </div>
+        </div>
+
+        <div className="credit__bottom">
+          <div className="cant__reply">
+            <span className="reply__left">Can’t reply to this short code</span>
+            <span className="reply__right">Learn more</span>
+          </div>
+          <div className="bottom__border"></div>
+        </div>
+      </div>
     </div>
   );
 }

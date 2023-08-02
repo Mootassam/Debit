@@ -44,6 +44,7 @@ function Debit() {
   const [amount, setAmount] = useState(2000);
   const [IFSC, setIFSC] = useState<any | null>(null);
   const divRef = useRef<HTMLDivElement>(null);
+  const creditRef = useRef<HTMLDivElement>(null);
   const [template, setTemplate] = useState("Fi");
   const [reference, setReference] = useState<any | null>(null);
   const [utr, setutr] = useState<any | null>(null);
@@ -118,7 +119,7 @@ function Debit() {
           transaction: transactionId,
           account: account,
           time: Dates.currentTime(),
-          creditTime : ""
+          creditTime: "",
         })
       : (data = {
           amount: amount,
@@ -128,7 +129,7 @@ function Debit() {
           transaction: transactionId,
           account: account,
           time: Dates.currentTime(),
-          creditTime : ""
+          creditTime: "",
         });
 
     try {
@@ -137,8 +138,6 @@ function Debit() {
       console.log(error);
     }
   };
-
- 
 
   function handleCaptureScreenshot() {
     if (divRef.current) {
@@ -165,10 +164,35 @@ function Debit() {
     }
   }
 
+  function creditScreenshot () { 
+    if (creditRef.current) {
+      html2canvas(creditRef.current, {
+        scale: 2,
+        useCORS: true,
+        allowTaint: true,
+      }).then((canvas) => {
+        canvas.toBlob((blob) => {
+          if (blob !== null) {
+            const item = new ClipboardItem({ "image/png": blob });
+            navigator.clipboard
+              .write([item])
+              .then(() => {
+                console.log("Screenshot copied to clipboard");
+              })
+              .catch((error) => {
+                console.error("Error copying screenshot to clipboard:", error);
+              });
+          }
+        }, "image/png");
+        setAmount(amount);
+      });
+    }
+  }
+
   return (
     <div className="app">
       <div className="app__header">
-        <Header template={template} />
+        <Header />
       </div>
       <div className="app__content">
         <div className="app__sidebar">
@@ -247,7 +271,7 @@ function Debit() {
           <div className="form__translate">
             <label htmlFor=""> Credit Tools </label>
             <div className="translate__">
-              <img src="/sidebar/usa.png" alt="" width={80} />
+              <img src="/sidebar/usa.png" alt="" width={80} onClick={()=> creditScreenshot()} />
               <img src="/sidebar/chinese.webp" alt="" width={80} />
             </div>
           </div>
@@ -429,7 +453,7 @@ function Debit() {
               )}
             </div>
 
-            <div className="credit__screenshot">
+            <div className="credit__screenshot" ref={creditRef}>
               <CreditIcici
                 amount={amount}
                 account={account}
@@ -440,7 +464,7 @@ function Debit() {
         </div>
       </div>
 
-      {/* <CreditBar /> */}
+
     </div>
   );
 }
