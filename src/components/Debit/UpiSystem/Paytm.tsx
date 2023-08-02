@@ -6,7 +6,6 @@ import Right from "../../../shared/right/Right";
 import Left from "../../../shared/icons/Left";
 
 function Paytm(props) {
-
   const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
 
   const CheckstatusBattery = () => {
@@ -26,9 +25,6 @@ function Paytm(props) {
 
     return background;
   };
-  
-
-
 
   return (
     <div className="system__app">
@@ -120,9 +116,7 @@ function Paytm(props) {
 
                   <div className="from__detaill">
                     <div className="ac__number">
-                      <div className="number__code">
-                        *******{props.account}
-                      </div>
+                      <div className="number__code">*******{props.account}</div>
                       <div className="amount">
                         {Currency.IndiaWithoutZero(props.amount)}
                       </div>
@@ -158,13 +152,11 @@ function Paytm(props) {
                       height={36}
                     />
 
-                    <label htmlFor="">Send again</label>
+                    <label htmlFor="">View History</label>
                   </div>
-
                   <div>
                     <img src="/paytm/share.png" alt="" width={36} height={36} />
-
-                    <label htmlFor="">Send again</label>
+                    <label htmlFor="">Share Receipt</label>
                   </div>
                 </div>
               </div>
@@ -351,7 +343,7 @@ function Paytm(props) {
                       height={36}
                     />
 
-                    <label htmlFor="">Send again</label>
+                    <label htmlFor="">View History</label>
                   </div>
 
                   <div>
@@ -362,7 +354,7 @@ function Paytm(props) {
                       height={36}
                     />
 
-                    <label htmlFor="">Send again</label>
+                    <label htmlFor="">Share Receipt</label>
                   </div>
                 </div>
               </div>

@@ -96,13 +96,13 @@ function Paytm() {
                 <div>
                   <img src="/paytm/history.png" alt="" width={36} height={36} />
 
-                  <label htmlFor="">Send again</label>
+                  <label htmlFor="">View History</label>
                 </div>
 
                 <div>
                   <img src="/paytm/share.png" alt="" width={36} height={36} />
 
-                  <label htmlFor="">Send again</label>
+                  <label htmlFor="">Share Receipt</label>
                 </div>
               </div>
             </div>
@@ -257,7 +257,7 @@ function Paytm() {
                     height={36}
                   />
 
-                  <label htmlFor="">Send again</label>
+                  <label htmlFor="">View again</label>
                 </div>
 
                 <div>
@@ -268,7 +268,7 @@ function Paytm() {
                     height={36}
                   />
 
-                  <label htmlFor="">Send again</label>
+                  <label htmlFor="">Sahre again</label>
                 </div>
               </div>
             </div>
