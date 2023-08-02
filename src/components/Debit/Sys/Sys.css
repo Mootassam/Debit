@@ -13,40 +13,36 @@
 }
 .data__ {
   display: flex;
-  gap: 1px;
+  gap: 1.2px;
   align-items: flex-end;
 }
 .data__ > div {
-  width: 4px;
+  width: 2.8px;
   align-items: baseline;
 }
 
 .data__ > div:nth-child(1) {
-  width: 4px;
-  height: 4px;
+  height: 3px;
   background-color: #ffff;
 }
 
 .data__ > div:nth-child(2) {
-  width: 4px;
   height: 6px;
   background-color: #ffff;
 }
 .data__ > div:nth-child(3) {
-  height: 8px;
-  width: 4px;
+  height: 9px;
   background: rgba(197, 197, 197, 0.7);
   background-color: #ffff;
 }
 
 .data__ > div:nth-child(4) {
-  height: 10px;
-  width: 4px;
+  height: 12px;
   background: rgba(197, 197, 197, 0.7);
 }
 .sysheader__battery {
   display: flex;
-  gap: 5px;
+  gap: 3.4px;
   align-items: center;
   color: #fff;
   max-height: 19px;
@@ -56,7 +52,7 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  font-size: 10px;
+  font-size: 11.3px;
   line-height: 12px;
   /* identical to box height */
   letter-spacing: -0.03em;
@@ -514,4 +510,9 @@
   display: grid;
   place-content: center;
   place-items: center;
+}
+
+.wifibi {
+  font-size: 18px;
+  margin-right: -2px;
 }

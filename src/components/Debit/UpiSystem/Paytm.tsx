@@ -2,7 +2,6 @@ import "./paytm.css";
 import Currency from "../../../utils/Currency";
 import Dates from "../../../utils/Dates";
 import Number from "../../../utils/Number";
-import Right from "../../../shared/right/Right";
 import Left from "../../../shared/icons/Left";
 import { BiWifi } from "react-icons/bi";
 

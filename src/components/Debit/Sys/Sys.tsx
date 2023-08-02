@@ -4,6 +4,7 @@ import Dates from "../../../utils/Dates";
 import Currency from "../../../utils/Currency";
 import Left from "../../../shared/icons/Left";
 import Right from "../../../shared/right/Right";
+import { BiWifi } from "react-icons/bi";
 
 function Sys(props) {
   const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
@@ -37,7 +38,7 @@ function Sys(props) {
                 <Left />
               </div>
               <div className="sysheader__battery">
-                <Right />
+              <BiWifi className="wifibi"  />
                 <div className="data__">
                   <div></div>
                   <div></div>
@@ -127,9 +128,7 @@ function Sys(props) {
                     <div className="icici__bank">
                       {props.from.name} - {props.account}
                     </div>
-                    <div className="utr__id">
-                      UTR: {props.transactionId}
-                    </div>
+                    <div className="utr__id">UTR: {props.transactionId}</div>
                   </div>
                   <div className="right__amountbank">
                     {Currency.IndiaWithoutZero(props.amount)}
@@ -172,7 +171,7 @@ function Sys(props) {
               </div>
 
               <div className="sysheader__battery">
-                <Right />
+                <BiWifi className="wifibi"  />
                 <div className="data__">
                   <div></div>
                   <div></div>
