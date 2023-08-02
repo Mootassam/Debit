@@ -1,12 +1,9 @@
-import React from "react";
 import StyledWrapper from "./Styled";
 import Currency from "../../../utils/Currency";
 import Names from "../../../utils/Names";
 import Dates from "../../../utils/Dates";
 import Number from "../../../utils/Number";
-import data from "../../../data/bank";
 function Icici2(props) {
-  let item = Number.getRandomItem(data);
   return (
     <StyledWrapper>
       <div className="app__icici2">

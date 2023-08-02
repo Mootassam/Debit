@@ -1,4 +1,3 @@
-import React from "react";
 import "./icici.css";
 import Currency from "../../../utils/Currency";
 import Number from "../../../utils/Number";

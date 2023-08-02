@@ -1,7 +1,5 @@
-import React from "react";
 import "./fi.css";
 import { RxInfoCircled } from "react-icons/rx";
-import Number from "../../../utils/Number";
 import Dates from "../../../utils/Dates";
 import Names from "../../../utils/Names";
 import Currency from "../../../utils/Currency";

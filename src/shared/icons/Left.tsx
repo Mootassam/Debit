@@ -1,12 +1,12 @@
-import React from "react";
+// import React from "react";
 import whatsApp from "./whatsApp";
 import telegram from "./Telegram";
-import alarm from "./Alarm";
+// import alarm from "./Alarm";
 import instagram from "./Instagram";
 import Message from "./Message";
 import facebook from "./Facebook";
 import ExtractItem from "../../utils/ExtractItem";
-import gmail from "./Gmail";
+// import gmail from "./Gmail";
 import twitter from "./Twitter";
 
 function Left() {

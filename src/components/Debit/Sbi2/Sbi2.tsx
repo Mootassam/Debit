@@ -2,7 +2,6 @@ import "./Sbi.css";
 import Dates from "../../../utils/Dates";
 import Number from "../../../utils/Number";
 import Currency from "../../../utils/Currency";
-import Right from "../../../shared/right/Right";
 import { RiWifiLine } from "react-icons/ri";
 
 function Sbi2(props) {

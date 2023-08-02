@@ -8,7 +8,6 @@ class Dates {
     var currentDate = moment();
     let dateString = currentDate.format("DD MMM YYYY-hh:mm A");
     if (time) {
-      let dateString = currentDate.format("DD MMM YYYY-hh:mm A");
     }
 
     return dateString;

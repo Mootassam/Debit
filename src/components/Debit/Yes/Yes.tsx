@@ -1,4 +1,3 @@
-import React from "react";
 import "./yes.css";
 import Currency from "../../../utils/Currency";
 import Dates from "../../../utils/Dates";

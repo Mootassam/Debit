@@ -1,13 +1,10 @@
-import React, { useEffect } from "react";
-import { useDispatch } from "react-redux";
-import { ThunkDispatch } from "@reduxjs/toolkit";
+import  { useEffect } from "react";
 import { useSelector } from "react-redux";
 import { debitDetaill } from "../../../store/debit/debitSelectors";
 import "./credit.css";
 import Dates from "../../../utils/Dates";
 import { RiWifiLine } from "react-icons/ri";
-function CreditIcici(props) {
-  const dispatch = useDispatch<ThunkDispatch<any, any, any>>();
+function CreditIcici() {
   const dataDebit = useSelector(debitDetaill);
   useEffect(() => {}, [dataDebit]);
   const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;

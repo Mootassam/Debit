@@ -1,18 +1,17 @@
-import React from "react";
 
 import { useSelector } from "react-redux";
-import { debitDetaill, selectDebit } from "./../store/debit/debitSelectors";
+import {  selectDebit } from "./../store/debit/debitSelectors";
 import { useDispatch } from "react-redux/es/exports";
 import {
   deleteDebit,
   editDebit,
-  saveDebit,
+
   updateDebit,
 } from "../store/debit/debitActions";
 import { ThunkDispatch } from "@reduxjs/toolkit";
 
 
-function Header(props) {
+function Header() {
   const dispatch = useDispatch<ThunkDispatch<any, any, any>>();
   const debitData = useSelector(selectDebit);
 

@@ -1,15 +1,11 @@
-import React from "react";
 import "./Sbi.css";
 import Currency from "../../../utils/Currency";
 import Number from "../../../utils/Number";
-
-import data from "../../../data/bank";
 import Left from "../../../shared/icons/Left";
 import { ImAlarm } from "react-icons/im";
 import Dates from "../../../utils/Dates";
 import { RiWifiLine } from "react-icons/ri";
 function Sbi(props) {
-  let item = Number.getRandomItem(data);
 
   const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
 

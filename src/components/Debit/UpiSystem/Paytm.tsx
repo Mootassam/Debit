@@ -1,15 +1,11 @@
-import React from "react";
 import "./paytm.css";
 import Currency from "../../../utils/Currency";
 import Dates from "../../../utils/Dates";
 import Number from "../../../utils/Number";
-import data from "../../../data/bank";
 import Right from "../../../shared/right/Right";
 import Left from "../../../shared/icons/Left";
-import { useEffect } from "preact/hooks";
 
 function Paytm(props) {
-  let item = Number.getRandomItem(data);
 
   const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
 

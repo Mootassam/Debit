@@ -1,4 +1,3 @@
-import React from "react";
 import "./Equitas.css";
 import Number from "../../../utils/Number";
 import Currency from "../../../utils/Currency";

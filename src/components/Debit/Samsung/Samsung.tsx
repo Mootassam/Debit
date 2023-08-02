@@ -1,11 +1,8 @@
 import "./Samsung.css";
 import Dates from "../../../utils/Dates";
-import Number from "../../../utils/Number";
 import Names from "../../../utils/Names";
-import data from "../../../data/bank";
 
 function Samsung(props) {
-  let item = Number.getRandomItem(data);
 
   return (
     <div className="app__samsung">

@@ -1,4 +1,3 @@
-import React from "react";
 import Currency from "../../../utils/Currency";
 
 function KotakCredit(props) {

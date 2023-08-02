@@ -36,8 +36,8 @@ import list from "../../data/bank";
 import { useSelector } from "react-redux";
 import { debitDetaill } from "../../store/debit/debitSelectors";
 import Dates from "../../utils/Dates";
-import creditICIC from "../Credit/ICICI/CreditIcici";
-import CreditIcici from "../Credit/ICICI/CreditIcici";
+// import creditICIC from "../Credit/ICICI/CreditIcici";
+// import CreditIcici from "../Credit/ICICI/CreditIcici";
 
 function Debit() {
   const dispatch = useDispatch<ThunkDispatch<any, any, any>>();

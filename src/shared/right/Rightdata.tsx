@@ -1,6 +1,6 @@
-import React from "react";
+// import React from "react";
 import "../styles/style.css";
-import Right from "./Right";
+// import Right from "./Right";
 import { RiWifiLine } from "react-icons/ri";
 function Rightdata() {
   const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;

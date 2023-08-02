@@ -1,9 +1,7 @@
-import React from "react";
 import "./idfcg.css";
 import Currency from "../../../utils/Currency";
 import Number from "../../../utils/Number";
 import Names from "../../../utils/Names";
-import Idfc from './../Idfc/Idfc';
 import Dates from "../../../utils/Dates";
 function Grey(props) {
   return (

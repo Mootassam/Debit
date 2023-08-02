@@ -1,7 +1,5 @@
-import React from "react";
 import "./idfc.css";
 import Currency from "../../../utils/Currency";
-import Number from "../../../utils/Number";
 import Dates from "../../../utils/Dates";
 import Names from "../../../utils/Names";
 function Idfc(props) {

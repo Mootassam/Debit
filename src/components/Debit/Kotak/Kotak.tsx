@@ -1,4 +1,3 @@
-import React from "react";
 import Dates from "../../../utils/Dates";
 import Currency from "../../../utils/Currency";
 import "./Kotak.css";

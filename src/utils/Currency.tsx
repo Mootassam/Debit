@@ -52,7 +52,6 @@ class Currency {
     return formattedNumber;
   }
 
-  static impsCurrency(number) {}
 }
 
 export default Currency;

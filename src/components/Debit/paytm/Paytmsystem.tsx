@@ -1,6 +1,5 @@
-import React from "react";
 import "./paytmsystem.css";
-function Paytmsystem(porps) {
+function Paytmsystem() {
   return (
     <div className="paytm__system">
       <div className="paytmsystem__logo">
