@@ -35,7 +35,6 @@ class Dates {
   }
 
   static phonePe3() {
-    const currentDate = moment().format("");
   }
 
   static dateBlue() {

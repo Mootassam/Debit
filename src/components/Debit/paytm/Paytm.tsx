@@ -1,10 +1,8 @@
-import React from "react";
 import "./paytm.css";
-import Currency from "../../../utils/Currency";
-import Dates from "src/utils/Dates";
-import Number from './../../utils/Number';
+import Dates from "../../../utils/Dates";
+import Number from '../../../utils/Number';
 
-function Paytm(props) {
+function Paytm() {
   return (
     <div className="system__app">
       <div className="app__paytm">

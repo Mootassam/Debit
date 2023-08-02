@@ -1,4 +1,3 @@
-import React from "react";
 import "./Axis.css";
 import Number from "../../../utils/Number";
 import Dates from "../../../utils/Dates";
