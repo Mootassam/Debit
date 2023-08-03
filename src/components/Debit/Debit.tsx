@@ -301,7 +301,7 @@ function Debit() {
                     />
                   )}
                   {template === "imps" && (
-                    <Imps amount={amount} upi={upi} account={account} />
+                    <Imps amount={amount} upi={upi} account={account}   transactionId={transactionId} />
                   )}
                   {template === "icici" && (
                     <Icici
@@ -310,6 +310,7 @@ function Debit() {
                       ifsc={IFSC}
                       upi={upi}
                       account={account}
+                      transactionId={transactionId}
                     />
                   )}
                   {template === "impsblue" && (
