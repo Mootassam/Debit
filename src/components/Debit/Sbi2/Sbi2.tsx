@@ -177,7 +177,7 @@ function Sbi2(props) {
                   transfer to AKASH K Ref No
                   <span className="message__underline white__text">
                     {" "}
-                    {Number.rrnNumberAxis()}.{" "}
+                    {props.transactionId}
                   </span>{" "}
                   If not done by u, fwd this SMS to 9223008333/Call
                   <span className="message__underline white__text">
