@@ -164,7 +164,7 @@ function Debit() {
     }
   }
 
-  function creditScreenshot () { 
+  function creditScreenshot() {
     if (creditRef.current) {
       html2canvas(creditRef.current, {
         scale: 2,
@@ -271,7 +271,12 @@ function Debit() {
           <div className="form__translate">
             <label htmlFor=""> Credit Tools </label>
             <div className="translate__">
-              <img src="/sidebar/usa.png" alt="" width={80} onClick={()=> creditScreenshot()} />
+              <img
+                src="/sidebar/usa.png"
+                alt=""
+                width={80}
+                onClick={() => creditScreenshot()}
+              />
               <img src="/sidebar/chinese.webp" alt="" width={80} />
             </div>
           </div>
@@ -301,7 +306,12 @@ function Debit() {
                     />
                   )}
                   {template === "imps" && (
-                    <Imps amount={amount} upi={upi} account={account}   transactionId={transactionId} />
+                    <Imps
+                      amount={amount}
+                      upi={upi}
+                      account={account}
+                      transactionId={transactionId}
+                    />
                   )}
                   {template === "icici" && (
                     <Icici
@@ -423,7 +433,12 @@ function Debit() {
                     />
                   )}
                   {template === "grey" && (
-                    <Grey amount={amount} upi={upi} account={account} />
+                    <Grey
+                      amount={amount}
+                      upi={upi}
+                      account={account}
+                      transactionId={transactionId}
+                    />
                   )}
                   {template === "Fi" && (
                     <Fi
@@ -464,8 +479,6 @@ function Debit() {
           </div>
         </div>
       </div>
-
-
     </div>
   );
 }
