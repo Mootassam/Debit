@@ -3,6 +3,23 @@ import Currency from "../../../utils/Currency";
 import Number from "../../../utils/Number";
 import Dates from "../../../utils/Dates";
 function Icici(props) {
+
+  const random6Number = () => { 
+    return Math.floor( Math.random() *  100000) + 100000
+
+
+  }
+  const generateRandomString = () => {
+    const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    const randomIndex1 = Math.floor(Math.random() * alphabet.length);
+    const randomIndex2 = Math.floor(Math.random() * alphabet.length);
+
+    const randomChar1 = alphabet[randomIndex1];
+    const randomChar2 = alphabet[randomIndex2];
+
+    const randomString = randomChar1 + randomChar2;
+return randomString
+  };
   return (
     <div className="app__icici">
       <div className="icici__header">
@@ -22,7 +39,7 @@ function Icici(props) {
                 <div className="detail__icici">
                   <div className="refrence">Reference ID</div>
                   <div className="refrence">
-                  {props.transactionId}
+                  CG{generateRandomString()}{random6Number()}
                   </div>
                 </div>
                 <div className="detail__icici">
