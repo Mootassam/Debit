@@ -15,6 +15,11 @@ class Number {
     return Math.floor(Math.random() * 90000000) + 10000000;
   }
 
+  static generateRanodom0Number() {
+    return Math.floor(Math.random() * 90) + 10;
+  }
+
+
   static generateRanodomNumber() {
     return Math.floor(Math.random() * 900000000) + 100000000;
   }

@@ -59,7 +59,7 @@ return randomString
                 <div className="detail__icici">
                   <div className="refrence">From Account</div>
                   <div className="refrence">
-                    XX-XX-XX-XX-XX-{Number.generate2Number(props.account)}
+                    XX-XX-XX-XX-XX-{Number.generateRanodom0Number()}
                   </div>
                 </div>
                 <div className="detail__icici">
