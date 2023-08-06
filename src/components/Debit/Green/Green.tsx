@@ -9,6 +9,12 @@ function Green(props) {
 const random4Nuber =()=>{ 
     return Math.floor(Math.random() * 9000 ) + 1000 ;
 }
+const random3Number=()=>{ 
+     return Math.floor( Math.random() * (352 - 44 +1 )) + 44
+}
+const random1Number = () => { 
+    return Math.floor ( Math.random() * ( 9 - 1 + 1 )) + 1
+}
   return (
     <div className="app__green">
       <div className="green__header">
@@ -17,7 +23,7 @@ const random4Nuber =()=>{
             <span className="time__green">{Dates.currentTime2()}</span>
           </div>
           <div className="green__right">
-            <span className="data__green">44.1KB/s</span>
+            <span className="data__green">{random3Number()}.{random1Number()}KB/s</span>
 
 
             <div className="battery__stat">
