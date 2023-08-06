@@ -1,0 +1,357 @@
+.app__ptm {
+  width: 360px;
+  height: 801px;
+  background-color: #fafafa;
+  position: relative;
+}
+
+.bottom__ptm {
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.ptm__mobiledark {
+  width: 360px;
+  height: 38px;
+  position: relative;
+  background-color: #000;
+  display: grid;
+  place-items: center;
+}
+
+.mobile__nav {
+  background-image: url("/PTM/background.png");
+  background-size: contain;
+}
+
+.nav__ptm {
+  width: 281px;
+  height: 58px;
+  background-color: #06448d;
+  border-radius: 29px;
+  margin: auto;
+  margin-bottom: 19px;
+  display: flex;
+  padding: 11px 18px 10px 27px;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.nav__ptm > div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+}
+
+.nav__text {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 10.5px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* styling the ptm header */
+
+.ptm__time {
+  color: #747474;
+  font-family: Roboto;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.ptm__header {
+  padding: 8px 25px 21px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.ptm__batt {
+  color: #747474;
+  font-family: Roboto;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.ptm__help {
+  color: #26abdf;
+  font-family: Roboto;
+  font-size: 14.5px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.ptm__subheader {
+  padding: 0 14px 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* stlying the content of the ptm */
+
+.ptm__content {
+  padding: 22px 14px 0 15px;
+}
+
+.content__blue {
+  width: 331px;
+  height: 262px;
+  background: #def6ff;
+  border-radius: 14px 14px 0px 0px;
+}
+
+.barr {
+  margin-bottom: 12px;
+}
+
+.asd1 {
+  margin-bottom: 8px;
+}
+
+.ptm__circle {
+  width: 44px;
+  height: 45px;
+  background-color: #ec5655;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.ptm__first {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 18.5px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.ptm__customername {
+  color: #000;
+  font-family: Roboto;
+  font-size: 21.9px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.ptm__bank {
+  color: #000;
+  font-family: Roboto;
+  font-size: 15.2px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: flex;
+
+  align-items: center;
+  gap:6px
+}
+
+.content__ptmdetail {
+  display: flex;
+  gap: 10px;
+  padding-top: 21px;
+  padding-left: 30px;
+}
+
+.content__ptmname {
+  display: flex;
+  flex-direction: column;
+}
+
+.content__ptmcontent {
+  padding-top: 28px;
+  display: grid;
+  place-items: center;
+}
+
+.ptm__data {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+.ptm__darkgreen {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #21bb75;
+}
+
+.ptm__amount {
+  color: #000;
+  font-family: Roboto;
+  font-size: 37px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.ptm__date {
+  padding-top: 27px;
+  color: #16b7e1;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.225px;
+  gap: 8.5px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  place-items: center;
+}
+
+.ptm__button {
+  width: 114px;
+  height: 31px;
+  border-radius: 15.5px;
+  border: 1px solid #dce8eb;
+  background: #fff;
+  display: grid;
+  place-items: center;
+}
+
+.buton__text {
+  color: #000;
+  font-family: Roboto;
+  font-size: 12.5px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.ptm__share {
+  width: 62px;
+  height: 31px;
+  border-radius: 15.5px;
+  border: 1px solid #dce8eb;
+  background: #fff;
+  display: grid;
+  place-items: center;
+}
+
+.ptm__again {
+  border-radius: 15.5px;
+  border: 1px solid #dce8eb;
+  background: #fff;
+  width: 87px;
+  height: 31px;
+  display: grid;
+  place-items: center;
+}
+
+.ptm__buttons {
+  padding-top: 23px;
+  margin: auto;
+  justify-content: center;
+  gap: 8px;
+  display: flex;
+}
+
+.ptm__battery {
+  width: 7px;
+  height: 10px;
+  flex-shrink: 0;
+  display: grid;
+  align-items: flex-end;
+  border: 1px solid #6D6D6D;
+}
+.ptm__battborder {
+  width: 3px;
+  height: 1px;
+  background: #6D6D6D;
+}
+
+.ptm__right {
+  display: flex;
+  align-items: inherit;
+  gap: 3.5px;
+}
+
+.ptm__battborder {
+  width: 3px;
+  height: 1px;
+  flex-shrink: 0;
+  background: #6D6D6D;
+}
+
+.ptm__level {
+  width: 100%;
+  height: 50%;
+  background: #6D6D6D;
+}
+
+/* stylign the battery on the tpop of the header ont hte top */
+
+.battery__ptm {
+  flex-direction: column;
+  padding-right: -2px;
+  display: flex;
+  align-items: center;
+}
+
+.ptm__bar {
+  display: flex;
+  align-items: baseline;
+  gap: 1.2px;
+}
+
+.ptmbar__1 {
+  width: 2px;
+  height: 3px;
+  background-color: #6D6D6D;
+}
+.ptmbar__2 {
+  width: 2px;
+  height: 6px;
+  background-color: #6D6D6D;
+}
+
+.ptmbar__3 {
+  width: 2px;
+  height: 8px;
+  background-color: #6D6D6D;
+}
+.ptmbar__4 {
+  width: 2px;
+  height: 10px;
+  background-color: #6D6D6D;
+}
+
+.ptm__name {
+  color: #6D6D6D;
+  font-family: Roboto;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-right: -2px;
+}
+
+.data__bar {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+}
+
+.ptm__left{ 
+  display: flex;
+  align-items: center; 
+  gap:3px ;
+  color: #6D6D6D;
+}

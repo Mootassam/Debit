@@ -37,7 +37,7 @@ function Sys(props) {
                 <Left />
               </div>
               <div className="sysheader__battery">
-              <BiWifi className="wifibi"  />
+                <BiWifi className="wifibi" />
                 <div className="data__">
                   <div></div>
                   <div></div>
@@ -170,7 +170,7 @@ function Sys(props) {
               </div>
 
               <div className="sysheader__battery">
-                <BiWifi className="wifibi"  />
+                <BiWifi className="wifibi" />
                 <div className="data__">
                   <div></div>
                   <div></div>

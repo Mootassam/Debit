@@ -1,7 +1,5 @@
-import { BsAlarm } from "react-icons/bs";
-import { ImAlarm } from "react-icons/im";
+import { IoIosNotifications } from "react-icons/io";
 const alarm = [
-  { component: <BsAlarm size={13} /> },
-  { component: <ImAlarm size={13} /> },
+  { component: <IoIosNotifications size={13} /> },
 ];
 export default alarm;

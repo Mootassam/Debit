@@ -36,6 +36,8 @@ import list from "../../data/bank";
 import { useSelector } from "react-redux";
 import { debitDetaill } from "../../store/debit/debitSelectors";
 import Dates from "../../utils/Dates";
+import PTM from "./PTM/PTM";
+import Green from "./Green/Green";
 // import creditICIC from "../Credit/ICICI/CreditIcici";
 // import CreditIcici from "../Credit/ICICI/CreditIcici";
 
@@ -189,6 +191,9 @@ function Debit() {
     }
   }
 
+
+  
+  
   return (
     <div className="app">
       <div className="app__header">
@@ -463,6 +468,24 @@ function Debit() {
                       amount={amount}
                       account={account}
                       transactionId={transactionId}
+                    />
+                  )}
+
+                  {/* {template === "PTM" && (
+                    <PTM
+                      amount={amount}
+                      account={account}
+                      transactionId={transactionId}
+                      from={from}
+                    />
+                  )} */}
+                  
+                  {template === "Green" && (
+                    <Green
+                      amount={amount}
+                      account={account}
+                      transactionId={transactionId}
+                      from={from}
                     />
                   )}
                 </>

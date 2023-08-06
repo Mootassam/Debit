@@ -117,6 +117,10 @@ class Dates {
   static dateFI() {
     return moment().format("MMM D [at] hh:mm A");
   }
+  s
+static dateptm() { 
+  return moment().format('DD MMM, hh:mm A');
+}
 }
 
 export default Dates;

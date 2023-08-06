@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+
+.app__green {
+  width: 361px;
+  height: 802px;
+  background-color: #f8f8f8;
+  position: relative;
+}
+
+.green__header {
+  background-image: url("/Green/background.png");
+  object-fit: cover;
+  background-size: contain;
+  width: 364px;
+  height: 190px;
+}
+
+.grren__bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 123px;
+
+  background-color: #fff;
+  gap: 28px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styling the content  */
+
+.green__content {
+  padding-top: 29px;
+  padding-left: 22px;
+}
+
+.content__text {
+  color: #000;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.text__1 {
+  color: #000;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.text2__amount {
+  color: #000;
+  font-family: Roboto;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.__bl {
+  color: #4b9db7;
+  overflow: hidden;
+  color: #4b9db7;
+  text-overflow: ellipsis;
+  font-family: Roboto;
+  font-size: 13.7px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-variant: small-caps;
+  text-decoration-line: underline;
+}
+
+.content__text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* stlying the bottom of the mobile  */
+.green__mobile {
+  padding-left: 98px;
+}
+
+.bottom__more {
+  display: flex;
+  width: 267px;
+  justify-content: space-between;
+  padding-top: 15px;
+  align-items: center;
+  align-items: flex-end;
+  padding-left: 76px;
+}
+
+.text__fav {
+  color: #484848;
+  font-family: Roboto;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.bottom__more > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+}
+
+/* styling the header on and the time */
+
+.green__time {
+  padding: 15px 19px 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.green__right {
+  display: flex;
+  align-items: stretch;
+  gap: 3px;
+}
+
+.time__green {
+  color: #003e35;
+  font-family: Inter;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.grebank__name {
+  color: #bffef5;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.grbank__detaill {
+  color: #7fead6;
+  font-family: Roboto;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.green__bank {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 16px;
+}
+
+.data__green {
+  color: #003e35;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.battery__stat {
+  display: flex;
+  align-items: center;
+  gap:2px
+}
+
+.green__percent {
+  display: flex;
+  align-items: baseline;
+  margin-left: -1.3px;
+}
+
+.percent__green {
+  color: #003e35;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+
+
+.percenet__ {
+  color: #003e35;
+  font-family: Inter;
+  font-size: 7px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+/* styling the battery */
+.green__battery {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+.green__border {
+  width: 1px;
+  height: 3px;
+  background-color: #003e35;
+}
+.grenn__bat {
+  width: 21px;
+  border-radius: 2px;
+  border: 1px solid #003e35;
+  display: flex;
+  align-items: center;
+  padding: 1px;
+}
+
+.green__level {
+  width: 11px;
+  height: 5px;
+  background-color: #003e35;
+}

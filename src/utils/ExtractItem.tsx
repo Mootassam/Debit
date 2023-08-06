@@ -13,10 +13,11 @@ class ExtractItem {
     message?,
     clock?,
     face?,
-    twitt?
+    twitt?,
+    notif?
   ) {
     const limit = Math.floor(Math.random() * (4 - 0 + 1)) + 0;
-    let array = [whats, teleg, instag, message, clock, face, twitt];
+    let array = [whats, teleg, instag, message, clock, face, twitt,notif];
 
     const item = array
       .sort(() => Math.random() - Math.random())

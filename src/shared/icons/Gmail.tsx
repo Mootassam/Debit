@@ -1,9 +1,12 @@
-import { SiGmail } from "react-icons/si";
+import { MdPhoneMissed ,MdOutlinePhoneMissed } from "react-icons/md";
 
 const gmail = [
   {
-    component: <SiGmail />,
+    component: <MdPhoneMissed size={13} />,
   },
+  {
+    component:<MdOutlinePhoneMissed size={13} />
+  }
 ];
 
 export default gmail;
