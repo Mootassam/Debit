@@ -143,6 +143,8 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  display: flex;
+  gap: 13px;
 }
 
 .grbank__detaill {
@@ -152,6 +154,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  padding-left: 17px;
 }
 
 .green__bank {
@@ -172,7 +175,7 @@
 .battery__stat {
   display: flex;
   align-items: center;
-  gap:2px
+  gap: 2px;
 }
 
 .green__percent {
@@ -189,8 +192,6 @@
   font-weight: 500;
   line-height: normal;
 }
-
-
 
 .percenet__ {
   color: #003e35;

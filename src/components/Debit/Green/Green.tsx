@@ -41,7 +41,7 @@ const random4Nuber =()=>{
           </div>
         </div>
         <div className="green__bank">
-          <span className="grebank__name">Induslnd Bank</span>
+          <span className="grebank__name"> <img src="/Green/back.png" alt="" width={6} /> Induslnd Bank</span>
           <span className="grbank__detaill">JM-INDUSB</span>
         </div>
       </div>
