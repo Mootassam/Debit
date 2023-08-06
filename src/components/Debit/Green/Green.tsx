@@ -3,6 +3,7 @@ import "./Green.css";
 import { FaSignal } from "react-icons/fa";
 import { BiWifi } from "react-icons/bi";
 import Dates from "../../../utils/Dates";
+import Currency from './../../../utils/Currency';
 function Green(props) {
     const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
 const random4Nuber =()=>{ 
@@ -31,7 +32,6 @@ const random4Nuber =()=>{
                       }}></div>
               </div>
               <div className="green__border"></div>
-
             </div>
             </div>
             <div className="green__percent">
@@ -48,10 +48,10 @@ const random4Nuber =()=>{
 
       <div className="green__content">
         <div className="content__text">
-          <span className="text__1">Your Induslnd Account {random4Nuber()} has</span>
+          <span className="text__1">Your Induslnd Account 10XXXXX{random4Nuber()} has</span>
           <div>
             <span className="text__1">been debited for INR</span>
-            <span className="text2__amount"> {props.amount}</span>
+            <span className="text2__amount"> {Currency.IndiaWithoutCurrency(props.amount)}.00</span>
             <span className="text1"> towards IMPS/ </span>
           </div>
           <div>
