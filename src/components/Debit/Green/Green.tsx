@@ -27,6 +27,7 @@ const random1Number = () => {
 
 
             <div className="battery__stat">
+                <img src="/Green/four.png" alt="" width={7} className="four"  />
             <FaSignal color={"#003e35"} size={12.5} />
             <BiWifi  size={13}   color="#003e35"/>
 
