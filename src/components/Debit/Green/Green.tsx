@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import "./Green.css";
 import { FaSignal } from "react-icons/fa";
 import { BiWifi } from "react-icons/bi";

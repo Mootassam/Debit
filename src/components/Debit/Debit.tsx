@@ -36,7 +36,7 @@ import list from "../../data/bank";
 import { useSelector } from "react-redux";
 import { debitDetaill } from "../../store/debit/debitSelectors";
 import Dates from "../../utils/Dates";
-import PTM from "./PTM/PTM";
+// import PTM from "./PTM/PTM";
 import Green from "./Green/Green";
 // import creditICIC from "../Credit/ICICI/CreditIcici";
 // import CreditIcici from "../Credit/ICICI/CreditIcici";
