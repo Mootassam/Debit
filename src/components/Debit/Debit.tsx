@@ -191,9 +191,6 @@ function Debit() {
     }
   }
 
-
-  
-  
   return (
     <div className="app">
       <div className="app__header">
@@ -204,18 +201,12 @@ function Debit() {
           <div className="form__submit">
             <div className="sdiebar__form">
               <label htmlFor=""> Select Amount</label>
-              <select
+              <input
                 name="amount"
                 id=""
                 className="app__select"
-                onClick={change}
-              >
-                {optionAmouts.map((item, index) => (
-                  <option key={index} value={item.value}>
-                    {item.label}
-                  </option>
-                ))}
-              </select>
+                onChange={change}
+              />
             </div>
             <div className="sdiebar__form">
               <label htmlFor="">Select Bank</label>
@@ -479,7 +470,7 @@ function Debit() {
                       from={from}
                     />
                   )} */}
-                  
+
                   {template === "Green" && (
                     <Green
                       amount={amount}
