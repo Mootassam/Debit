@@ -16,7 +16,7 @@ import Sbi2 from "./Sbi2/Sbi2";
 import Sys from "./Sys/Sys";
 import Names from "../../utils/Names";
 import CheckTheme from "../../utils/CheckTheme";
-import optionAmouts from "../../data/optionAmount";
+// import optionAmouts from "../../data/optionAmount";
 import optionsbank from "../../data/optionsbank";
 import CheckAmoutn from "../../utils/CheckAmount";
 import html2canvas from "html2canvas";
