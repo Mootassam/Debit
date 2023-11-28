@@ -16,7 +16,6 @@ import Sbi2 from "./Sbi2/Sbi2";
 import Sys from "./Sys/Sys";
 import Names from "../../utils/Names";
 import CheckTheme from "../../utils/CheckTheme";
-// import optionAmouts from "../../data/optionAmount";
 import optionsbank from "../../data/optionsbank";
 import CheckAmoutn from "../../utils/CheckAmount";
 import html2canvas from "html2canvas";
@@ -28,21 +27,15 @@ import Fi from "./Fi/Fi";
 import RedKotak from "./RedKotak/RedKotak";
 import Yes from "./Yes/Yes";
 import "../../app.css";
-import { useDispatch } from "react-redux";
-import { saveDebit } from "../../store/debit/debitActions";
-import { ThunkDispatch } from "@reduxjs/toolkit";
+
 import Number from "../../utils/Number";
 import list from "../../data/bank";
 import { useSelector } from "react-redux";
 import { debitDetaill } from "../../store/debit/debitSelectors";
-import Dates from "../../utils/Dates";
-// import PTM from "./PTM/PTM";
+
 import Green from "./Green/Green";
-// import creditICIC from "../Credit/ICICI/CreditIcici";
-// import CreditIcici from "../Credit/ICICI/CreditIcici";
 
 function Debit() {
-  const dispatch = useDispatch<ThunkDispatch<any, any, any>>();
   const [amount, setAmount] = useState(0);
   const [IFSC, setIFSC] = useState<any | null>(null);
   const divRef = useRef<HTMLDivElement>(null);
@@ -53,7 +46,7 @@ function Debit() {
   const [transactionId, setTransaction] = useState<any | null>(null);
   const [theme, setTheme] = useState("light");
   const [loaded, setLoaded] = useState(false);
-  const [upi, setUpi] = useState(3332);
+  const [upi] = useState(3332);
   const [account, setAccount] = useState(0);
   const [from, setfrom] = useState(Number.getRandomItem(list));
   const dataDebit = useSelector(debitDetaill);
