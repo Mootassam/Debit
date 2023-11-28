@@ -2,12 +2,7 @@
 import { useSelector } from "react-redux";
 import {  selectDebit } from "./../store/debit/debitSelectors";
 import { useDispatch } from "react-redux/es/exports";
-import {
-  deleteDebit,
-  editDebit,
 
-  updateDebit,
-} from "../store/debit/debitActions";
 import { ThunkDispatch } from "@reduxjs/toolkit";
 
 
@@ -19,14 +14,7 @@ function Header() {
   //   await dispatch(deleteDebit());
   // };
 
-  const showDetaill = async (data, index) => {
-    try {
-      await dispatch(editDebit({ data, index }));
-      await dispatch(updateDebit(index));
-    } catch (error) {
-      console.log(error);
-    }
-  };
+
 
   return (
     <>
@@ -47,27 +35,7 @@ function Header() {
         </label> */}
       </div>
 
-      <div className="header__sidebar">
-        <ul className="list__items">
-          {debitData.map((item, index) => (
-            <li
-              className="special__credit"
-              onClick={() => showDetaill(item, index)}
-            >
-              <b> {index + 1} )</b>
-              <br />
-              bank Name : <b> {item.bank} </b> <br />
-              Amount : <b> ₹ {item.amount} </b> <br />
-              Account Number: <b>{item.account} </b> <br />
-              IMPS : <b>{item.transaction} </b>
-              <br />
-              Time : {item.time}
-              <br />
-              CreditTime :{item.creditTime}
-            </li>
-          ))}
-        </ul>
-      </div>
+    
     </>
   );
 }
