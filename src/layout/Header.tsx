@@ -15,9 +15,9 @@ function Header() {
   const dispatch = useDispatch<ThunkDispatch<any, any, any>>();
   const debitData = useSelector(selectDebit);
 
-  const clearAll = async () => {
-    await dispatch(deleteDebit());
-  };
+  // const clearAll = async () => {
+  //   await dispatch(deleteDebit());
+  // };
 
   const showDetaill = async (data, index) => {
     try {
