@@ -41,10 +41,10 @@ function Header() {
         <span className="number__credit">3</span>
       </div> */}
         <label></label>
-
+{/* 
         <label className="clear__all" onClick={() => clearAll()}>
           Clear All : <span className="credit__number">{debitData.length}</span>
-        </label>
+        </label> */}
       </div>
 
       <div className="header__sidebar">

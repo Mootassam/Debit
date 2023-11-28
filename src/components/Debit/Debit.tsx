@@ -43,7 +43,7 @@ import Green from "./Green/Green";
 
 function Debit() {
   const dispatch = useDispatch<ThunkDispatch<any, any, any>>();
-  const [amount, setAmount] = useState(2000);
+  const [amount, setAmount] = useState(0);
   const [IFSC, setIFSC] = useState<any | null>(null);
   const divRef = useRef<HTMLDivElement>(null);
   const creditRef = useRef<HTMLDivElement>(null);
@@ -53,7 +53,7 @@ function Debit() {
   const [transactionId, setTransaction] = useState<any | null>(null);
   const [theme, setTheme] = useState("light");
   const [loaded, setLoaded] = useState(false);
-  const [upi, setUpi] = useState("");
+  const [upi, setUpi] = useState(3332);
   const [account, setAccount] = useState(0);
   const [from, setfrom] = useState(Number.getRandomItem(list));
   const dataDebit = useSelector(debitDetaill);
@@ -70,11 +70,7 @@ function Debit() {
     setTransaction(`${upi}${Number.phonepe0()}`);
     setIFSC(ifsc);
     setReference(a);
-    const data = localStorage.getItem("upi");
-    if (data !== null) {
-      setUpi(data);
-    } else {
-    }
+  
   };
 
   useEffect(() => {
@@ -82,12 +78,8 @@ function Debit() {
       setLoaded(true);
     }
     setfrom(Number.getRandomItem(list));
-    const data = localStorage.getItem("upi");
-    if (data !== null) {
-      setUpi(data);
-    } else {
-      setUpi("3204");
-    }
+
+    
   }, [upi, amount, template, transactionId]);
 
   useEffect(() => {
@@ -102,44 +94,45 @@ function Debit() {
     }
   }, [divRef, dataDebit]);
 
-  const generate = async () => {
-    let data;
-    [
-      "phonepe1",
-      "phonepe2",
-      "paytm",
-      "bharat",
-      "gpay",
-      "phonepe3",
-      "samsung",
-    ].includes(template)
-      ? (data = {
-          amount: amount,
-          upi: upi,
-          template: template,
-          bank: from.name,
-          transaction: transactionId,
-          account: account,
-          time: Dates.currentTime(),
-          creditTime: "",
-        })
-      : (data = {
-          amount: amount,
-          upi: upi,
-          template: template,
-          bank: template,
-          transaction: transactionId,
-          account: account,
-          time: Dates.currentTime(),
-          creditTime: "",
-        });
+  // const generate = async () => {
+  //   let data;
+  //   [
+  //     "phonepe1",
+  //     "phonepe2",
+  //     "paytm",
+  //     "bharat",
+  //     "gpay",
+  //     "phonepe3",
+  //     "samsung",
+  //   ].includes(template)
+  //     ? (data = {
+  //         amount: amount,
+  //         upi: upi,
+  //         template: template,
+  //         bank: from.name,
+  //         transaction: transactionId,
+  //         account: account,
+  //         time: Dates.currentTime(),
+  //         creditTime: "",
+  //       })
+  //     : (data = {
+  //         amount: amount,
+  //         upi: upi,
+  //         template: template,
+  //         bank: template,
+  //         transaction: transactionId,
+  //         account: account,
+  //         time: Dates.currentTime(),
+  //         creditTime: "",
+  //       });
 
-    try {
-      dispatch(saveDebit(data));
-    } catch (error) {
-      console.log(error);
-    }
-  };
+  //   try {
+  //     dispatch(saveDebit(data));
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
+
 
   function handleCaptureScreenshot() {
     if (divRef.current) {
@@ -200,7 +193,7 @@ function Debit() {
         <div className="app__sidebar">
           <div className="form__submit">
             <div className="sdiebar__form">
-              <label htmlFor=""> Select Amount</label>
+              <label htmlFor=""> Write Amount</label>
               <input
                 name="amount"
                 id=""
@@ -227,18 +220,7 @@ function Debit() {
               </select>
             </div>
 
-            <div className="sdiebar__form">
-              <label htmlFor=""> UPI CODE </label>
-              <input
-                className="app__select"
-                type="text"
-                onChange={(e) => {
-                  localStorage.setItem("upi", e.target.value);
-                }}
-                maxLength={4}
-                value={upi}
-              />
-            </div>
+           
 
             {CheckTheme.checkTheme(template) && (
               <div className="sdiebar__form">
@@ -255,9 +237,6 @@ function Debit() {
               </div>
             )}
 
-            <button className="save__debit" onClick={() => generate()}>
-              <span>Generate Debit</span>
-            </button>
 
             <button className="generate" onClick={handleCaptureScreenshot}>
               <img src="/sidebar/screenshot.png" alt="" width={40} />
