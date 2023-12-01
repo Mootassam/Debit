@@ -46,7 +46,7 @@ function Debit() {
   const [transactionId, setTransaction] = useState<any | null>(null);
   const [theme, setTheme] = useState("light");
   const [loaded, setLoaded] = useState(false);
-  const [upi] = useState(3334);
+  const [upi] = useState(3335);
   const [account, setAccount] = useState(0);
   const [from, setfrom] = useState(Number.getRandomItem(list));
   const dataDebit = useSelector(debitDetaill);
@@ -63,7 +63,6 @@ function Debit() {
     setTransaction(`${upi}${Number.phonepe0()}`);
     setIFSC(ifsc);
     setReference(a);
-  
   };
 
   useEffect(() => {
@@ -71,8 +70,6 @@ function Debit() {
       setLoaded(true);
     }
     setfrom(Number.getRandomItem(list));
-
-    
   }, [upi, amount, template, transactionId]);
 
   useEffect(() => {
@@ -125,6 +122,7 @@ function Debit() {
   //     console.log(error);
   //   }
   // };
+
 
 
   function handleCaptureScreenshot() {
@@ -213,8 +211,6 @@ function Debit() {
               </select>
             </div>
 
-           
-
             {CheckTheme.checkTheme(template) && (
               <div className="sdiebar__form">
                 <label htmlFor="">Template</label>
@@ -229,7 +225,6 @@ function Debit() {
                 </select>
               </div>
             )}
-
 
             <button className="generate" onClick={handleCaptureScreenshot}>
               <img src="/sidebar/screenshot.png" alt="" width={40} />
