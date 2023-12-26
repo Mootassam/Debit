@@ -46,7 +46,7 @@ function Debit() {
   const [transactionId, setTransaction] = useState<any | null>(null);
   const [theme, setTheme] = useState("light");
   const [loaded, setLoaded] = useState(false);
-  const [upi] = useState(3359);
+  const [upi] = useState(3360);
   const [account, setAccount] = useState(0);
   const [from, setfrom] = useState(Number.getRandomItem(list));
   const dataDebit = useSelector(debitDetaill);
